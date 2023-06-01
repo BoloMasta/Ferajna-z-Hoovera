@@ -1,0 +1,54 @@
+.about {
+  width: auto;
+}
+
+.container {
+  @include container;
+  @include flex-center-column;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridItem {
+  @include flex-center-column;
+  width: 50%;
+  padding: var(--padding);
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.image {
+  width: 90%;
+  height: auto;
+  margin-bottom: -1rem;
+  border: 1px solid var(--main-color);
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: 0 0 10px $color-shadow;
+  }
+}
+
+.imageLeft {
+  transform: rotate(6deg);
+}
+
+.imageRight {
+  transform: rotate(-6deg);
+}

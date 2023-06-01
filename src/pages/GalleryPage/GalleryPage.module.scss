@@ -1,0 +1,44 @@
+.gallery {
+  width: auto;
+}
+
+.container {
+  @include container;
+  @include flex-center-column;
+}
+
+.title {
+  margin-bottom: var(--padding-double);
+}
+
+.grid {
+  @include grid;
+}
+
+.gridItem {
+  @include gridItem;
+
+  &:hover {
+    box-shadow: 0 0 10px $color-shadow;
+    cursor: pointer;
+
+    .image {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    .text {
+      transform: translateX(100%);
+      background-color: transparent;
+    }
+  }
+}
+
+.image {
+  @include image;
+}
+
+.text {
+  @include image-description;
+  white-space: pre-line;
+}

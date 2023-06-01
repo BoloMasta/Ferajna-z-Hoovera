@@ -1,0 +1,34 @@
+.header {
+  border-bottom: 1px solid #333333;
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.container {
+  @include container;
+  @include flex-between;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.modalMenu {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 11;
+  top: inherit;
+  right: 0;
+  background: $color-background;
+  transition: $transition-slow;
+  overflow: hidden;
+  @include flex-center;
+
+  box-shadow: 0 0 10px var(--shadow-color);
+
+  &.open {
+    height: calc(100vh - 132px);
+  }
+}

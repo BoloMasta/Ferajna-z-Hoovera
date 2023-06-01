@@ -1,0 +1,92 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--padding);
+}
+
+@function pxToRem($px) {
+  @return calc(#{$px} / 16 * 1rem);
+}
+
+@mixin breakpoint($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: calc(var(--padding) * -1);
+
+  > * {
+    margin: calc(var(--padding-half) * 1) auto;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    > * {
+      width: calc(50% - var(--padding-half) * 2);
+    }
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    > * {
+      width: calc(33.333% - var(--padding-half) * 2);
+    }
+  }
+}
+
+@mixin gridItem {
+  @include flex-center;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid $color-text;
+  transition: $transition-slow;
+  position: relative;
+}
+
+@mixin image {
+  width: 100%;
+  height: auto;
+  transition: $transition-slow;
+  opacity: 0.8;
+}
+
+@mixin image-description {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: $color-background;
+  transition: $transition-slow;
+  line-height: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+}

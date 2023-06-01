@@ -1,0 +1,53 @@
+@mixin iconElement {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: $color-text;
+  transition: $transition-slow;
+  border-radius: 4px;
+}
+
+.hamburgerMenu {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+  margin-right: 30px;
+
+  .icon {
+    @include iconElement;
+    top: 20px;
+
+    &:before {
+      content: "";
+      @include iconElement;
+      top: -15px;
+    }
+
+    &:after {
+      content: "";
+      @include iconElement;
+      top: 15px;
+    }
+  }
+
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.13) translate(10px, 10px);
+      }
+
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.13) translate(10px, -10px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

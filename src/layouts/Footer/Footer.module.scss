@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--accent-color);
+}
+
+.container {
+  @include container;
+  @include flex-center;
+}
+
+.text {
+  color: #fff;
+  font-size: var(--font-size-small);
+}

@@ -1,0 +1,28 @@
+.lead {
+  @include flex-center;
+  height: pxToRem(400);
+  position: relative;
+  margin-bottom: 40px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    width: calc(100vw);
+    height: calc(100% + var(--padding) * 2);
+    position: absolute;
+
+    background-image: url("./images/lead.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.title {
+  font-size: var(--font-size-huge);
+  font-weight: $font-weight-bold;
+  text-align: center;
+  color: $color-secondary;
+  text-shadow: 0 0 10px var(--shadow-color);
+}

@@ -1,0 +1,8 @@
+.features {
+  height: 400px;
+}
+
+.container {
+  @include container;
+  @include flex-center-column;
+}
