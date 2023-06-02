@@ -8,7 +8,7 @@
 }
 
 .title {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .grid {
@@ -20,7 +20,7 @@
 .gridItem {
   @include flex-center-column;
   width: 50%;
-  padding: var(--padding);
+  padding: var(--padding-half);
 }
 
 .text {

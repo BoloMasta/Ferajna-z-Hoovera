@@ -13,10 +13,22 @@ const GalleryPage = () => {
               className={styles.image}
               loading="lazy"
             />
-            <text className={styles.text}>
+            <p className={styles.text}>
               Krakowskie przedmieście
               {"\n"}18.09.2021
-            </text>
+            </p>
+          </div>
+          <div className={styles.gridItem}>
+            <img
+              src="../images/skwer1.jpg"
+              alt="Warszawiacy"
+              className={styles.image}
+              loading="lazy"
+            />
+            <p className={styles.text}>
+              Krakowskie przedmieście
+              {"\n"}18.09.2021
+            </p>
           </div>
           <div className={styles.gridItem}>
             <img
