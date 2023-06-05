@@ -1,0 +1,20 @@
+{
+  "location": "Bemowo",
+  "date": "1.08.2022",
+  "author": "Jan Kowalski",
+
+  "images": [
+    {
+      "url": "../images/gallery/bemowo 1.08.2022/bemowo1.jpg",
+      "alt": "Bemowo1"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2022/bemowo2.jpg",
+      "alt": "Bemowo2"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2022/bemowo3.jpg",
+      "alt": "Bemowo3"
+    }
+  ]
+}

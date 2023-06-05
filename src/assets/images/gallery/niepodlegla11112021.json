@@ -1,0 +1,28 @@
+{
+  "location": "Niepodległa",
+  "date": "11.11.2021",
+  "author": "Tomasz Tołłoczko",
+
+  "images": [
+    {
+      "url": "../images/gallery/niepodlegla 11.11.2021/IMG_1469.jpg",
+      "alt": "Niepodległa 11.11.2021"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 11.11.2021/IMG_1529.jpg",
+      "alt": "Niepodległa 11.11.2021"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 11.11.2021/IMG_1770.jpg",
+      "alt": "Niepodległa 11.11.2021"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 11.11.2021/IMG_2064.jpg",
+      "alt": "Niepodległa 11.11.2021"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 11.11.2021/IMG_2132.jpg",
+      "alt": "Niepodległa 11.11.2021"
+    }
+  ]
+}

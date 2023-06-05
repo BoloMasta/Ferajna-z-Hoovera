@@ -5,10 +5,31 @@
 .container {
   @include container;
   @include flex-center-column;
+  position: relative;
 }
 
 .title {
   margin-bottom: var(--padding-double);
+}
+
+.button {
+  @include button;
+  position: absolute;
+  top: var(--padding-half);
+  right: var(--padding-half);
+}
+
+.icon {
+  margin-right: calc(var(--padding) / 3);
+  position: relative;
+  top: 3px;
+}
+
+.author {
+  font-size: var(--font-size);
+  position: absolute;
+  top: var(--padding);
+  left: var(--padding);
 }
 
 .grid {

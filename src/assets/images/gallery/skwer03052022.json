@@ -1,0 +1,20 @@
+{
+  "location": "Skwer",
+  "date": "3.05.2022",
+  "author": "Jan Halicki",
+
+  "images": [
+    {
+      "url": "../images/gallery/skwer 3.05.2022/skwer1.jpg",
+      "alt": "Skwer 3.05.2022"
+    },
+    {
+      "url": "../images/gallery/skwer 3.05.2022/skwer2.jpg",
+      "alt": "Skwer 3.05.2022"
+    },
+    {
+      "url": "../images/gallery/skwer 3.05.2022/skwer3.jpg",
+      "alt": "Skwer 3.05.2022"
+    }
+  ]
+}
