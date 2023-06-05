@@ -2,45 +2,46 @@ import { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import { BiArrowBack, BiCamera } from "react-icons/bi";
 import { Img } from "react-image";
+import { gallerySorted } from "../../assets/images/gallery/gallery";
 import Loader from "../../layouts/Loader/Loader";
 import styles from "./GalleryPage.module.scss";
-
-import { gallerySorted } from "../../assets/images/gallery/gallery";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const GalleryPage = () => {
   const [images, setImages] = useState([]);
-  const [gallery, setGallery] = useState([]);
+  const [imagesToGallery, setImagesToGallery] = useState([]);
+  const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
-    const galleryNew = images.images?.map((image) => ({
+    const imagesToGalleryURLS = images.images?.map((image) => ({
       original: image.url,
       thumbnail: image.urlSmall,
     }));
-    setGallery(galleryNew);
+    setImagesToGallery(imagesToGalleryURLS);
   }, [images]);
 
   return (
     <div className={styles.gallery}>
       <div className={styles.container}>
-        {images.length === 0 ? (
+        {images.length === 0 && (
           <>
             <h2 className={styles.title}>Galeria</h2>
             <div className={styles.grid}>
               {gallerySorted.map((images, index) => (
-                <div className={styles.gridItem} key={index} onClick={() => setImages(images)}>
+                <div
+                  className={styles.gridItem}
+                  key={index}
+                  onClick={() => {
+                    setImages(images);
+                  }}
+                >
                   <Img
                     src={images.images[0].url}
                     alt={images.images[0].alt}
                     className={`${styles.image} ${styles.cover}`}
                     loading="lazy"
                     loader={<Loader />}
-                    unloader={
-                      <img
-                        src="./images/brak-zdjecia.png"
-                        alt="Brak zdjęcia"
-                        className={styles.image}
-                      />
-                    }
+                    unloader={<img src="./images/brak-zdjecia.png" alt="Brak zdjęcia" className={styles.image} />}
                   />
                   <p className={styles.text}>
                     {images.location}
@@ -51,7 +52,9 @@ const GalleryPage = () => {
               ))}
             </div>
           </>
-        ) : (
+        )}
+
+        {images?.images?.length > 0 && imageIndex === 0 && (
           <>
             <h2 className={styles.title}>{`${images.location} - ${images.date}`}</h2>
             <p className={styles.author}>
@@ -71,30 +74,29 @@ const GalleryPage = () => {
                     className={styles.image}
                     loading="lazy"
                     loader={<Loader />}
-                    unloader={
-                      <img
-                        src="./images/brak-zdjecia.png"
-                        alt="Brak zdjęcia"
-                        className={styles.image}
-                      />
-                    }
+                    unloader={<img src="./images/brak-zdjecia.png" alt="Brak zdjęcia" className={styles.image} />}
+                    onClick={() => setImageIndex(index)}
                   />
                 </div>
               ))}
             </div>
-            <ImageGallery
-              items={gallery}
-              // showPlayButton={false}
-              // showFullscreenButton={false}
-              // showNav={false}
-              // showThumbnails={false}
-              // showBullets={true}
-              // lazyLoad={true}
-              // slideDuration={0}
-              // slideInterval={2000}
-              // startIndex={images.index}
-            />
           </>
+        )}
+
+        {images?.images?.length > 0 && imageIndex > 0 && (
+          <ImageGallery
+            items={imagesToGallery}
+            showPlayButton={true}
+            showFullscreenButton={true}
+            showNav={true}
+            showThumbnails={true}
+            showBullets={true}
+            lazyLoad={true}
+            slideDuration={500}
+            slideInterval={3000}
+            thumbnailPosition="bottom"
+            startIndex={imageIndex}
+          />
         )}
       </div>
     </div>
