@@ -1,3 +1,5 @@
+//@import url("../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss");
+
 .gallery {
   width: auto;
 }
@@ -38,6 +40,8 @@
 
 .gridItem {
   @include gridItem;
+  min-width: 300px;
+  min-height: 200px;
 
   &:hover {
     box-shadow: 0 0 10px $color-shadow;
@@ -57,6 +61,14 @@
 
 .image {
   @include image;
+}
+
+.cover {
+  filter: blur(0.5px);
+
+  &:hover {
+    filter: blur(0);
+  }
 }
 
 .text {

@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import postcssNesting from "postcss-nesting";
 
 import react from "@vitejs/plugin-react";
 
@@ -16,8 +17,11 @@ export default (args) => {
       },
       preprocessorOptions: {
         scss: {
-          additionalData: `@import "./src/assets/vars"; @import "./src/assets/mixins";`,
+          additionalData: `@import "./src/assets/vars"; @import "./src/assets/mixins"; `,
         },
+      },
+      postcss: {
+        plugins: [postcssNesting()],
       },
     },
   });
