@@ -1,11 +1,19 @@
 import moment from "moment";
 
-import bemowo01082022 from "./bemowo01082022.json";
-import skwer03052022 from "./skwer03052022.json";
-import studio19032022 from "./studio19032022.json";
-import niepodlegla11112021 from "./niepodlegla11112021.json";
-import flora19012020 from "./flora19012020.json";
+import bemowo010822 from "./bemowo010822.json";
+import skwer030522 from "./skwer030522.json";
+import studio190322 from "./studio190322.json";
+import niepodlegla111121 from "./niepodlegla111121.json";
+import flora190120 from "./flora190120.json";
 
-const gallery = [bemowo01082022, skwer03052022, studio19032022, niepodlegla11112021, flora19012020];
+export const galleries = [bemowo010822, skwer030522, studio190322, niepodlegla111121, flora190120];
 
-export const gallerySorted = gallery.sort((a, b) => moment(b.date, "DD.MM.YYYY") - moment(a.date, "DD.MM.YYYY"));
+export const galleriesSortedCovers = galleries
+  .sort((a, b) => moment(b.date, "DD.MM.YYYY") - moment(a.date, "DD.MM.YYYY"))
+  .map((images) => ({
+    cover: images.images[0].url,
+    coverAlt: images.images[0].alt,
+    location: images.location,
+    date: images.date,
+    galeryId: images.galeryId,
+  }));

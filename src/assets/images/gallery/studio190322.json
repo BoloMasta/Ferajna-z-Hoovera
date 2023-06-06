@@ -1,0 +1,49 @@
+{
+  "galeryId": "studio190322",
+  "location": "Studio",
+  "date": "19.03.2022",
+  "author": "Jan Halicki",
+
+  "images": [
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_6757.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_6757_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_6793.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_6793_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_6761.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_6761_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_6479.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_6479_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_6517.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_6517_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_7013.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_7013_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_6576.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_6576_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    },
+    {
+      "url": "../images/gallery/studio 19.03.2022/IMG_7009.jpg",
+      "urlThumbnail": "../images/gallery/studio 19.03.2022/IMG_7009_thumbnail.jpg",
+      "alt": "Studio 19.03.2022"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import Layout from "../layouts/Layout/Layout";
 const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
 const AboutPage = lazy(() => import("../pages/AboutPage/AboutPage"));
 const MusicPage = lazy(() => import("../pages/MusicPage/MusicPage"));
+const GalleriesPage = lazy(() => import("../pages/GalleriesPage/GalleriesPage"));
 const GalleryPage = lazy(() => import("../pages/GalleryPage/GalleryPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage/ContactPage"));
 
@@ -65,7 +66,8 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/music" element={<MusicPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/gallery" element={<GalleriesPage />} />
+          <Route path="/gallery/:galleryId" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>

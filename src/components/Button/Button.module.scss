@@ -1,0 +1,16 @@
+.button {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  padding: var(--padding-half) var(--padding);
+  border-radius: 5px;
+  border: 1px solid $color-text;
+  transition: $transition-slow;
+  cursor: pointer;
+  background-color: transparent;
+  color: $color-text;
+
+  &:hover {
+    background-color: $color-text;
+    color: $color-background;
+  }
+}
