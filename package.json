@@ -11,8 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@originjs/vite-plugin-require-context": "^1.0.9",
-    "get-all-files": "^4.1.0",
     "modern-normalize": "^2.0.0",
     "moment": "^2.29.4",
     "postcss-nesting": "^11.2.2",

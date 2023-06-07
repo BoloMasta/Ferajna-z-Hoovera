@@ -5,7 +5,7 @@ import styles from "./GalleriesPage.module.scss";
 
 const GalleriesPage = () => {
   return (
-    <div className={styles.galleriesPage}>
+    <div className={styles.galleries}>
       <div className={styles.container}>
         <h2 className={styles.title}>Galeria</h2>
         <div className={styles.grid}>

@@ -2,13 +2,12 @@
   @include flex-center;
   height: pxToRem(400);
   position: relative;
-  margin-bottom: 40px;
   z-index: 1;
 
   &::before {
     content: "";
     display: block;
-    width: calc(100vw);
+    width: calc(100vw - 18px);
     height: calc(100% + var(--padding) * 2);
     position: absolute;
 

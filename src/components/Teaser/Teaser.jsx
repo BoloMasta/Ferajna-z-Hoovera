@@ -6,7 +6,7 @@ const Teaser = () => {
   return (
     <section className={styles.teaser}>
       <div className={styles.container}>
-        <Parallax speed={-50} translateY={[-250, -20]}>
+        <Parallax speed={50} translateY={[-150, 50]}>
           <h2 className={styles.title}>Kto się tak wydziera?</h2>
         </Parallax>
 

@@ -6,7 +6,7 @@
   &::before {
     content: "";
     display: block;
-    width: 100vw;
+    width: calc(100vw - 18px);
     height: 100%;
     position: absolute;
     background: linear-gradient(

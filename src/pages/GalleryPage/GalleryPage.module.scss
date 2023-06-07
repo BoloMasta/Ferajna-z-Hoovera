@@ -1,5 +1,3 @@
-//@import url("../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss");
-
 .gallery {
   width: auto;
 }
@@ -41,6 +39,7 @@
 
 .gridItem {
   @include gridItem;
+  max-width: 400px;
 
   &:hover {
     box-shadow: 0 0 10px $color-shadow;
@@ -56,36 +55,22 @@
       background-color: transparent;
     }
   }
+
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 450px;
+    min-height: 200px;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    min-height: 200px;
+  }
 }
 
 .image {
   @include image;
 }
 
-.cover {
-  filter: blur(0.5px);
-  max-width: 400px;
-  max-height: 300px;
-
-  &:hover {
-    filter: blur(0);
-  }
-
-  @include breakpoint($breakpoint-tablet) {
-    max-width: none;
-    height: 300px;
-  }
-
-  @include breakpoint($breakpoint-desktop) {
-    height: 200px;
-  }
-}
-
-.text {
-  @include image-description;
-  white-space: pre-line;
-}
-
 .imageGallery {
   box-shadow: 0 0 10px $color-shadow;
+  width: 100%;
 }

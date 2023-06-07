@@ -1,0 +1,54 @@
+{
+  "galeryId": "niepodlegla310722",
+  "location": "Niepodległa",
+  "date": "31.07.2022",
+  "author": "Jan Halicki",
+
+  "images": [
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1306.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1306_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1288.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1288_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1403.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1403_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1261.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1261_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1294.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1294_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1369.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1369_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1376.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1376_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1367.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1367_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    },
+    {
+      "url": "../images/gallery/niepodlegla 31.07.2022/IMG_1416.jpg",
+      "urlThumbnail": "../images/gallery/niepodlegla 31.07.2022/IMG_1416_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Niepodległa Miejsce Spotkań"
+    }
+  ]
+}
