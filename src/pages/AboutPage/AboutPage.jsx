@@ -1,3 +1,6 @@
+import { Img } from "react-image";
+import Loader from "../../layouts/Loader/Loader";
+import NoPhoto from "../../../public/images/brak-zdjecia.png";
 import styles from "./AboutPage.module.scss";
 
 const AboutPage = () => {
@@ -19,46 +22,60 @@ const AboutPage = () => {
               tylko piosenki powstańcze, ale także utwory legionów oraz inne znane melodie
               patriotyczne, a w okresie świąt Bożego Narodzenia - kolędy.
             </p>
+            <p className={styles.text}>
+              Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy
+              Krakowskim Przedmieściu w Warszawie już od kilku lat można nas spotkać w najważniejsze
+              rocznice państwowe, święta i ważne dni dla historii naszego miasta i kraju.
+            </p>
           </div>
           <div className={styles.gridItem}>
-            <img
+            <Img
               src="../images/skwer1.jpg"
-              alt="Warszawiacy"
+              alt="Ferajna z Hoovera"
               className={`${styles.image} ${styles.imageLeft}`}
               loading="lazy"
+              loader={<Loader />}
+              unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
             />
-            <img
+            <Img
               src="../images/skwer3.jpg"
-              alt="Warszawiacy"
+              alt="Ferajna z Hoovera"
               className={`${styles.image} ${styles.imageRight}`}
               loading="lazy"
+              loader={<Loader />}
+              unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
             />
           </div>
 
           <div className={styles.gridItem}>
-            <img
+            <Img
               src="../images/skwer4.jpg"
-              alt="Warszawiacy"
+              alt="Ferajna z Hoovera"
               className={`${styles.image} ${styles.imageRight}`}
               loading="lazy"
+              loader={<Loader />}
+              unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
             />
-            <img
+            <Img
               src="../images/bohateron.jpg"
-              alt="Warszawiacy"
+              alt="Ferajna z Hoovera"
               className={`${styles.image} ${styles.imageLeft}`}
               loading="lazy"
+              loader={<Loader />}
+              unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
             />
           </div>
           <div className={styles.gridItem}>
             <p className={styles.text}>
-              Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy
-              Krakowskim Przedmieściu w Warszawie już od 6 lat można nas spotkać w najważniejsze
-              rocznice państwowe, święta i ważne dni dla historii naszego miasta i kraju.
-            </p>
-            <p className={styles.text}>
               Jako zespół nie tylko gramy spontanicznie na ulicy, ale także angażujemy się w pomoc
               na rzecz warszawskich powstańców. Spotykamy się z nimi na różnych wydarzeniach czy
               odwiedzamy ich z okazji urodzin z muzyczną laurką.
+            </p>
+            <p className={styles.text}>
+              Kiedy pozwalają nam na to pozamuzyczne obowiązki, koncertujemy także w innych miastach
+              Polski. Można nas spotkać na różnych piknikach hisotrycznych, na ulicy czy w szkole
+              lub w kościele. Kilkukrtonie występowaliśmy na Festiwalu Niepodległa na Krakowskim
+              Przedmieściu oraz Festiwalu Dziękujemy Polsko.
             </p>
             <p className={styles.text}>
               W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON, za całokształt naszych

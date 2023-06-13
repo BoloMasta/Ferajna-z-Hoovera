@@ -33,7 +33,7 @@
 }
 
 .grid {
-  @include grid;
+  @include grid3-1;
   margin-top: var(--padding-double);
 }
 
@@ -54,7 +54,6 @@
 
 .image {
   @include image;
-
   @include breakpoint($breakpoint-tablet) {
     max-width: 400px;
   }
@@ -64,5 +63,10 @@
   @include image-description;
   bottom: 0;
   font-weight: $font-weight-bold;
+  font-size: var(--font-size);
   text-shadow: 0 0 10px var(--shadow-color);
+
+  @include breakpoint($breakpoint-tablet) {
+    font-size: var(--font-size-small);
+  }
 }

@@ -8,6 +8,7 @@ import Loader from "../../layouts/Loader/Loader";
 import Button from "../../components/Button/Button";
 import styles from "./GalleryPage.module.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";
+import NoPhoto from "../../../public/images/brak-zdjecia.png";
 
 const GalleryPage = () => {
   const [images, setImages] = useState([]);
@@ -55,13 +56,7 @@ const GalleryPage = () => {
                     className={styles.image}
                     loading="lazy"
                     loader={<Loader />}
-                    unloader={
-                      <img
-                        src="./../images/brak-zdjecia.png"
-                        alt="Brak zdjęcia"
-                        className={styles.image}
-                      />
-                    }
+                    unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     onClick={() => setImageIndex(index + 1)}
                   />
                 </div>

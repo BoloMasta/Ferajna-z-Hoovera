@@ -1,6 +1,7 @@
 import { Img } from "react-image";
 import Loader from "../../layouts/Loader/Loader";
 import { galleriesSortedCovers } from "../../assets/images/gallery/gallery";
+import NoPhoto from "../../../public/images/brak-zdjecia.png";
 import styles from "./GalleriesPage.module.scss";
 
 const GalleriesPage = () => {
@@ -23,13 +24,7 @@ const GalleriesPage = () => {
                 className={`${styles.image} ${styles.cover}`}
                 loading="lazy"
                 loader={<Loader />}
-                unloader={
-                  <img
-                    src="./../images/brak-zdjecia.png"
-                    alt="Brak zdjęcia"
-                    className={styles.image}
-                  />
-                }
+                unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
               />
               <p className={styles.text}>
                 {images.location}

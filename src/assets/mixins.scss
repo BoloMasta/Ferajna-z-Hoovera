@@ -40,7 +40,7 @@
   }
 }
 
-@mixin grid {
+@mixin grid3-2-1 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +58,24 @@
   }
 
   @include breakpoint($breakpoint-desktop) {
+    > * {
+      width: calc(33.333% - var(--padding-half) * 2);
+    }
+  }
+}
+
+@mixin grid3-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: calc(var(--padding) * -1);
+
+  > * {
+    margin: calc(var(--padding-half) * 1) auto;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
     > * {
       width: calc(33.333% - var(--padding-half) * 2);
     }
