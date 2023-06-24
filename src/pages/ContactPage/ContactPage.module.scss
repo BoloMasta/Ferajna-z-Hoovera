@@ -1,0 +1,84 @@
+.contact {
+  width: auto;
+}
+
+.container {
+  @include container;
+  @include flex-center-column;
+}
+
+.grid {
+  @include grid3-1;
+  align-items: flex-start;
+  margin-top: var(--padding-double);
+}
+
+.gridItem {
+  @include gridItem;
+  @include flex-center-column;
+  justify-content: start;
+  width: 100%;
+
+  @include breakpoint($breakpoint-tablet) {
+    width: calc(100% / 3);
+    min-height: 450px;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    min-height: 550px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px $color-shadow;
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: var(--font-size);
+  line-height: 2.5;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin-bottom: var(--padding);
+  line-height: 2;
+}
+
+.listName {
+  display: block;
+  text-align: center;
+}
+
+.listIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: var(--padding);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.link {
+  color: $color-text;
+  text-decoration: none;
+  transition: $transition;
+  font-size: var(--font-size-small);
+
+  &:hover {
+    color: $color-primary;
+  }
+}
