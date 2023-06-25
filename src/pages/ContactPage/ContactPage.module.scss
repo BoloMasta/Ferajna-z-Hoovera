@@ -7,17 +7,20 @@
   @include flex-center-column;
 }
 
+.title {
+  margin-bottom: var(--padding-double);
+}
+
 .grid {
   @include grid3-1;
   align-items: flex-start;
-  margin-top: var(--padding-double);
 }
 
 .gridItem {
-  @include gridItem;
   @include flex-center-column;
   justify-content: start;
   width: 100%;
+  margin-bottom: 70px;
 
   @include breakpoint($breakpoint-tablet) {
     width: calc(100% / 3);
@@ -27,10 +30,14 @@
   @include breakpoint($breakpoint-desktop) {
     min-height: 550px;
   }
+}
 
-  &:hover {
-    box-shadow: 0 0 10px $color-shadow;
-  }
+.header {
+  text-align: center;
+  font-size: var(--font-size);
+  line-height: 2.5;
+  font-weight: $font-weight-bold;
+  margin-bottom: var(--padding);
 }
 
 .text {
@@ -55,6 +62,7 @@
 }
 
 .listItem {
+  @include flex-center-column;
   margin-bottom: var(--padding);
   line-height: 2;
 }

@@ -19,8 +19,12 @@
 
 .gridItem {
   @include flex-center-column;
-  width: 50%;
+  width: 100%;
   padding: var(--padding-half);
+
+  @include breakpoint($breakpoint-tablet) {
+    width: 50%;
+  }
 }
 
 .text {
@@ -40,6 +44,11 @@
   border-radius: 5px;
   overflow: hidden;
   transition: $transition;
+  display: none;
+
+  @include breakpoint($breakpoint-tablet) {
+    display: block;
+  }
 
   &:hover {
     box-shadow: 0 0 10px $color-shadow;

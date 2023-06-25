@@ -14,7 +14,7 @@ const ContactPage = () => {
           <div className={styles.gridItem}>
             <GiRotaryPhone className={styles.icon} />
 
-            <p className={styles.text}>Zadzwoń</p>
+            <p className={styles.header}>Zadzwoń</p>
             <ul className={styles.list}>
               <li className={styles.listItem}>
                 <p className={styles.listName}>Bolesław Adamiec</p>
@@ -39,25 +39,19 @@ const ContactPage = () => {
 
           <div className={styles.gridItem}>
             <GiMailbox className={styles.icon} />
-            <p className={styles.text}>
-              Napisz
-              <br />
-              <br />
-              <a
-                href="mailto:
+            <p className={styles.header}>Napisz</p>
+            <a
+              href="mailto:
               ferajnazhoovera@gmail.com"
-                className={styles.link}
-              >
-                ferajnazhoovera@gmail.com
-              </a>
-            </p>
+              className={styles.link}
+            >
+              ferajnazhoovera@gmail.com
+            </a>
           </div>
 
           <div className={styles.gridItem}>
             <GiLightBulb className={styles.icon} />
-            <p className={styles.text}>Obserwuj</p>
-            <br />
-            <br />
+            <p className={styles.header}>Obserwuj</p>
             <ul className={styles.list}>
               <li className={styles.listItem}>
                 <a href="https://www.facebook.com/ferajnazhoovera" className={styles.link}>
@@ -65,14 +59,12 @@ const ContactPage = () => {
                   Facebook
                 </a>
               </li>
-
               <li className={styles.listItem}>
                 <a href="https://www.instagram.com/ferajnazhoovera/" className={styles.link}>
                   <BsInstagram className={styles.listIcon} />
                   Instagram
                 </a>
               </li>
-
               <li className={styles.listItem}>
                 <a href="http://www.youtube.com/ferajnazhoovera" className={styles.link}>
                   <BsYoutube className={styles.listIcon} />
