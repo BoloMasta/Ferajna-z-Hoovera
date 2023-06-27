@@ -19,22 +19,38 @@ const Footer = () => {
           </div>
 
           <div className={styles.socials}>
-            <a href="https://www.facebook.com/ferajnazhoovera" target="_blank" rel="noreferrer" className={styles.link}>
-              <BsFacebook className={styles.icon} id={styles.iconFacebook} />
-            </a>
+            <div className={styles.socialsIcon} id={styles.iconFacebook}>
+              <a
+                href="https://www.facebook.com/ferajnazhoovera"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                <BsFacebook className={styles.icon} />
+              </a>
+            </div>
 
-            <a
-              href="https://www.instagram.com/ferajnazhoovera/"
-              target="_blank"
-              rel="noreferrer"
-              className={styles.link}
-            >
-              <BsInstagram className={styles.icon} id={styles.iconInstagram} />
-            </a>
+            <div className={styles.socialsIcon} id={styles.iconInstagram}>
+              <a
+                href="https://www.instagram.com/ferajnazhoovera/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                <BsInstagram className={styles.icon} />
+              </a>
+            </div>
 
-            <a href="https://www.youtube.com/ferajnazhoovera" target="_blank" rel="noreferrer" className={styles.link}>
-              <BsYoutube className={styles.icon} id={styles.iconYoutube} />
-            </a>
+            <div className={styles.socialsIcon} id={styles.iconYoutube}>
+              <a
+                href="https://www.youtube.com/ferajnazhoovera"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                <BsYoutube className={styles.icon} />
+              </a>
+            </div>
           </div>
         </div>
 
