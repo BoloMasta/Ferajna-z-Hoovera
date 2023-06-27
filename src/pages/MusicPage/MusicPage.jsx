@@ -18,10 +18,9 @@ const MusicPage = () => {
           <div className={styles.gridItem}>
             <iframe
               className={styles.video}
-              src="https://www.youtube.com/embed/PbWtu5Sa_NE"
+              src="https://www.youtube-nocookie.com/embed/PbWtu5Sa_NE"
               title="Ferajna z Hoovera - Warszawo ma"
               frameBorder="0"
-              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
@@ -48,7 +47,7 @@ const MusicPage = () => {
           <div className={styles.gridItem}>
             <iframe
               className={styles.video}
-              src="https://www.youtube.com/embed/videoseries?list=PLp6GCgoiewEnlRwpoEGp3VLT3kftTZsvP"
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLp6GCgoiewEnlRwpoEGp3VLT3kftTZsvP"
               title="YouTube video player"
               frameBorder="0"
               loading="lazy"
@@ -60,7 +59,7 @@ const MusicPage = () => {
           <div className={styles.gridItem}>
             <iframe
               className={styles.video}
-              src="https://www.youtube.com/embed/-2klUYihhJo"
+              src="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
               title="Piosenki Powstania Warszawskiego"
               frameBorder="0"
               loading="lazy"
@@ -71,7 +70,7 @@ const MusicPage = () => {
             <iframe
               className={styles.video}
               style={{ marginTop: "20px" }}
-              src="https://www.youtube.com/embed/zyE7tw4JvvY"
+              src="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
               title="Piosenki i pieńni patriotyczne"
               frameBorder="0"
               loading="lazy"

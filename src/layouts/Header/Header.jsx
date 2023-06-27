@@ -1,10 +1,11 @@
 //import Container from "../Container/Container";
 import Media from "react-media";
+import propTypes from "prop-types";
 import Navigation from "../Navigation/Navigation";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
+import logo from "/images/logo.png";
 import { breakpoints } from "../../assets/breakpoints";
 import styles from "./Header.module.scss";
-import propTypes from "prop-types";
 
 const Header = ({ ...props }) => {
   const { isMenuOpen } = props;
@@ -12,7 +13,7 @@ const Header = ({ ...props }) => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <img src="../images/logo.png" alt="Ferajna z Hoovera logo" className={styles.logo} />
+        <img src={logo} alt="Ferajna z Hoovera logo" className={styles.logo} />
         <Media queries={breakpoints}>
           {(matches) => (
             <>

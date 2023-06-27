@@ -98,7 +98,7 @@
     top: 0;
     left: -30px;
     z-index: -1;
-    transform: skew(-15deg);
+    transform: skew(-20deg);
 
     @include breakpoint($breakpoint-tablet) {
       width: 250%;
@@ -117,7 +117,7 @@
     top: 0;
     right: -30px;
     z-index: -1;
-    transform: skew(-15deg);
+    transform: skew(-20deg);
 
     @include breakpoint($breakpoint-tablet) {
       width: 250%;

@@ -1,5 +1,5 @@
 GiRotaryPhone;
-import { GiRotaryPhone, GiMailbox, GiLightBulb } from "react-icons/gi";
+import { GiRotaryPhone, GiMailbox, GiRingingBell } from "react-icons/gi";
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 
 import styles from "./ContactPage.module.scss";
@@ -50,7 +50,7 @@ const ContactPage = () => {
           </div>
 
           <div className={styles.gridItem}>
-            <GiLightBulb className={styles.icon} />
+            <GiRingingBell className={styles.icon} />
             <p className={styles.header}>Obserwuj</p>
             <ul className={styles.list}>
               <li className={styles.listItem}>

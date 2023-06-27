@@ -1,13 +1,112 @@
 .footer {
-  background-color: var(--accent-color);
+  background-color: $color-footer;
 }
 
 .container {
   @include container;
+  @include flex-center-column;
+  padding-bottom: var(--padding-half);
+}
+
+.contact {
+  @include flex-center-column;
+  width: 100%;
+  margin-bottom: var(--padding);
+  gap: var(--padding);
+
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.logoContainer {
+  width: 100px;
+  height: 100px;
+  @include flex-center;
+  background-color: $color-background;
+  border-radius: 50%;
+  border: 1px solid $color-border;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.mailIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.8rem;
+  color: $color-secondary;
+  transition: $transition;
+}
+
+.mailText {
+  color: $color-secondary;
+  font-size: var(--font-size-small);
+  @include flex-center;
+  transition: $transition;
+
+  &:hover {
+    color: $color-primary;
+
+    .mailIcon {
+      color: $color-primary;
+    }
+  }
+}
+
+.socials {
   @include flex-center;
 }
 
-.text {
-  color: #fff;
+.link {
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: $color-secondary;
+  transition: $transition;
+}
+
+#iconFacebook {
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+#iconInstagram {
+  &:hover {
+    color: #be40e4;
+  }
+}
+
+#iconYoutube {
+  &:hover {
+    color: #c4302b;
+  }
+}
+
+.copy {
+  @include flex-center;
+  width: 100%;
+}
+
+.copyText {
   font-size: var(--font-size-small);
+  margin-right: 0.5rem;
+}
+
+.copyLink {
+  color: $color-text;
+  transition: $transition;
+
+  &:hover {
+    color: $color-secondary;
+  }
 }

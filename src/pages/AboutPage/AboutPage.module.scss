@@ -37,17 +37,15 @@
 .image {
   width: 90%;
   height: auto;
-  margin-bottom: -1rem;
   border: 1px solid var(--main-color);
   padding: 10px;
   background-color: var(--background-color);
   border-radius: 5px;
   overflow: hidden;
   transition: $transition;
-  display: none;
 
   @include breakpoint($breakpoint-tablet) {
-    display: block;
+    margin-bottom: -1rem;
   }
 
   &:hover {
@@ -56,9 +54,16 @@
 }
 
 .imageLeft {
-  transform: rotate(6deg);
+  @include breakpoint($breakpoint-tablet) {
+    transform: rotate(6deg);
+  }
 }
 
 .imageRight {
   transform: rotate(-6deg);
+  display: none;
+
+  @include breakpoint($breakpoint-tablet) {
+    display: block;
+  }
 }
