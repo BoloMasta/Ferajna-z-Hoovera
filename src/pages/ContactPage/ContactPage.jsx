@@ -40,32 +40,35 @@ const ContactPage = () => {
           <div className={styles.gridItem}>
             <GiMailbox className={styles.icon} />
             <p className={styles.header}>Napisz</p>
-            <a
-              href="mailto:
+            <div className={styles.listItem}>
+              E-mail
+              <a
+                href="mailto:
               ferajnazhoovera@gmail.com"
-              className={styles.link}
-            >
-              ferajnazhoovera@gmail.com
-            </a>
+                className={styles.link}
+              >
+                ferajnazhoovera@gmail.com
+              </a>
+            </div>
           </div>
 
           <div className={styles.gridItem}>
             <GiRingingBell className={styles.icon} />
             <p className={styles.header}>Obserwuj</p>
             <ul className={styles.list}>
-              <li className={styles.listItem}>
+              <li className={styles.listItem} id={styles.facebook}>
                 <a href="https://www.facebook.com/ferajnazhoovera" className={styles.link}>
                   <BsFacebook className={styles.listIcon} />
                   Facebook
                 </a>
               </li>
-              <li className={styles.listItem}>
+              <li className={styles.listItem} id={styles.instagram}>
                 <a href="https://www.instagram.com/ferajnazhoovera/" className={styles.link}>
                   <BsInstagram className={styles.listIcon} />
                   Instagram
                 </a>
               </li>
-              <li className={styles.listItem}>
+              <li className={styles.listItem} id={styles.youtube}>
                 <a href="http://www.youtube.com/ferajnazhoovera" className={styles.link}>
                   <BsYoutube className={styles.listIcon} />
                   Youtube

@@ -12,6 +12,24 @@
   text-align: center;
   position: relative;
 
+  &::before {
+    background: $color-highlight;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
   &:not(:last-child) {
     margin-bottom: pxToRem(50);
 
@@ -50,7 +68,6 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        //transform: translateX(50%);
         opacity: 0.7;
         left: 100%;
       }
@@ -66,10 +83,6 @@
   margin: 0;
   text-decoration: none;
   transition: var(--transition);
-
-  &:hover {
-    color: var(--accent-color);
-  }
 
   @media screen and (min-width: $breakpoint-tablet) {
     font-size: var(--font-size);

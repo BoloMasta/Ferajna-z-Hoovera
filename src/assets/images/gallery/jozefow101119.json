@@ -1,0 +1,55 @@
+{
+  "galeryId": "jozefow101119",
+  "location": "Józefów",
+  "date": "10.11.2019",
+  "author": "Marcin Suliga",
+
+  "images": [
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0871.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0871_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0788.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0788_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0803.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0803_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0829.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0829_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0852.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0852_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0833.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0833_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0851.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0851_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0856.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0856_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    },
+    {
+      "url": "../images/gallery/jozefow 10.11.2019/IMG_0792.jpg",
+      "urlThumbnail": "../images/gallery/jozefow 10.11.2019/IMG_0792_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Józefowie"
+    }
+  ]
+}

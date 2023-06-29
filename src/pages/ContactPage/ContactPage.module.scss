@@ -63,8 +63,15 @@
 
 .listItem {
   @include flex-center-column;
-  margin-bottom: var(--padding);
-  line-height: 2;
+  line-height: 1.5;
+  padding: var(--padding-half);
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $color-border;
+    box-shadow: 0 0 10px 0 $color-shadow;
+  }
 }
 
 .listName {
@@ -85,8 +92,59 @@
   text-decoration: none;
   transition: $transition;
   font-size: var(--font-size-small);
+  position: relative;
+
+  &::before {
+    background: $color-highlight;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
 
   &:hover {
-    color: $color-primary;
+    &::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
+#facebook {
+  &:hover {
+    background-color: $color-facebook;
+    & .link {
+      color: $color-secondary;
+      &::before {
+        transform: scaleX(0);
+      }
+    }
+  }
+}
+
+#instagram {
+  &:hover {
+    background: $color-instagram;
+    & .link {
+      color: $color-secondary;
+      &::before {
+        transform: scaleX(0);
+      }
+    }
+  }
+}
+
+#youtube {
+  &:hover {
+    background-color: $color-youtube;
+    & .link {
+      color: $color-secondary;
+      &::before {
+        transform: scaleX(0);
+      }
+    }
   }
 }
