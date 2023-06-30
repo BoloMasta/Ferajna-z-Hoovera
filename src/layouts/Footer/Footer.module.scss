@@ -106,6 +106,10 @@
 
 #iconFacebook {
   background: linear-gradient(to left, #3b5998, #1f4494);
+
+  & .icon {
+    margin-right: -2px;
+  }
 }
 
 #iconInstagram {
