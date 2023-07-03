@@ -1,6 +1,6 @@
 import moment from "moment";
 
-import bemowo010822 from "./bemowo010822.json";
+import bemowo010821 from "./bemowo010821.json";
 import skwer030522 from "./skwer030522.json";
 import studio190322 from "./studio190322.json";
 import niepodlegla111121 from "./niepodlegla111121.json";
@@ -11,7 +11,7 @@ import festiwal111122 from "./festiwal111122.json";
 import dom240822 from "./dom240822.json";
 
 export const galleries = [
-  bemowo010822,
+  bemowo010821,
   skwer030522,
   studio190322,
   niepodlegla111121,

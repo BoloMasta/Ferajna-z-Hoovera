@@ -1,0 +1,39 @@
+{
+  "galeryId": "bemowo010821",
+  "location": "Bemowo",
+  "date": "1.08.2021",
+  "author": "Jan Halicki",
+
+  "images": [
+    {
+      "url": "../images/gallery/bemowo 1.08.2021/S8A3550.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2021/S8A3550_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2021/S8A3555.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2021/S8A3555_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2021/S8A3565.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2021/S8A3565_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2021/S8A3561.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2021/S8A3561_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2021/S8A3562.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2021/S8A3562_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2021/S8A3574.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2021/S8A3574_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    }
+  ]
+}

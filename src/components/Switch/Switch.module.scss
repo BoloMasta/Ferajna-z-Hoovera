@@ -1,7 +1,7 @@
 .gallery {
-  --z: 28px; /* control the zig-zag  */
-  --s: 280px; /* control the size */
-  --g: 6px; /* control the gap */
+  --z: 28px; /* zig-zag */
+  --s: 280px; /* size */
+  --g: 6px; /* gap */
 
   display: grid;
   gap: var(--g);
@@ -33,6 +33,7 @@
   transition: 0.5s;
   filter: grayscale(1);
   border: 1px solid $color-border;
+  border-radius: 5px;
   box-shadow: 2px 2px 0 var(--shadow-color), 3px 3px 0 var(--shadow-color-dark);
 }
 
@@ -41,25 +42,27 @@
   filter: grayscale(0);
 }
 
-.gallery > :nth-child(1) {
+#leftImage {
   place-self: start;
-  clip-path: polygon(calc(2 * var(--z)) 0, 100% 0, 100% 100%, 0 100%);
-  --mask: conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2 * var(--z))
-    repeat-y;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --mask: conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100%
+    calc(2 * var(--z)) repeat-y;
 }
 
-.gallery > :nth-child(2) {
+#rightImage {
   place-self: end;
-  clip-path: polygon(0 0, 100% 0, calc(100% - 2 * var(--z)) 100%, 0 100%);
-  --mask: conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50% calc(50% - var(--z)) / 100%
-    calc(2 * var(--z)) repeat-y;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --mask: conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50%
+    calc(50% - var(--z)) / 100% calc(2 * var(--z)) repeat-y;
 }
 
 .title {
   position: absolute;
   font-weight: $font-weight-bold;
-  color: $color-secondary;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  transition: $transition;
+  pointer-events: none;
+  // color: $color-secondary;
+  // text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
   &:first-of-type {
     bottom: var(--padding-half);
@@ -70,6 +73,19 @@
     top: var(--padding-half);
     right: var(--padding-half);
   }
+}
+
+#leftTitle {
+  --padding-half: 0.5rem;
+}
+
+#rightTitle {
+  --padding-half: 0.5rem;
+}
+
+.titleActive {
+  color: $color-highlight;
+  font-size: var(--font-size-huge);
 }
 
 h1 {
