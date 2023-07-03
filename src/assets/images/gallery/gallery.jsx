@@ -7,6 +7,8 @@ import niepodlegla111121 from "./niepodlegla111121.json";
 import niepodlegla310722 from "./niepodlegla310722.json";
 import flora190120 from "./flora190120.json";
 import jozefow101119 from "./jozefow101119.json";
+import festiwal111122 from "./festiwal111122.json";
+import dom240822 from "./dom240822.json";
 
 export const galleries = [
   bemowo010822,
@@ -16,6 +18,8 @@ export const galleries = [
   niepodlegla310722,
   flora190120,
   jozefow101119,
+  festiwal111122,
+  dom240822,
 ];
 
 export const galleriesSortedCovers = galleries

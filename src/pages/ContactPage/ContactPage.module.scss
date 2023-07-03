@@ -67,6 +67,7 @@
   padding: var(--padding-half);
   border-radius: 5px;
   border: 1px solid transparent;
+  transition: $transition;
 
   &:hover {
     border: 1px solid $color-border;
