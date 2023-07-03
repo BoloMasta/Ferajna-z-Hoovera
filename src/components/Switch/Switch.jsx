@@ -24,7 +24,7 @@ const Switch = (props) => {
       <div className={styles.gallery}>
         <img
           src="../images/skwer1.jpg"
-          alt="Archer"
+          alt="Zdjęcie zespołu Ferajna z Hoovera"
           className={styles.image}
           id={styles.leftImage}
           onMouseEnter={() => {
@@ -39,10 +39,9 @@ const Switch = (props) => {
         />
         <img
           src="../images/skwer3.jpg"
-          alt="Saber"
+          alt="Zdjęcie zespołu Ferajna z Hoovera"
           className={styles.image}
           id={styles.rightImage}
-          //id="rightImage"
           onMouseEnter={() => {
             document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
@@ -51,12 +50,9 @@ const Switch = (props) => {
               (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||
               (document.getElementById("rightTitle").className = `${styles.title}`);
           }}
-          // onMouseLeave={() => {
-          //   document.getElementById("rightTitle").className = `${styles.title}`;
-          // }}
           onClick={() => props.setActive("right")}
         />
-        <h2 className={`${styles.title} `} id="leftTitle">
+        <h2 className={styles.title} id="leftTitle">
           O zespole
         </h2>
         <h2 className={styles.title} id="rightTitle">

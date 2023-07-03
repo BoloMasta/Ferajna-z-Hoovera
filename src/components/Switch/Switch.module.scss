@@ -12,6 +12,7 @@
   width: calc(2 * var(--s) + var(--g));
   grid-auto-flow: column;
   position: relative;
+  overflow: hidden;
 
   @include breakpoint($breakpoint-tablet) {
     --z: 30px;
@@ -70,42 +71,61 @@
   font-weight: $font-weight-bold;
   transition: $transition-slow;
   pointer-events: none;
-  // color: $color-secondary;
+  z-index: 2;
 
   &:first-of-type {
     bottom: var(--padding-half);
     left: var(--padding-half);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -90%;
+      width: 200%;
+      height: 100%;
+      border: 1px solid $color-border;
+      transition: $transition-slow;
+      transform: skew(-20deg);
+      background-color: $color-secondary;
+      z-index: -1;
+    }
   }
 
   &:last-of-type {
     top: var(--padding-half);
     right: var(--padding-half);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -90%;
+      width: 200%;
+      height: 100%;
+      border: 1px solid $color-border;
+      transition: $transition-slow;
+      transform: skew(-20deg);
+      background-color: $color-secondary;
+      z-index: -1;
+    }
   }
-}
-
-#leftTitle {
-  --padding-half: 0.5rem;
-}
-
-#rightTitle {
-  --padding-half: 0.5rem;
 }
 
 .titleActive {
   color: $color-highlight;
   font-size: var(--font-size-huge);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
 
-h1 {
-  text-align: center;
-  font-family: system-ui, sans-serif;
-  font-size: 3rem;
-  word-spacing: 0.8em;
-}
-h1 span:first-child {
-  color: #af3817;
-}
-h1 span:last-child {
-  color: #0b3fa1;
+  &:first-of-type {
+    &::before {
+      left: -220%;
+    }
+  }
+
+  &:last-of-type {
+    &::before {
+      right: -220%;
+    }
+  }
 }
