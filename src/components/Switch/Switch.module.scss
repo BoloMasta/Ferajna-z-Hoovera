@@ -1,0 +1,86 @@
+.gallery {
+  --z: 28px; /* control the zig-zag  */
+  --s: 280px; /* control the size */
+  --g: 6px; /* control the gap */
+
+  display: grid;
+  gap: var(--g);
+  width: calc(2 * var(--s) + var(--g));
+  grid-auto-flow: column;
+  position: relative;
+
+  @include breakpoint($breakpoint-tablet) {
+    --z: 30px;
+    --s: 330px;
+    --g: 7px;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    --z: 32px;
+    --s: 400px;
+    --g: 8px;
+  }
+}
+
+.gallery > img {
+  width: 0;
+  min-width: calc(100% + var(--z) / 2);
+  height: var(--s);
+  object-fit: cover;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  cursor: pointer;
+  transition: 0.5s;
+  filter: grayscale(1);
+  border: 1px solid $color-border;
+  box-shadow: 2px 2px 0 var(--shadow-color), 3px 3px 0 var(--shadow-color-dark);
+}
+
+.gallery > img:hover {
+  width: calc(var(--s) / 2);
+  filter: grayscale(0);
+}
+
+.gallery > :nth-child(1) {
+  place-self: start;
+  clip-path: polygon(calc(2 * var(--z)) 0, 100% 0, 100% 100%, 0 100%);
+  --mask: conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2 * var(--z))
+    repeat-y;
+}
+
+.gallery > :nth-child(2) {
+  place-self: end;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 2 * var(--z)) 100%, 0 100%);
+  --mask: conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50% calc(50% - var(--z)) / 100%
+    calc(2 * var(--z)) repeat-y;
+}
+
+.title {
+  position: absolute;
+  font-weight: $font-weight-bold;
+  color: $color-secondary;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  &:first-of-type {
+    bottom: var(--padding-half);
+    left: var(--padding-half);
+  }
+
+  &:last-of-type {
+    top: var(--padding-half);
+    right: var(--padding-half);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  font-size: 3rem;
+  word-spacing: 0.8em;
+}
+h1 span:first-child {
+  color: #af3817;
+}
+h1 span:last-child {
+  color: #0b3fa1;
+}
