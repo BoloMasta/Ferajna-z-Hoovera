@@ -1,0 +1,76 @@
+.about {
+  width: auto;
+  @include flex-center-column;
+}
+
+.title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridItem {
+  @include flex-center-column;
+  width: 100%;
+  padding: var(--padding-half);
+
+  @include breakpoint($breakpoint-tablet) {
+    width: 50%;
+  }
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-indent: var(--padding);
+}
+
+.image {
+  width: 90%;
+  height: auto;
+  border: 1px solid var(--main-color);
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: $transition;
+
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 350px;
+    margin-bottom: -1rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin-bottom: -2rem;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    max-width: 400px;
+    margin-bottom: -1rem;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px $color-shadow;
+  }
+}
+
+.imageLeft {
+  @include breakpoint($breakpoint-tablet) {
+    transform: rotate(6deg);
+  }
+}
+
+.imageRight {
+  transform: rotate(-6deg);
+  display: none;
+
+  @include breakpoint($breakpoint-tablet) {
+    display: block;
+  }
+}

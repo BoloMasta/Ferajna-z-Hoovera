@@ -2,12 +2,21 @@ import propTypes from "prop-types";
 import styles from "./Switch.module.scss";
 
 const Switch = (props) => {
+  const leftImage = document.getElementById("Switch-module__leftImage");
+  const rightImage = document.getElementById("Switch-module__rightImage");
+  const leftTitle = document.getElementById("leftTitle");
+  const rightTitle = document.getElementById("rightTitle");
+
   if (props.active === "left") {
-    document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
-    document.getElementById("rightTitle").className = `${styles.title}`;
+    leftTitle.className = `${styles.title} ${styles.titleActive}`;
+    rightTitle.className = `${styles.title}`;
+    leftImage.className = `${styles.image} ${styles.imageActive}`;
+    rightImage.className = `${styles.image}`;
   } else if (props.active === "right") {
-    document.getElementById("leftTitle").className = `${styles.title}`;
-    document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
+    leftTitle.className = `${styles.title}`;
+    rightTitle.className = `${styles.title} ${styles.titleActive}`;
+    rightImage.className = `${styles.image} ${styles.imageActive}`;
+    leftImage.className = `${styles.image}`;
   }
 
   return (
@@ -16,25 +25,31 @@ const Switch = (props) => {
         <img
           src="../images/skwer1.jpg"
           alt="Archer"
+          className={styles.image}
           id={styles.leftImage}
           onMouseEnter={() => {
-            document.getElementById(
-              "leftTitle"
-            ).className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
-          // onMouseLeave={() => {
-          //   document.getElementById("leftTitle").className = `${styles.title}`;
-          // }}
+          onMouseLeave={() => {
+            (props.active === "left" &&
+              (document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`)) ||
+              (document.getElementById("leftTitle").className = `${styles.title}`);
+          }}
           onClick={() => props.setActive("left")}
         />
         <img
           src="../images/skwer3.jpg"
           alt="Saber"
+          className={styles.image}
           id={styles.rightImage}
+          //id="rightImage"
           onMouseEnter={() => {
-            document.getElementById(
-              "rightTitle"
-            ).className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
+          }}
+          onMouseLeave={() => {
+            (props.active === "right" &&
+              (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||
+              (document.getElementById("rightTitle").className = `${styles.title}`);
           }}
           // onMouseLeave={() => {
           //   document.getElementById("rightTitle").className = `${styles.title}`;

@@ -55,7 +55,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-right: pxToRem(50);
+      margin-right: pxToRem(45);
       margin-bottom: 0;
 
       &::after {
@@ -71,6 +71,12 @@
         opacity: 0.7;
         left: 100%;
       }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    &:not(:last-child) {
+      margin-right: pxToRem(50);
     }
   }
 }

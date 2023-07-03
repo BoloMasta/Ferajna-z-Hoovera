@@ -1,4 +1,4 @@
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 import propTypes from "prop-types";
 import Header from "../Header/Header";
@@ -8,6 +8,18 @@ import "./Layout.scss";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      window.onscroll = () => {
+        window.scrollTo(0, 0);
+      };
+    } else {
+      window.onscroll = () => {
+        window.scrollTo(0, window.scrollY);
+      };
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
