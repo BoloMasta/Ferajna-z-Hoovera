@@ -1,3 +1,4 @@
+import members from "../../assets/images/members/members";
 import styles from "./Members.module.scss";
 
 const Members = () => {
@@ -7,9 +8,12 @@ const Members = () => {
 
       <div className={styles.container}>
         <div className={styles.membersImages}>
-          <img src="../images/ferajna1.jpg" alt="Zdjęcie zespołu Ferajna z Hoovera" className={styles.image} />
-          <img src="../images/ferajna2.jpg" alt="Zdjęcie zespołu Ferajna z Hoovera" className={styles.image} />
-          <img src="../images/ferajna3.jpg" alt="Zdjęcie zespołu Ferajna z Hoovera" className={styles.image} />
+          {members.members.map((member, index) => (
+            <div className={styles.member} key={index}>
+              <img src={member.avatar} alt={member.avatarAlt} className={styles.memberAvatar} />
+              <img src={member.photo} alt={member.photoAlt} className={styles.memberPhoto} />
+            </div>
+          ))}
         </div>
 
         <div className={styles.membersText}>

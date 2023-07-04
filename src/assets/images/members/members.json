@@ -1,14 +1,91 @@
 {
   "members": [
     {
-      "name": "John",
-      "age": 30,
-      "description": "John is a very nice guy"
+      "id": 1,
+      "name": "Jakub Jagiełło",
+      "alias": "Laluś",
+      "photo": "../images/about/members/lalusPhoto.png",
+      "avatar": "../images/about/members/lalusAvatar.png",
+      "description": "<p>Ferajniany skrzypek 🎻. Jego rzewne solówki wyciskają łzy 😢 z oczu największych twardzieli a skoczne przygrywki podrywają do tańca 💃.</p> <p>Mąż 👩‍❤️‍👨, od niedawna ojciec👨‍👧, naukowiec w dziedzinie nanostruktur 👨‍🔬 w zakresie ich wytwarzania i charakteryzacji. Znany z tego, że nikt z ferajniaków nie wie jak śpiewa 🤷‍♂️ oraz ze stoickiego usposobienia co wyróżnia go spośród pozostałych ferajniaków.</p> <p>W wolnych chwilach kopie razem z @janek_adamiec świński pęcherz ⚽ w amatorskiej drużynie Los Aspirantos. Pasjonat włoskiej piłki nożnej 🇮🇹.</p>"
     },
     {
-      "name": "Mary",
-      "age": 25,
-      "description": "John is a very nice guy"
+      "id": 2,
+      "name": "Piotr Kosiński",
+      "alias": "Grom",
+      "photo": "../images/about/members/gromPhoto.png",
+      "photoAlt": "Piotr Kosiński",
+      "avatar": "../images/about/members/gromAvatar.png",
+      "avatarAlt": "Grom avatar",
+      "description": "<p>W ferajnie zajmuje się rzeczą najważniejszą czyli ogarnianiem tematu 😉, śpiewaniem 🎤 i robieniem zawieruchy. Pełni też bardzo ważna funkcje trzymania śpiewnika 📖 i pomagania chłopakom żeby nie zapomnieli tekstu co im się notorycznie zdarza 😂</p> <p>Absolwent warszawskiej AWF - zawód instruktor narciarstwa⛷️. Do zeszłego roku razem z bratem z @lawnmaster.pl zakładał i pielęgnował najładniejsze trawniki ☘️w stolicy i okolicy. Zimą niezmiennie uczy narciarstwa ⛷️ na lodowcach północnych Włoch. Poza zimowymi także pasjonat sportów wodnych i piłki nożnej.  </p>"
+    },
+    {
+      "id": 3,
+      "name": "Jan Adamiec",
+      "alias": "Jeshua",
+      "photo": "../images/about/members/jeshuaPhoto.png",
+      "photoAlt": "Jan Adamiec",
+      "avatar": "../images/about/members/jeshuaAvatar.png",
+      "avatarAlt": "Jeshua avatar",
+      "description": "<p>Praworęczny gitarzysta 🎸 acz leworęczny człowiek 👈. Brat stryjeczny Kędziora.</p> <p> W Ferajnie śpiewa 🎤, tańczy🕺, gra na gitarze i opowiada sympatyczne historie. Niewieście serca pękają 💔 kiedy tylko zaintonuje \"Rozmaryna\" a potem płoną z zazdrości na widok obrączki na palcu (roszczenia zgłaszać do @sieradzanm i syna Gustawczaka).</p> <p> Przemierzył z małżonką pół świata 🌍, jednak serce zostawił w Tatrach ⛰️, a pierś w białoniebieskim trykocie vicemistrza półamatotskiej podwórkowej ligi kopaczy, Los Aspirantos ⚽. Marketingowiec @decathlonpolska, stale przypomina reszcie ferajny, że keSZua a nie keCZua.</p> <p>Chciałby mieć Fiata 500 🚙. </p>"
+    },
+    {
+      "id": 4,
+      "name": "Mateusz Halicki",
+      "alias": "Miecio",
+      "photo": "../images/about/members/miecioPhoto.png",
+      "photoAlt": "Mateusz Halicki",
+      "avatar": "../images/about/members/miecioAvatar.png",
+      "avatarAlt": "Miecio avatar",
+      "description": "<p>Główny bas Ferajny, znany ze słusznego wzrostu i potężnego głosu 🎤. Jeden z założycieli i pomysłodawców zespołu, na co dzień prowadzi własną pracownię lutniczą w śródmieściu gdzie buduje, naprawia i serwisuje skrzypce 🎻, altówki, wiolonczele i kontrabasy.</p> <p>Mąż Małgorzaty i ojciec Tosi 👨‍👩‍👧</p>"
+    },
+    {
+      "id": 5,
+      "name": "Adam Sieradzan",
+      "alias": "Dudek",
+      "photo": "../images/about/members/dudekPhoto.png",
+      "photoAlt": "Adam Sieradzan",
+      "avatar": "../images/about/members/dudekAvatar.png",
+      "avatarAlt": "Dudek avatar",
+      "description": "<p>Najmłodszy członek zespołu 👶 i brat @panpielegniarka grający z nim na zmianę. Swoją role w ferajnie wypełnia poprzez łojenie w bęben 🥁. Na co dzień student geografii 🗺️, spec w firmie sharingowej 🚳 i autostopowicz 🚙. Życie nocnej Warszawy 🌃 nie jest mu obce więc wypatrujcie go wieczorami w najlepszych stołecznych lokalach a na pewno chętnie z wami zagada i wychyly co nieco.</p> <p>Znany z typowej dla młodych wiary w ideały jak na przykład to, że jak będzie grał równo to my też zaczniemy 😂</p>"
+    },
+    {
+      "id": 6,
+      "name": "Marek Balcerski",
+      "alias": "Broda",
+      "photo": "../images/about/members/brodaPhoto.png",
+      "photoAlt": "Marek Balcerski",
+      "avatar": "../images/about/members/brodaAvatar.png",
+      "avatarAlt": "Broda avatar",
+      "description": "<p>Ferajniany śpiewak 🎤 i popyliniarz. Na co dzień można spotkać go na ścianie wspinaczkowej🧗‍♂️ w centrum Warszawy gdzie trenuje, pracuje jako instruktor i również odpoczywa, zawsze radosny i nieziemsko przystojny kawaler z wielką brodą 🧔(albo bez, zależy od humoru). Prawdziwy Warsiawiak, którego wykonanie Ballady Garmażeryjnej rozpędza z nieba chmury 🌤️ i zmusza do śmiechu nawet największego Pana Marudę Niszczyciela Dobrej Zabawy.</p>"
+    },
+    {
+      "id": 7,
+      "name": "Andrzej Ostrowski",
+      "alias": "Deszcz",
+      "photo": "../images/about/members/deszczPhoto.png",
+      "photoAlt": "Andrzej Ostrowski",
+      "avatar": "../images/about/members/deszczAvatar.png",
+      "avatarAlt": "<p>W Ferajnie gra na mandolinie i krzyczy choć szkoła muzyczna nauczyła go fortepianu i milczenia. Znany z nieobrzędowej fryzury, umiłowania do bezalkoholowych kraftów i irlandzkich ciągot podczas gry 🎶🎵🎶</p> <p>Prywatnie mąż @anna_ostrowska_ao i ojciec dwojga dzieci. Z wykształcenia konserwator drewna zabytkowego, z zawodu lutnik prowadzący na Ursynowie @pracowniagitar . Poza Ferajną gra też na basie w zespole @johny.rockers 🎸</p> <p>Kiedyś narzekał nagłos, teraz nie narzeka (a jak już to po cichu) 😂  </p>"
+    },
+    {
+      "id": 8,
+      "name": "Łukasz Kosiński",
+      "alias": "Bizon",
+      "photo": "../images/about/members/bizonPhoto.png",
+      "photoAlt": "Łukasz Kosiński",
+      "avatar": "../images/about/members/bizonAvatar.png",
+      "avatarAlt": "Bizon avatar",
+      "description": "<p>W Ferajnie jeden z czterech głównych głosów 🎤. Z wykształcenia i zawodu technik elektroradiolog ☢️. Już w dzieciństwie zdobywał muzyczne doświadczenia występując z @dziecizbrodaofficial. Wielki pasjonat gór ⛰️ i wytrawny surfer 🏄‍♂️, którego spotkacie na najlepszych spotach nad Bałtykiem i w Portugalii. Zakochany w Polsce 🇵🇱 i jej historii. Uważa, że by iść naprzód ➡️ trzeba patrzeć do tyłu 🔙 czyli na historię. Dziekuję.</p>"
+    },
+    {
+      "id": 9,
+      "name": "Bolesław Adamiec",
+      "alias": "Kędzior",
+      "photo": "../images/about/members/kedziorPhoto.png",
+      "photoAlt": "Bolesław Adamiec",
+      "avatar": "../images/about/members/kedziorAvatar.png",
+      "avatarAlt": "Kędzior avatar",
+      "description": "<p> Leworęczny gitarzysta 🎸 acz praworęczny człowiek➡️, brat stryjeczny Jeshuy. Nieformalny ambasador Ferajny w mediach, zawsze gotów stanąć przed kamerą 🎥 by odpowiedzieć na pytania reporterów 📸. Jeśli podchodzisz do nas na ulicy pogadać o interesach a nie ma w okolicy naszego menago – przeważnie wyślemy Cię do niego.</p> <p>Gitarzysta zespołu @johny.rockers. Amator badmintona 🏸 i ultimate frisbee 🥏. Patentowany żeglarz ⛵. Jeśli kiedykolwiek będziesz potrzebował muzyczki to wpadaj do @apollomusicpl i pytaj o niego. Najbardziej punktualny 🕐 ze wszystkich ferajniaków zawsze melduje się na Skwerze pierwszy🥇.</p>"
     }
   ]
 }
