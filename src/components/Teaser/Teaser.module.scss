@@ -21,6 +21,7 @@
 .container {
   @include container;
   @include flex-center-column;
+  position: relative;
 }
 
 .title {
@@ -32,9 +33,27 @@
   display: block;
 }
 
+.logo {
+  position: absolute;
+  width: 90px;
+  top: -90px;
+  animation: rotate 10s linear infinite;
+}
+
+.text {
+  font-size: var(--font-size);
+  font-weight: $font-weight-bold;
+  text-align: center;
+  color: $color-text;
+  text-shadow: 0 0 10px var(--shadow-color);
+  display: block;
+  margin-top: var(--padding);
+  margin-bottom: var(--padding);
+}
+
 .grid {
   @include grid3-1;
-  margin-top: var(--padding-double);
+  margin-top: var(--padding-half);
 }
 
 .gridItem {
@@ -68,5 +87,14 @@
 
   @include breakpoint($breakpoint-tablet) {
     font-size: var(--font-size-small);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
