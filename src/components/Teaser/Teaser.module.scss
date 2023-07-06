@@ -11,8 +11,8 @@
     position: absolute;
     background: linear-gradient(
       180deg,
-      rgba(66, 28, 10, 0.884) 0%,
-      rgba(66, 28, 10, 0.671) 85%,
+      rgba(44, 19, 8, 0.897) 0%,
+      rgba(51, 21, 7, 0.795) 60%,
       $color-background 100%
     );
   }
@@ -28,7 +28,7 @@
   font-size: var(--font-size-huge);
   font-weight: $font-weight-bold;
   text-align: center;
-  color: $color-secondary;
+  color: $color-teaser;
   text-shadow: 0 0 10px var(--shadow-color);
   display: block;
 }
@@ -44,7 +44,7 @@
   font-size: var(--font-size);
   font-weight: $font-weight-bold;
   text-align: center;
-  color: $color-text;
+  color: $color-teaser;
   text-shadow: 0 0 10px var(--shadow-color);
   display: block;
   margin-top: var(--padding);

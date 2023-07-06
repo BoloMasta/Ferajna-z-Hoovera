@@ -1,23 +1,26 @@
 .cardContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-column;
   perspective: 1500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  padding: var(--padding);
+
+  @include breakpoint($breakpoint-tablet) {
+    padding: 0;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+  }
 }
 
 .card {
   width: 350px;
   height: 350px;
   box-shadow: 0 1px 5px #00000099;
-
   border-radius: 10px;
   background-image: url("./images/plyta.jpg");
-  //background-image: url(https://images.unsplash.com/photo-1557672199-6e8c8b2b8fff?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
   background-size: cover;
-
   position: relative;
-
   transition-duration: 300ms;
   transition-property: transform, box-shadow;
   transition-timing-function: ease-out;
@@ -36,15 +39,22 @@
   height: 100%;
   left: 0;
   top: 0;
-
   background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
 }
 
 .description {
   width: 50%;
   height: 100%;
-  padding: var(--padding);
-  padding-top: calc(var(--padding) * 2);
+  padding: var(--padding-half);
+  padding-top: 20px;
+  background-color: $color-shadow;
+  border-radius: 0 0 10px 10px;
+
+  @include breakpoint($breakpoint-tablet) {
+    background-color: transparent;
+    padding: var(--padding);
+    padding-top: 80px;
+  }
 }
 
 .title {
@@ -52,27 +62,51 @@
   font-weight: 700;
   padding: var(--padding);
   position: relative;
-  color: $color-background;
+  color: $color-text;
   text-shadow: 0 0 10px $color-shadow;
+
+  @include breakpoint($breakpoint-tablet) {
+    color: $color-background;
+  }
 
   &::after {
     content: "";
-    display: block;
+    display: none;
     width: 100%;
     height: 80px;
     background-color: $color-footer;
     margin-top: 0.5rem;
     position: absolute;
-    top: 10%;
-    right: 40%;
+    top: 1px;
+    right: 20%;
     transform: skew(-20deg);
     z-index: -1;
+    box-shadow: 0 0 10px $color-shadow-dark;
+
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+      top: 2px;
+    }
+
+    @include breakpoint($breakpoint-desktop) {
+      top: 15px;
+    }
   }
 }
 
 .text {
   padding: var(--padding);
   padding-top: 0;
-  font-size: 1.2rem;
+  font-size: var(--font-size);
   line-height: 1.3;
+
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    padding-top: 0;
+    padding-right: 0;
+  }
 }

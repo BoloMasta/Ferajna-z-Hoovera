@@ -5,6 +5,7 @@
 
 .container {
   @include container;
+  padding: var(--padding-half) var(--padding);
   @include flex-between;
 }
 
@@ -30,5 +31,9 @@
 
   &.open {
     height: calc(100vh - 132px);
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    display: none;
   }
 }
