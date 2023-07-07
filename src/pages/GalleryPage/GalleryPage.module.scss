@@ -35,14 +35,28 @@
 
 .grid {
   @include grid3-2-1;
+
+  // display: grid;
+  // grid-template-columns: repeat(1, 1fr);
+  // grid-gap: var(--padding-half);
+
+  // @include breakpoint($breakpoint-tablet) {
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+
+  // @include breakpoint($breakpoint-desktop) {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
 }
 
 .gridItem {
   @include gridItem;
   max-width: 400px;
+  overflow: hidden;
+  height: auto;
 
   &:hover {
-    box-shadow: 0 0 10px $color-shadow;
+    // box-shadow: 0 0 10px $color-shadow;
     cursor: pointer;
 
     .image {

@@ -13,13 +13,34 @@
 }
 
 .grid {
-  @include grid3-2-1;
+  // @include grid3-2-1;
+  // align-content: flex-start;
+
+  // // &::after {
+  // //   content: "";
+  // //   flex: auto;
+  // //   width: auto;
+  // // }
+  // align-content: space-between;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: var(--padding-half);
+
+  @include breakpoint($breakpoint-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .gridItem {
   @include gridItem;
   max-width: 400px;
   min-height: 170px;
+  width: 100%;
 
   &:hover {
     box-shadow: 0 0 10px $color-shadow;
@@ -61,11 +82,11 @@
 
   @include breakpoint($breakpoint-tablet) {
     max-width: none;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
   }
 
   @include breakpoint($breakpoint-desktop) {
-    height: 200px;
+    height: 222px;
   }
 }
 

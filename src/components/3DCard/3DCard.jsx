@@ -38,6 +38,8 @@ const Card = () => {
   `;
     }
 
+    if (!$card) return;
+
     $card.addEventListener("mouseenter", () => {
       bounds = $card.getBoundingClientRect();
       document.addEventListener("mousemove", rotateToMouse);
@@ -63,9 +65,14 @@ const Card = () => {
       <div className={styles.description}>
         <h2 className={styles.title}>Kup płytę</h2>
         <p className={styles.text}>
-          Zaprszamy do zakupu naszej płyty. Wszystkie utwory zostały nagrane w Quality Studio w Warszawie. Płyta jest
-          dostępna w sprzedaży w sklepie internetowym wydawnictwa &nbsp;
-          <a href="https://wydawnictwopoczekalnia.pl/" target="_blank" rel="noreferrer" style={{ fontWeight: "bold" }}>
+          Zaprszamy do zakupu naszej płyty. Wszystkie utwory zostały nagrane w Quality Studio w
+          Warszawie. Płyta jest dostępna w sprzedaży w sklepie internetowym wydawnictwa &nbsp;
+          <a
+            href="https://wydawnictwopoczekalnia.pl/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ fontWeight: "bold" }}
+          >
             Poczekalnia.
           </a>
         </p>
