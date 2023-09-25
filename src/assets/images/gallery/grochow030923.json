@@ -1,0 +1,14 @@
+{
+  "galeryId": "grochow030923",
+  "location": "Grochów",
+  "date": "3.09.2023",
+  "author": "Dorota i Wojciech Szota",
+
+  "images": [
+    {
+      "url": "../images/gallery/skwer 1.08.2023/KUN8588.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2023/KUN8588_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    }
+  ]
+}

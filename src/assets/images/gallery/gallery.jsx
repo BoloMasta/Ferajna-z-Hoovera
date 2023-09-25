@@ -11,6 +11,8 @@ import festiwal111122 from "./festiwal111122.json";
 import dom240822 from "./dom240822.json";
 import skwer010822 from "./skwer010822.json";
 import bemowo010822 from "./bemowo010822.json";
+import skwer010823 from "./skwer010823.json";
+import grochow030923 from "./grochow030923.json";
 
 export const galleries = [
   bemowo010821,
@@ -24,6 +26,8 @@ export const galleries = [
   dom240822,
   skwer010822,
   bemowo010822,
+  skwer010823,
+  grochow030923,
 ];
 
 export const galleriesSortedCovers = galleries
