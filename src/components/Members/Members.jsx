@@ -40,7 +40,7 @@ const Members = () => {
               dangerouslySetInnerHTML={{ __html: members.members[activeMember - 1].description }}
             ></div>
           ) : (
-            <div className={styles.text}>Wybierz członka zespołu</div>
+            <div className={styles.text}>Wybierz ferajniaka</div>
           )}
         </div>
       </div>

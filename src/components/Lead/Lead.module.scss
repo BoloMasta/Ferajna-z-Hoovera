@@ -1,6 +1,6 @@
 .lead {
   @include flex-center;
-  height: pxToRem(300);
+  height: pxToRem(400);
   position: relative;
   z-index: 1;
   margin-bottom: var(--padding);

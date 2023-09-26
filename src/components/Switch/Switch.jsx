@@ -8,10 +8,12 @@ const Switch = (props) => {
   const rightTitle = document.getElementById("rightTitle");
 
   if (props.active === "left") {
-    leftTitle.className = `${styles.title} ${styles.titleActive}`;
-    rightTitle.className = `${styles.title}`;
-    leftImage.className = `${styles.image} ${styles.imageActive}`;
-    rightImage.className = `${styles.image}`;
+    document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
+    document.getElementById("rightTitle").className = `${styles.title}`;
+    document.getElementById(
+      "Switch-module__leftImage"
+    ).className = `${styles.image} ${styles.imageActive}`;
+    document.getElementById("Switch-module__rightImage").className = `${styles.image}`;
   } else if (props.active === "right") {
     leftTitle.className = `${styles.title}`;
     rightTitle.className = `${styles.title} ${styles.titleActive}`;
@@ -28,11 +30,15 @@ const Switch = (props) => {
           className={styles.image}
           id={styles.leftImage}
           onMouseEnter={() => {
-            document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById(
+              "leftTitle"
+            ).className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
             (props.active === "left" &&
-              (document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`)) ||
+              (document.getElementById(
+                "leftTitle"
+              ).className = `${styles.title} ${styles.titleActive}`)) ||
               (document.getElementById("leftTitle").className = `${styles.title}`);
           }}
           onClick={() => props.setActive("left")}
@@ -43,11 +49,15 @@ const Switch = (props) => {
           className={styles.image}
           id={styles.rightImage}
           onMouseEnter={() => {
-            document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById(
+              "rightTitle"
+            ).className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
             (props.active === "right" &&
-              (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||
+              (document.getElementById(
+                "rightTitle"
+              ).className = `${styles.title} ${styles.titleActive}`)) ||
               (document.getElementById("rightTitle").className = `${styles.title}`);
           }}
           onClick={() => props.setActive("right")}

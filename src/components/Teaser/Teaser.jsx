@@ -25,7 +25,7 @@ const Teaser = () => {
           <p className={styles.text}>
             Witamy na stronie naszego zespołu. Znajdziesz tu informacje o nas, naszej twórczości
             oraz o tym jak się z nami skontaktować. Zapraszamy do zapoznania się z naszymi
-            wykonaniami oraz do kontaktu w sprawie ewentualnych propozycji koncertowych.
+            wykonaniami oraz do kontaktu.
           </p>
         </Parallax>
 

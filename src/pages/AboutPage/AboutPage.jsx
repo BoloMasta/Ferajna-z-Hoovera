@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Img } from "react-image";
+// import { Img } from "react-image";
 import Switch from "../../components/Switch/Switch";
 import About from "../../components/About/About";
 import Members from "../../components/Members/Members";
-import Loader from "../../layouts/Loader/Loader";
-import NoPhoto from "../../../public/images/brak-zdjecia.png";
+// import Loader from "../../layouts/Loader/Loader";
+// import NoPhoto from "../../../public/images/brak-zdjecia.png";
 import styles from "./AboutPage.module.scss";
 
 const AboutPage = () => {

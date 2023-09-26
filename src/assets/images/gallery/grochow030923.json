@@ -6,9 +6,89 @@
 
   "images": [
     {
-      "url": "../images/gallery/skwer 1.08.2023/KUN8588.jpg",
-      "urlThumbnail": "../images/gallery/skwer 1.08.2023/KUN8588_thumbnail.jpg",
-      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_134.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_134_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_3.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_3_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_4.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_4_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_24.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_24_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_30.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_30_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_41.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_41_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_78.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_78_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_81.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_81_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_86.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_86_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_90.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_90_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_91.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_91_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_111.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_111_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_125.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_125_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_117.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_117_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_135.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_135_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_140.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_140_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
+    },
+    {
+      "url": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_153.jpg",
+      "urlThumbnail": "../images/gallery/grochow 3.09.2023/fot_Dorota_Wojciech_Szota_153_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Sanktuarium Matki Bożej Królowej Polskich Męczenników na Grochowie"
     }
   ]
 }
