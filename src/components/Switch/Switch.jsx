@@ -8,12 +8,10 @@ const Switch = (props) => {
   const rightTitle = document.getElementById("rightTitle");
 
   if (props.active === "left") {
-    document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
-    document.getElementById("rightTitle").className = `${styles.title}`;
-    document.getElementById(
-      "Switch-module__leftImage"
-    ).className = `${styles.image} ${styles.imageActive}`;
-    document.getElementById("Switch-module__rightImage").className = `${styles.image}`;
+    leftTitle.className = `${styles.title} ${styles.titleActive}`;
+    rightTitle.className = `${styles.title}`;
+    leftImage.className = `${styles.image} ${styles.imageActive}`;
+    rightImage.className = `${styles.image}`;
   } else if (props.active === "right") {
     leftTitle.className = `${styles.title}`;
     rightTitle.className = `${styles.title} ${styles.titleActive}`;
