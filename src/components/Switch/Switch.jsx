@@ -12,13 +12,13 @@ const Switch = (props) => {
   if (props.active === "left") {
     leftTitle.classList.add(`${styles.titleActive}`);
     rightTitle.classList.remove(`${styles.titleActive}`);
-    leftImage.classList.add(`${styles.imageActive}`);
-    rightImage.classList.remove(`${styles.imageActive}`);
+    //leftImage.classList.add(`${styles.imageActive}`);
+    //rightImage.classList.remove(`${styles.imageActive}`);
   } else if (props.active === "right") {
     leftTitle.classList.remove(`${styles.titleActive}`);
     rightTitle.classList.add(`${styles.titleActive}`);
-    rightImage.classList.add(`${styles.imageActive}`);
-    leftImage.classList.remove(`${styles.imageActive}`);
+    //rightImage.classList.add(`${styles.imageActive}`);
+    //leftImage.classList.remove(`${styles.imageActive}`);
   }
 
   // if (props.active === "left") {
