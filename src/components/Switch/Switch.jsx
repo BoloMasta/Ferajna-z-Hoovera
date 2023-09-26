@@ -4,8 +4,8 @@ import styles from "./Switch.module.scss";
 import ctl from "@netlify/classnames-template-literals";
 
 const Switch = (props) => {
-  const leftImage = document.getElementById("Switch-module__leftImage");
-  const rightImage = document.getElementById("Switch-module__rightImage");
+  const leftImage = document.getElementById("leftImage");
+  const rightImage = document.getElementById("rightImage");
   const leftTitle = document.getElementById("leftTitle");
   const rightTitle = document.getElementById("rightTitle");
 
@@ -16,7 +16,7 @@ const Switch = (props) => {
     if (leftImage) leftImage.classList.add(`${styles.imageActive}`);
     if (rightImage) rightImage.classList.remove(`${styles.imageActive}`);
 
-    //leftImage.classList.add(`${styles.imageActive}`);
+    ///leftImage.classList.add(`${styles.imageActive}`);
     //rightImage.classList.remove(`${styles.imageActive}`);
   } else if (props.active === "right") {
     leftTitle.classList.remove(`${styles.titleActive}`);
@@ -46,8 +46,8 @@ const Switch = (props) => {
         <img
           src="../images/skwer1.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
-          className={styles.image}
-          id={styles.leftImage}
+          className={styles.leftImage}
+          id="leftImage"
           onMouseEnter={() => {
             document.getElementById("leftTitle").classList.add(`${styles.titleActive}`);
             //document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
@@ -65,8 +65,8 @@ const Switch = (props) => {
           src="../images/skwer3.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
           //className={styles.image}
-          className={ctl(styles.image, props.active === "right" && styles.imageActive)}
-          id={styles.rightImage}
+          className={styles.rightImage}
+          id="rightImage"
           onMouseEnter={() => {
             document.getElementById("rightTitle").classList.add(`${styles.titleActive}`);
             //document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
