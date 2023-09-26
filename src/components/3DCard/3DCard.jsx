@@ -31,6 +31,8 @@ const Card = () => {
 
       $card.style.transform = transform;
 
+      // STARE
+
       //   $card.style.transform = `
       //   scale3d(1.08, 1.08, 1.08)
       //   rotate3d(
@@ -41,15 +43,15 @@ const Card = () => {
       //   )
       // `;
 
-      $card.querySelector("._3DCard-module__glow").style.backgroundImage = `
-      radial-gradient(
-        circle at
-        ${center.x * 2 + bounds.width / 2}px
-        ${center.y * 2 + bounds.height / 2}px,
-        #ffffff55,
-        #0000000f
-      )
-    `;
+      //   $card.querySelector("._3DCard-module__glow").style.backgroundImage = `
+      //   radial-gradient(
+      //     circle at
+      //     ${center.x * 2 + bounds.width / 2}px
+      //     ${center.y * 2 + bounds.height / 2}px,
+      //     #ffffff55,
+      //     #0000000f
+      //   )
+      // `;
     }
 
     if (!$card) return;
