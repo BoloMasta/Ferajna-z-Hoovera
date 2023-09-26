@@ -8,16 +8,28 @@ const Switch = (props) => {
   const rightTitle = document.getElementById("rightTitle");
 
   if (props.active === "left") {
-    leftTitle.className = `${styles.title} ${styles.titleActive}`;
-    rightTitle.className = `${styles.title}`;
-    leftImage.className = `${styles.image} ${styles.imageActive}`;
-    rightImage.className = `${styles.image}`;
+    leftTitle.classList.add(`${styles.titleActive}`);
+    rightTitle.classList.remove(`${styles.titleActive}`);
+    leftImage.classList.add(`${styles.imageActive}`);
+    rightImage.classList.remove(`${styles.imageActive}`);
   } else if (props.active === "right") {
-    leftTitle.className = `${styles.title}`;
-    rightTitle.className = `${styles.title} ${styles.titleActive}`;
-    rightImage.className = `${styles.image} ${styles.imageActive}`;
-    leftImage.className = `${styles.image}`;
+    leftTitle.classList.remove(`${styles.titleActive}`);
+    rightTitle.classList.add(`${styles.titleActive}`);
+    rightImage.classList.add(`${styles.imageActive}`);
+    leftImage.classList.remove(`${styles.imageActive}`);
   }
+
+  // if (props.active === "left") {
+  //   leftTitle.className = `${styles.title} ${styles.titleActive}`;
+  //   rightTitle.className = `${styles.title}`;
+  //   leftImage.className = `${styles.image} ${styles.imageActive}`;
+  //   rightImage.className = `${styles.image}`;
+  // } else if (props.active === "right") {
+  //   leftTitle.className = `${styles.title}`;
+  //   rightTitle.className = `${styles.title} ${styles.titleActive}`;
+  //   rightImage.className = `${styles.image} ${styles.imageActive}`;
+  //   leftImage.className = `${styles.image}`;
+  // }
 
   return (
     <section className={styles.switch}>
@@ -28,15 +40,11 @@ const Switch = (props) => {
           className={styles.image}
           id={styles.leftImage}
           onMouseEnter={() => {
-            document.getElementById(
-              "leftTitle"
-            ).className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
             (props.active === "left" &&
-              (document.getElementById(
-                "leftTitle"
-              ).className = `${styles.title} ${styles.titleActive}`)) ||
+              (document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`)) ||
               (document.getElementById("leftTitle").className = `${styles.title}`);
           }}
           onClick={() => props.setActive("left")}
@@ -47,15 +55,11 @@ const Switch = (props) => {
           className={styles.image}
           id={styles.rightImage}
           onMouseEnter={() => {
-            document.getElementById(
-              "rightTitle"
-            ).className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
             (props.active === "right" &&
-              (document.getElementById(
-                "rightTitle"
-              ).className = `${styles.title} ${styles.titleActive}`)) ||
+              (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||
               (document.getElementById("rightTitle").className = `${styles.title}`);
           }}
           onClick={() => props.setActive("right")}

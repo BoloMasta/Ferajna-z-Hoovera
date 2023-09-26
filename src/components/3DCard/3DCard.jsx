@@ -17,15 +17,29 @@ const Card = () => {
       };
       const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
-      $card.style.transform = `
-      scale3d(1.08, 1.08, 1.08)
-      rotate3d(
-        ${center.y / 100},
-        ${-center.x / 100},
-        0,
-        ${Math.log(distance) * 2}deg
-      )
-    `;
+      // TEST
+
+      let rotateX = center.y / 100;
+      let rotateY = -center.x / 100;
+      let rotateZ = Math.log(distance) * 2;
+
+      if (rotateX > 1) rotateX = 1;
+      if (rotateX < -1) rotateX = -1;
+      if (rotateY > 1) rotateY = 1;
+
+      let transform = `scale3d(1.08, 1.08, 1.08) rotate3d(${rotateX}, ${rotateY}, 0, ${rotateZ}deg)`;
+
+      $card.style.transform = transform;
+
+      //   $card.style.transform = `
+      //   scale3d(1.08, 1.08, 1.08)
+      //   rotate3d(
+      //     ${center.y / 100},
+      //     ${-center.x / 100},
+      //     0,
+      //     ${Math.log(distance) * 2}deg
+      //   )
+      // `;
 
       $card.querySelector("._3DCard-module__glow").style.backgroundImage = `
       radial-gradient(
@@ -65,14 +79,9 @@ const Card = () => {
       <div className={styles.description}>
         <h2 className={styles.title}>Kup płytę</h2>
         <p className={styles.text}>
-          Zaprszamy do zakupu naszej płyty. Wszystkie utwory zostały nagrane w Quality Studio w
-          Warszawie. Płyta jest dostępna w sprzedaży w sklepie internetowym wydawnictwa{" "}
-          <a
-            href="https://wydawnictwopoczekalnia.pl/"
-            target="_blank"
-            rel="noreferrer"
-            style={{ fontWeight: "bold" }}
-          >
+          Zaprszamy do zakupu naszej płyty. Wszystkie utwory zostały nagrane w Quality Studio w Warszawie. Płyta jest
+          dostępna w sprzedaży w sklepie internetowym wydawnictwa{" "}
+          <a href="https://wydawnictwopoczekalnia.pl/" target="_blank" rel="noreferrer" style={{ fontWeight: "bold" }}>
             Poczekalnia.
           </a>
         </p>
