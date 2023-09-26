@@ -17,41 +17,25 @@ const Card = () => {
       };
       const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
-      // TEST
+      $card.style.transform = `
+        scale3d(1.08, 1.08, 1.08)
+        rotate3d(
+          ${center.y / 100},
+          ${-center.x / 100},
+          0,
+          ${Math.log(distance) * 2}deg
+        )
+      `;
 
-      let rotateX = center.y / 100;
-      let rotateY = -center.x / 100;
-      let rotateZ = Math.log(distance) * 2;
-
-      if (rotateX > 1) rotateX = 1;
-      if (rotateX < -1) rotateX = -1;
-      if (rotateY > 1) rotateY = 1;
-
-      let transform = `scale3d(1.08, 1.08, 1.08) rotate3d(${rotateX}, ${rotateY}, 0, ${rotateZ}deg)`;
-
-      $card.style.transform = transform;
-
-      // STARE
-
-      //   $card.style.transform = `
-      //   scale3d(1.08, 1.08, 1.08)
-      //   rotate3d(
-      //     ${center.y / 100},
-      //     ${-center.x / 100},
-      //     0,
-      //     ${Math.log(distance) * 2}deg
-      //   )
-      // `;
-
-      //   $card.querySelector("._3DCard-module__glow").style.backgroundImage = `
-      //   radial-gradient(
-      //     circle at
-      //     ${center.x * 2 + bounds.width / 2}px
-      //     ${center.y * 2 + bounds.height / 2}px,
-      //     #ffffff55,
-      //     #0000000f
-      //   )
-      // `;
+      $card.querySelector("._3DCard-module__glow").style.backgroundImage = `
+        radial-gradient(
+          circle at
+          ${center.x * 2 + bounds.width / 2}px
+          ${center.y * 2 + bounds.height / 2}px,
+          #ffffff55,
+          #0000000f
+        )
+      `;
     }
 
     if (!$card) return;

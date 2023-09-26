@@ -1,5 +1,7 @@
+//import ctl from "@netlify/classnames-template-literals";
 import propTypes from "prop-types";
 import styles from "./Switch.module.scss";
+import ctl from "@netlify/classnames-template-literals";
 
 const Switch = (props) => {
   const leftImage = document.getElementById("Switch-module__leftImage");
@@ -40,27 +42,34 @@ const Switch = (props) => {
           className={styles.image}
           id={styles.leftImage}
           onMouseEnter={() => {
-            document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById("leftTitle").classList.add(`${styles.titleActive}`);
+            //document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
-            (props.active === "left" &&
-              (document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`)) ||
-              (document.getElementById("leftTitle").className = `${styles.title}`);
+            props.active !== "left" && document.getElementById("leftTitle").classList.remove(`${styles.titleActive}`);
+
+            // (props.active === "left" &&
+            //   (document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`)) ||
+            //   (document.getElementById("leftTitle").className = `${styles.title}`);
           }}
           onClick={() => props.setActive("left")}
         />
         <img
           src="../images/skwer3.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
-          className={styles.image}
+          //className={styles.image}
+          className={ctl(styles.image, props.active === "right" && styles.imageActive)}
           id={styles.rightImage}
           onMouseEnter={() => {
-            document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
+            document.getElementById("rightTitle").classList.add(`${styles.titleActive}`);
+            //document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
-            (props.active === "right" &&
-              (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||
-              (document.getElementById("rightTitle").className = `${styles.title}`);
+            props.active !== "right" && document.getElementById("rightTitle").classList.remove(`${styles.titleActive}`);
+
+            // (props.active === "right" &&
+            //   (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||
+            //   (document.getElementById("rightTitle").className = `${styles.title}`);
           }}
           onClick={() => props.setActive("right")}
         />

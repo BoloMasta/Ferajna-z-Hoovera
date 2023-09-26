@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@netlify/classnames-template-literals": "^1.0.3",
     "modern-normalize": "^2.0.0",
     "moment": "^2.29.4",
     "postcss-nesting": "^11.2.2",
