@@ -9,7 +9,9 @@
 }
 
 .title {
-  margin-bottom: var(--padding-double);
+  margin-bottom: var(--padding-half);
+  max-width: 65%;
+  text-align: center;
 }
 
 .button {
@@ -27,10 +29,11 @@
 
 .author {
   font-size: var(--font-size);
-  position: absolute;
-  top: calc(var(--padding) + 6px);
-  left: var(--padding);
-  max-width: 20%;
+  margin-bottom: var(--padding-double);
+  // position: absolute;
+  // top: calc(var(--padding) + 6px);
+  // left: var(--padding);
+  // max-width: 20%;
 }
 
 .grid {

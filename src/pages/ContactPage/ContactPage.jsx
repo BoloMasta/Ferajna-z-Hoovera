@@ -17,15 +17,15 @@ const ContactPage = () => {
             <p className={styles.header}>Zadzwoń</p>
             <ul className={styles.list}>
               <li className={styles.listItem}>
-                <p className={styles.listName}>Bolesław Adamiec</p>
-                <a href="tel:+48693993930" className={styles.link}>
-                  + 48 693 993 930
-                </a>
-              </li>
-              <li className={styles.listItem}>
                 <p className={styles.listName}>Łukasz Kosiński</p>
                 <a href="tel:+48667777615" className={styles.link}>
                   + 48 667 777 615
+                </a>
+              </li>
+              <li className={styles.listItem}>
+                <p className={styles.listName}>Bolesław Adamiec</p>
+                <a href="tel:+48693993930" className={styles.link}>
+                  + 48 693 993 930
                 </a>
               </li>
               <li className={styles.listItem}>
