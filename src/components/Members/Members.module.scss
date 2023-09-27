@@ -47,13 +47,22 @@
   overflow: hidden;
   cursor: pointer;
 
-  &:hover {
-    .memberAvatar {
-      transform: translateX(-50%);
-    }
-    .memberPhoto {
-      transform: translateX(-51%);
-    }
+  // &:hover {
+  //   .memberAvatar {
+  //     transform: translateX(-50%);
+  //   }
+  //   .memberPhoto {
+  //     transform: translateX(-51%);
+  //   }
+  // }
+}
+
+.memberActive {
+  .memberAvatar {
+    transform: translateX(-50%);
+  }
+  .memberPhoto {
+    transform: translateX(-51%);
   }
 }
 

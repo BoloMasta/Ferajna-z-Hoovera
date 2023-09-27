@@ -1,7 +1,7 @@
 //import ctl from "@netlify/classnames-template-literals";
 import propTypes from "prop-types";
 import styles from "./Switch.module.scss";
-import ctl from "@netlify/classnames-template-literals";
+//import ctl from "@netlify/classnames-template-literals";
 
 const Switch = (props) => {
   const leftImage = document.getElementById("leftImage");
@@ -53,7 +53,8 @@ const Switch = (props) => {
             //document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
-            props.active !== "left" && document.getElementById("leftTitle").classList.remove(`${styles.titleActive}`);
+            props.active !== "left" &&
+              document.getElementById("leftTitle").classList.remove(`${styles.titleActive}`);
 
             // (props.active === "left" &&
             //   (document.getElementById("leftTitle").className = `${styles.title} ${styles.titleActive}`)) ||
@@ -72,7 +73,8 @@ const Switch = (props) => {
             //document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`;
           }}
           onMouseLeave={() => {
-            props.active !== "right" && document.getElementById("rightTitle").classList.remove(`${styles.titleActive}`);
+            props.active !== "right" &&
+              document.getElementById("rightTitle").classList.remove(`${styles.titleActive}`);
 
             // (props.active === "right" &&
             //   (document.getElementById("rightTitle").className = `${styles.title} ${styles.titleActive}`)) ||

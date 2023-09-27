@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import members from "../../assets/images/members/members";
 import styles from "./Members.module.scss";
 
 const Members = () => {
   const [activeMember, setActiveMember] = useState(0);
+
+  useEffect(() => {
+    for (let i = 0; i < members.members.length; i++) {
+      if (i + 1 === activeMember) {
+        document.getElementById(i + 1).classList.add(`${styles.memberActive}`);
+      } else document.getElementById(i + 1).classList.remove(`${styles.memberActive}`);
+    }
+  }, [activeMember]);
 
   return (
     <section className={styles.members}>
@@ -13,7 +21,17 @@ const Members = () => {
             <div
               className={styles.member}
               key={member.id}
-              onClick={() => setActiveMember(member.id)}
+              id={member.id}
+              onClick={() => {
+                setActiveMember(member.id);
+              }}
+              onMouseEnter={() => {
+                document.getElementById(member.id).classList.add(`${styles.memberActive}`);
+              }}
+              onMouseLeave={() => {
+                if (activeMember !== member.id)
+                  document.getElementById(member.id).classList.remove(`${styles.memberActive}`);
+              }}
             >
               <img src={member.avatar} alt={member.avatarAlt} className={styles.memberAvatar} />
               <img src={member.photo} alt={member.photoAlt} className={styles.memberPhoto} />
