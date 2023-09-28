@@ -19,20 +19,22 @@ const About = () => {
                 <>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Jesteśmy grupą znajomych w zasadzie od dziecka. Kilka lat temu spontanicznie połączyliśmy swoje
-                      muzyczne talenty i wyszliśmy w sierpniowe popołudnie grać piosenki powstańcze, które znaliśmy
-                      m.in. z harcerstwa. Chcieliśmy w ten sposób oddać hołd powstańcom oraz przedstawić ich repertuar
-                      wszystkim warszawiakom.
+                      Jesteśmy grupą znajomych praktycznie od dzieciństwa. Kilka lat temu
+                      spontanicznie połączyliśmy nasze muzyczne talenty i w pewne sierpniowe
+                      popołudnie zaczęliśmy grać piosenki powstańcze, które znaliśmy m.in. z
+                      harcerstwa. Naszym celem było oddanie hołdu powstańcom i zaprezentowanie ich
+                      repertuaru wszystkim warszawiakom.
                     </p>
                     <p className={styles.text}>
-                      Ciepły odbiór publiczności sprawił, że gramy do dziś, przybliżając słuchaczom nie tylko piosenki
-                      powstańcze, ale także utwory legionów oraz inne znane melodie patriotyczne, a w okresie świąt
-                      Bożego Narodzenia - kolędy.
+                      Ciepłe przyjęcie przez publiczność sprawiło, że gramy do dziś, przybliżając
+                      naszym słuchaczom nie tylko piosenki powstańcze, ale także utwory legionów
+                      oraz inne znane melodie patriotyczne. W okresie świąt Bożego Narodzenia
+                      wykonujemy również kolędy.
                     </p>
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/skwer1.jpg"
+                      src="../images/about/about/_KUN8588.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} `}
                       loading="lazy"
@@ -42,19 +44,20 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy Krakowskim
-                      Przedmieściu w Warszawie już od kilku lat można nas spotkać w najważniejsze rocznice państwowe,
-                      święta i ważne dni dla historii naszego miasta i kraju.
+                      Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy
+                      Krakowskim Przedmieściu w Warszawie już od kilku lat można nas spotkać podczas
+                      najważniejszych rocznic państwowych, świąt i ważnych dni w historii naszego
+                      miasta i kraju.
                     </p>
                     <p className={styles.text}>
-                      Jako zespół nie tylko gramy spontanicznie na ulicy, ale także angażujemy się w pomoc na rzecz
-                      warszawskich powstańców. Spotykamy się z nimi na różnych wydarzeniach czy odwiedzamy ich z okazji
-                      urodzin z muzyczną laurką.
+                      Jako zespół nie tylko spontanicznie występujemy na ulicy, ale także angażujemy
+                      się w pomoc warszawskim powstańcom. Spotykamy się z nimi na różnych
+                      wydarzeniach lub odwiedzamy ich z okazji urodzin, przynosząc muzyczną laurkę.
                     </p>
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/skwer3.jpg"
+                      src="../images/about/about/IMG_2636.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} `}
                       loading="lazy"
@@ -64,14 +67,16 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Kiedy pozwalają nam na to pozamuzyczne obowiązki, koncertujemy także w innych miastach Polski.
-                      Można nas spotkać na różnych piknikach hisotrycznych, na ulicy czy w szkole lub w kościele.
-                      Kilkukrtonie występowaliśmy na Festiwalu Niepodległa na Krakowskim Przedmieściu oraz Festiwalu
-                      Dziękujemy Polsko.
+                      Kiedy pozwalają na to nasze pozamuzyczne obowiązki, koncertujemy także w
+                      innych miastach Polski. Można nas spotkać na różnych piknikach historycznych,
+                      na ulicach, w szkołach i kościołach. Kilka razy mieliśmy przyjemność
+                      występować na Festiwalu Niepodległa na Krakowskim Przedmieściu oraz na
+                      Festiwalu Dziękujemy Polsko.
                     </p>
                     <p className={styles.text}>
-                      W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON, za całokształt naszych
-                      dotychczasowych działań oraz czynny udział w akcjach na rzecz kombatantów.
+                      W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON za całokształt
+                      naszych dotychczasowych działań oraz aktywny udział w akcjach na rzecz
+                      kombatantów.
                     </p>
                   </div>
                   <div className={styles.gridItem}>
@@ -93,20 +98,23 @@ const About = () => {
                 <>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Jesteśmy grupą znajomych w zasadzie od dziecka. Kilka lat temu spontanicznie połączyliśmy swoje
-                      muzyczne talenty i wyszliśmy w sierpniowe popołudnie grać piosenki powstańcze, które znaliśmy
-                      m.in. z harcerstwa. Chcieliśmy w ten sposób oddać hołd powstańcom oraz przedstawić ich repertuar
-                      wszystkim warszawiakom.
+                      Jesteśmy grupą znajomych praktycznie od dzieciństwa. Kilka lat temu
+                      spontanicznie połączyliśmy nasze muzyczne talenty i w pewne sierpniowe
+                      popołudnie zaczęliśmy grać piosenki powstańcze, które znaliśmy m.in. z
+                      harcerstwa. Naszym celem było oddanie hołdu powstańcom i zaprezentowanie ich
+                      repertuaru wszystkim warszawiakom.
                     </p>
                     <p className={styles.text}>
-                      Ciepły odbiór publiczności sprawił, że gramy do dziś, przybliżając słuchaczom nie tylko piosenki
-                      powstańcze, ale także utwory legionów oraz inne znane melodie patriotyczne, a w okresie świąt
-                      Bożego Narodzenia - kolędy.
+                      Ciepłe przyjęcie przez publiczność sprawiło, że gramy do dziś, przybliżając
+                      naszym słuchaczom nie tylko piosenki powstańcze, ale także utwory legionów
+                      oraz inne znane melodie patriotyczne. W okresie świąt Bożego Narodzenia
+                      wykonujemy również kolędy.
                     </p>
                     <p className={styles.text}>
-                      Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy Krakowskim
-                      Przedmieściu w Warszawie już od kilku lat można nas spotkać w najważniejsze rocznice państwowe,
-                      święta i ważne dni dla historii naszego miasta i kraju.
+                      Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy
+                      Krakowskim Przedmieściu w Warszawie już od kilku lat można nas spotkać podczas
+                      najważniejszych rocznic państwowych, świąt i ważnych dni w historii naszego
+                      miasta i kraju.
                     </p>
                   </div>
                   <div className={styles.gridItem}>
@@ -127,7 +135,7 @@ const About = () => {
                       unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     />
                     <Img
-                      src="../images/skwer1.jpg"
+                      src="../images/about/about/fot. Stefan Różycki 2.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageLeft}`}
                       loading="lazy"
@@ -153,7 +161,7 @@ const About = () => {
                       unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     />
                     <Img
-                      src="../images/skwer4.jpg"
+                      src="../images/about/about/IMG_2636.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageRight}`}
                       loading="lazy"
@@ -163,19 +171,21 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Jako zespół nie tylko gramy spontanicznie na ulicy, ale także angażujemy się w pomoc na rzecz
-                      warszawskich powstańców. Spotykamy się z nimi na różnych wydarzeniach czy odwiedzamy ich z okazji
-                      urodzin z muzyczną laurką.
+                      Jako zespół nie tylko spontanicznie występujemy na ulicy, ale także angażujemy
+                      się w pomoc warszawskim powstańcom. Spotykamy się z nimi na różnych
+                      wydarzeniach lub odwiedzamy ich z okazji urodzin, przynosząc muzyczną laurkę.
                     </p>
                     <p className={styles.text}>
-                      Kiedy pozwalają nam na to pozamuzyczne obowiązki, koncertujemy także w innych miastach Polski.
-                      Można nas spotkać na różnych piknikach hisotrycznych, na ulicy czy w szkole lub w kościele.
-                      Kilkukrtonie występowaliśmy na Festiwalu Niepodległa na Krakowskim Przedmieściu oraz Festiwalu
-                      Dziękujemy Polsko.
+                      Kiedy pozwalają na to nasze pozamuzyczne obowiązki, koncertujemy także w
+                      innych miastach Polski. Można nas spotkać na różnych piknikach historycznych,
+                      na ulicach, w szkołach i kościołach. Kilka razy mieliśmy przyjemność
+                      występować na Festiwalu Niepodległa na Krakowskim Przedmieściu oraz na
+                      Festiwalu Dziękujemy Polsko.
                     </p>
                     <p className={styles.text}>
-                      W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON, za całokształt naszych
-                      dotychczasowych działań oraz czynny udział w akcjach na rzecz kombatantów.
+                      W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON za całokształt
+                      naszych dotychczasowych działań oraz aktywny udział w akcjach na rzecz
+                      kombatantów.
                     </p>
                   </div>
                 </>
@@ -187,20 +197,23 @@ const About = () => {
                 <>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Jesteśmy grupą znajomych w zasadzie od dziecka. Kilka lat temu spontanicznie połączyliśmy swoje
-                      muzyczne talenty i wyszliśmy w sierpniowe popołudnie grać piosenki powstańcze, które znaliśmy
-                      m.in. z harcerstwa. Chcieliśmy w ten sposób oddać hołd powstańcom oraz przedstawić ich repertuar
-                      wszystkim warszawiakom.
+                      Jesteśmy grupą znajomych praktycznie od dzieciństwa. Kilka lat temu
+                      spontanicznie połączyliśmy nasze muzyczne talenty i w pewne sierpniowe
+                      popołudnie zaczęliśmy grać piosenki powstańcze, które znaliśmy m.in. z
+                      harcerstwa. Naszym celem było oddanie hołdu powstańcom i zaprezentowanie ich
+                      repertuaru wszystkim warszawiakom.
                     </p>
                     <p className={styles.text}>
-                      Ciepły odbiór publiczności sprawił, że gramy do dziś, przybliżając słuchaczom nie tylko piosenki
-                      powstańcze, ale także utwory legionów oraz inne znane melodie patriotyczne, a w okresie świąt
-                      Bożego Narodzenia - kolędy.
+                      Ciepłe przyjęcie przez publiczność sprawiło, że gramy do dziś, przybliżając
+                      naszym słuchaczom nie tylko piosenki powstańcze, ale także utwory legionów
+                      oraz inne znane melodie patriotyczne. W okresie świąt Bożego Narodzenia
+                      wykonujemy również kolędy.
                     </p>
                     <p className={styles.text}>
-                      Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy Krakowskim
-                      Przedmieściu w Warszawie już od kilku lat można nas spotkać w najważniejsze rocznice państwowe,
-                      święta i ważne dni dla historii naszego miasta i kraju.
+                      Okrzyknęliśmy się Ferajną z Hoovera, gdyż to właśnie na skwerze Hoovera przy
+                      Krakowskim Przedmieściu w Warszawie już od kilku lat można nas spotkać podczas
+                      najważniejszych rocznic państwowych, świąt i ważnych dni w historii naszego
+                      miasta i kraju.
                     </p>
                   </div>
                   <div className={styles.gridItem}>
@@ -241,19 +254,21 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <p className={styles.text}>
-                      Jako zespół nie tylko gramy spontanicznie na ulicy, ale także angażujemy się w pomoc na rzecz
-                      warszawskich powstańców. Spotykamy się z nimi na różnych wydarzeniach czy odwiedzamy ich z okazji
-                      urodzin z muzyczną laurką.
+                      Jako zespół nie tylko spontanicznie występujemy na ulicy, ale także angażujemy
+                      się w pomoc warszawskim powstańcom. Spotykamy się z nimi na różnych
+                      wydarzeniach lub odwiedzamy ich z okazji urodzin, przynosząc muzyczną laurkę.
                     </p>
                     <p className={styles.text}>
-                      Kiedy pozwalają nam na to pozamuzyczne obowiązki, koncertujemy także w innych miastach Polski.
-                      Można nas spotkać na różnych piknikach hisotrycznych, na ulicy czy w szkole lub w kościele.
-                      Kilkukrtonie występowaliśmy na Festiwalu Niepodległa na Krakowskim Przedmieściu oraz Festiwalu
-                      Dziękujemy Polsko.
+                      Kiedy pozwalają na to nasze pozamuzyczne obowiązki, koncertujemy także w
+                      innych miastach Polski. Można nas spotkać na różnych piknikach historycznych,
+                      na ulicach, w szkołach i kościołach. Kilka razy mieliśmy przyjemność
+                      występować na Festiwalu Niepodległa na Krakowskim Przedmieściu oraz na
+                      Festiwalu Dziękujemy Polsko.
                     </p>
                     <p className={styles.text}>
-                      W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON, za całokształt naszych
-                      dotychczasowych działań oraz czynny udział w akcjach na rzecz kombatantów.
+                      W 2020 roku otrzymaliśmy srebrną statuetkę na gali BohaterON za całokształt
+                      naszych dotychczasowych działań oraz aktywny udział w akcjach na rzecz
+                      kombatantów.
                     </p>
                   </div>
                 </>

@@ -44,7 +44,7 @@ const Switch = (props) => {
     <section className={styles.switch}>
       <div className={styles.gallery}>
         <img
-          src="../images/skwer1.jpg"
+          src="../images/about/switch/ozespole.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
           className={styles.leftImage}
           id="leftImage"
@@ -63,7 +63,7 @@ const Switch = (props) => {
           onClick={() => props.setActive("left")}
         />
         <img
-          src="../images/skwer3.jpg"
+          src="../images/about/switch/czlonkowie.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
           //className={styles.image}
           className={styles.rightImage}

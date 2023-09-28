@@ -83,7 +83,7 @@ import styles from "./3DCard.module.scss";
 
 const Card = () => {
   useEffect(() => {
-    const $card = document.querySelector("._3DCard-module__card");
+    const $card = document.querySelector("#card");
     let bounds;
 
     function rotateToMouse(e) {
@@ -107,7 +107,7 @@ const Card = () => {
         Math.log(distance) * 2 +
         "deg)";
 
-      const glowStyle = $card.querySelector("._3DCard-module__glow").style;
+      const glowStyle = $card.querySelector("#glow").style;
       glowStyle.backgroundImage =
         "radial-gradient(" +
         "circle at " +
@@ -134,12 +134,13 @@ const Card = () => {
   return (
     <section className={styles.cardContainer}>
       <div
+        id="card"
         className={styles.card}
         onClick={() => {
           window.open("https://wydawnictwopoczekalnia.pl/", "_blank");
         }}
       >
-        <div className={styles.glow}></div>
+        <div className={styles.glow} id="glow"></div>
       </div>
       <div className={styles.description}>
         <h2 className={styles.title}>Kup płytę</h2>
