@@ -2,29 +2,33 @@
   @include flex-center;
   height: pxToRem(350);
   position: relative;
-  z-index: 1;
-  margin-bottom: var(--padding);
+  left: 0;
+
+  //bottom: (var(--padding));
+  z-index: -1;
+  overflow: hidden;
+  //margin-bottom: var(--padding);
 
   @include breakpoint($breakpoint-tablet) {
     height: pxToRem(400);
   }
 
   @include breakpoint($breakpoint-desktop) {
-    height: pxToRem(550);
+    height: pxToRem(500);
   }
 
-  &::before {
-    content: "";
-    display: block;
-    width: calc(100vw - 10px);
-    height: calc(100% + var(--padding) * 2);
-    position: absolute;
-    background-image: url("../images/lead.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 0 10px $color-shadow-dark;
-  }
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   width: calc(100vw - 10px);
+  //   height: calc(100% + var(--padding) * 2);
+  //   position: absolute;
+  //   background-image: url("../images/lead.jpg");
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   box-shadow: 0 0 10px $color-shadow-dark;
+  // }
 }
 
 .title {

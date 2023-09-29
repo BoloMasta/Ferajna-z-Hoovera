@@ -28,13 +28,18 @@ const MusicPage = () => {
           </Media>
 
           <div className={styles.gridItem}>
-            <img className={styles.image} src="/images/plyta.jpg" alt="Okładka płyty Kto się tak wydziera?" />
+            <img
+              className={styles.image}
+              src="/images/plyta.jpg"
+              alt="Okładka płyty Kto się tak wydziera?"
+            />
           </div>
           <div className={styles.gridItem}>
-            <h3 className={`${styles.header} ${styles.headerRight}`}>Kup naszą płytę</h3>
+            <h3 className={`${styles.header} ${styles.headerRight}`}>Kto się tak wydziera?</h3>
             <p className={styles.text}>
-              Trochę trzeba było zaczekać, ale mamy nadzieję, że było warto. W końcu jest! Nasza płyta z piosenkami
-              powstańczymi, ale nie tylko. Do nabycia w sklepie internetowym wydawnictwa{" "}
+              Trochę trzeba było zaczekać, ale mamy nadzieję, że było warto. W końcu jest! Nasza
+              płyta z piosenkami powstańczymi, ale nie tylko. Do nabycia w sklepie internetowym
+              wydawnictwa{" "}
               <a
                 href="https://wydawnictwopoczekalnia.pl/"
                 target="_blank"
@@ -46,11 +51,16 @@ const MusicPage = () => {
             </p>
           </div>
 
+          <div className={styles.gridSpacer}>
+            <img src="../images/loader.png" className={styles.spacer} />
+          </div>
+
           <div className={styles.gridItem}>
             <h3 className={`${styles.header} ${styles.headerLeft}`}> &quot;Warszawo ma&quot;</h3>
             <p className={styles.text}>
-              Zapraszamy na teledysk do utworu &quot;Warszawo ma&quot;, który do naszej muzyki zrealizowała w wakacje
-              2015 roku warszawska młodzież. Za koordynację tego projektu odpowiadał Jędrzej Gorski, Jeremi Skrodzki i
+              Serdecznie zapraszamy do obejrzenia teledysku do naszego nagrania utworu
+              &quot;Warszawo ma&quot;, który został zrealizowany przez warszawską młodzież w wakacje
+              2015 roku. Koordynację tego projektu zapewnili Jędrzej Gorski, Jeremi Skrodzki i
               Mateusz Wyszogrodzki.
             </p>
           </div>
@@ -63,6 +73,10 @@ const MusicPage = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
+          </div>
+
+          <div className={styles.gridSpacer}>
+            <img src="../images/loader.png" className={styles.spacer} />
           </div>
 
           {/* <div className={styles.gridItem}>
@@ -109,10 +123,29 @@ const MusicPage = () => {
           <div className={styles.gridItem}>
             <h3 className={`${styles.header} ${styles.headerRight}`}>Filmy edukacyjne</h3>
             <p className={styles.text}>
-              Dzięki wspólpracy z ORPEG nagraliśmy już 2 filmy edukacyjne na temat polskich pieśni patriotycznych.
-              Produkukcje te są dostępne bezpłatnie na platformie YouTube oraz były już wielokrotnie wykorzystywane
-              podczas lekcji historii i muzyki. Za zdjęcia i montaż obu filmów odpowiadała firma F&B Works, my za oprawę
-              muzyczną, zaś eksperci za treść merytoryczną. Zachęcamy do oglądania i udostępniania.
+              Dzięki współpracy z{" "}
+              <a
+                href="https://www.orpeg.pl/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ fontWeight: "bold" }}
+              >
+                ORPEG
+              </a>
+              , udało nam się stworzyć już 2 filmy edukacyjne na temat polskich pieśni
+              patriotycznych. Obie produkcje są dostępne bezpłatnie na platformie YouTube i cieszą
+              się popularnością podczas lekcji historii i muzyki. Za zdjęcia i montaż obu filmów
+              odpowiedzialna była firma{" "}
+              <a
+                href="https://www.facebook.com/FBWorksVideo/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ fontWeight: "bold" }}
+              >
+                F&B Works
+              </a>
+              , natomiast my zajęliśmy się oprawą muzyczną, a eksperci dostarczyli cenne treści
+              merytoryczne. Serdecznie zachęcamy do ich oglądania i udostępniania!
             </p>
           </div>
         </div>
