@@ -12,12 +12,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
+  width: 350px;
   height: 200px;
   transform-style: preserve-3d;
   perspective: 2000px;
   transition: 0.4s;
   text-align: center;
+
+  @include breakpoint($breakpoint-tablet) {
+    width: 600px;
+  }
+
   &:before {
     content: "";
     position: absolute;

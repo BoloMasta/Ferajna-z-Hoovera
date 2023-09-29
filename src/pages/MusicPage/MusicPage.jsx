@@ -6,7 +6,7 @@ const MusicPage = () => {
   return (
     <section className={styles.music}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Muzyka</h2>
+        {/* <h2 className={styles.title}>Muzyka</h2> */}
 
         <div className={styles.grid}>
           <Media queries={breakpoints}>
@@ -28,6 +28,25 @@ const MusicPage = () => {
           </Media>
 
           <div className={styles.gridItem}>
+            <img className={styles.image} src="/images/plyta.jpg" alt="Okładka płyty Kto się tak wydziera?" />
+          </div>
+          <div className={styles.gridItem}>
+            <h3 className={`${styles.header} ${styles.headerRight}`}>Kup naszą płytę</h3>
+            <p className={styles.text}>
+              Trochę trzeba było zaczekać, ale mamy nadzieję, że było warto. W końcu jest! Nasza płyta z piosenkami
+              powstańczymi, ale nie tylko. Do nabycia w sklepie internetowym wydawnictwa{" "}
+              <a
+                href="https://wydawnictwopoczekalnia.pl/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ fontWeight: "bold" }}
+              >
+                Poczekalnia.
+              </a>
+            </p>
+          </div>
+
+          <div className={styles.gridItem}>
             <h3 className={`${styles.header} ${styles.headerLeft}`}> &quot;Warszawo ma&quot;</h3>
             <p className={styles.text}>
               Zapraszamy na teledysk do utworu &quot;Warszawo ma&quot;, który do naszej muzyki zrealizowała w wakacje
@@ -46,18 +65,7 @@ const MusicPage = () => {
             ></iframe>
           </div>
 
-          <div className={styles.gridItem}>
-            <img className={styles.image} src="/images/plyta.jpg" alt="Okładka płyty Kto się tak wydziera?" />
-          </div>
-          <div className={styles.gridItem}>
-            <h3 className={`${styles.header} ${styles.headerRight}`}>Kup naszą płytę</h3>
-            <p className={styles.text}>
-              Zachecamy do zakupy naszej płyty z najpiękniejszymi polskimi pieśniami patriotycznymi. Płyta jest dostępna
-              w seklepie internetowym wydawcnictwa Poczekalnia.
-            </p>
-          </div>
-
-          <div className={styles.gridItem}>
+          {/* <div className={styles.gridItem}>
             <h3 className={`${styles.header} ${styles.headerLeft}`}>Playlista ulicznych wykonań</h3>
             <p className={styles.text}>
               Przez lata grania na ulicach Warszawy otrzymaliśmy od was wiele nagrań. Oto playlista z wybranymi utworami
@@ -74,7 +82,7 @@ const MusicPage = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-          </div>
+          </div> */}
 
           <div className={styles.gridItem}>
             <iframe

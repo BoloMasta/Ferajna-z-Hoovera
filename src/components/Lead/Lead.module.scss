@@ -1,14 +1,22 @@
 .lead {
   @include flex-center;
-  height: pxToRem(400);
+  height: pxToRem(350);
   position: relative;
   z-index: 1;
   margin-bottom: var(--padding);
 
+  @include breakpoint($breakpoint-tablet) {
+    height: pxToRem(400);
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    height: pxToRem(550);
+  }
+
   &::before {
     content: "";
     display: block;
-    width: calc(100vw - 18px);
+    width: calc(100vw - 10px);
     height: calc(100% + var(--padding) * 2);
     position: absolute;
     background-image: url("../images/lead.jpg");

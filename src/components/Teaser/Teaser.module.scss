@@ -6,15 +6,10 @@
   &::before {
     content: "";
     display: block;
-    width: calc(100vw - 18px);
+    width: calc(100vw - 10px);
     height: 100%;
     position: absolute;
-    background: linear-gradient(
-      180deg,
-      rgba(44, 19, 8, 0.897) 0%,
-      rgba(51, 21, 7, 0.795) 60%,
-      $color-background 100%
-    );
+    background: linear-gradient(180deg, rgba(44, 19, 8, 0.897) 0%, rgba(51, 21, 7, 0.795) 60%, $color-background 100%);
   }
 }
 
