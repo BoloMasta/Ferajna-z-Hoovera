@@ -1,6 +1,6 @@
-//import { Parallax, ParallaxBanner, BannerLayer } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 
-import { ParallaxBanner } from "react-scroll-parallax";
+//import { ParallaxBanner } from "react-scroll-parallax";
 // import { BannerLayer } from "react-scroll-parallax/dist/components/ParallaxBanner/types";
 
 import styles from "./Lead.module.scss";
@@ -8,17 +8,18 @@ import styles from "./Lead.module.scss";
 const Lead = () => {
   return (
     <section className={styles.lead}>
-      {/* <Parallax speed={20} translateY={[270, 70]}>
+      <Parallax speed={20} translateY={[330, 100]} opacity={[-0.8, 1.5]}>
         <h1 className={styles.title}>Serwus</h1>
-      </Parallax> */}
+      </Parallax>
 
-      <ParallaxBanner
+      {/* <ParallaxBanner
         layers={[
           {
             image: "/images/lead.jpg",
             speed: -130,
             translateY: [0, 30],
             style: { filter: "blur(1px)", inset: "-100px 0px 0px 0px" },
+            onProgress: (progress) => console.log(progress),
           },
           {
             speed: -15,
@@ -40,7 +41,7 @@ const Lead = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      />
+      /> */}
     </section>
   );
 };

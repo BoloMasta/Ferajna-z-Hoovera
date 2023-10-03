@@ -6,8 +6,30 @@ const Teaser = () => {
   return (
     <section className={styles.teaser}>
       <div className={styles.container}>
-        <Parallax speed={-50} translateY={[-200, 0]}>
-          <h2 className={styles.title}>Kto się tak wydziera?</h2>
+        <Parallax translateY={[-120, 0]} opacity={[0.5, 1]} startScroll={100} endScroll={500}>
+          <img
+            src="../images/kto.png"
+            loading="lazy"
+            alt="Kto się tak wydziera?"
+            className={styles.kto}
+          />
+          {/* <h2 className={styles.title}>Kto się tak wydziera?</h2> */}
+        </Parallax>
+
+        <Parallax
+          opacity={[0.2, 1]}
+          scale={[0.2, 1]}
+          translateX={[50, 0]}
+          startScroll={200}
+          endScroll={500}
+        >
+          <img
+            src="../images/ferajna.png"
+            loading="lazy"
+            alt="Ferajna z Hoovera"
+            className={styles.ferajna}
+          />
+          {/* <h2 className={styles.title}>Kto się tak wydziera?</h2> */}
         </Parallax>
 
         {/* <Parallax
@@ -21,7 +43,7 @@ const Teaser = () => {
           <img src="../images/loader.png" alt="Ferajna z Hoovera" className={styles.logo} loading="lazy" />
         </Parallax> */}
 
-        <Parallax speed={-50} translateY={[70, 0]} opacity={[0.5, 1]}>
+        <Parallax opacity={[0.5, 1]}>
           <p className={styles.text}>
             Witamy na stronie naszego zespołu. Znajdziesz tu informacje o nas, naszej twórczości
             oraz o tym jak się z nami skontaktować. Zapraszamy do zapoznania się z naszymi

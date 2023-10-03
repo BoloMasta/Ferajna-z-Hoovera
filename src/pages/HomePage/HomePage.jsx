@@ -7,13 +7,13 @@ import Card from "../../components/3DCard/3DCard";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Lead />
       <Teaser />
       <Card />
       {/* <Features /> */}
       <Quote />
-    </div>
+    </>
   );
 };
 

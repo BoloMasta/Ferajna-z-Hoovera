@@ -9,7 +9,12 @@
     width: calc(100vw - 10px);
     height: 100%;
     position: absolute;
-    background: linear-gradient(180deg, rgba(44, 19, 8, 0.897) 0%, rgba(51, 21, 7, 0.795) 60%, $color-background 100%);
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(44, 19, 8, 0.76) 0%,
+    //   rgba(51, 21, 7, 0.418) 60%,
+    //   $color-background 100%
+    // );
   }
 }
 
@@ -17,15 +22,28 @@
   @include container;
   @include flex-center-column;
   position: relative;
+  overflow: hidden;
 }
 
 .title {
   font-size: var(--font-size-huge);
   font-weight: $font-weight-bold;
   text-align: center;
-  color: $color-teaser;
+  color: $color-text;
   text-shadow: 0 0 10px var(--shadow-color);
   display: block;
+}
+
+.kto {
+  height: auto;
+  width: 300px;
+  filter: drop-shadow(0 0 10px var(--shadow-color));
+  margin-right: 500px;
+}
+
+.ferajna {
+  margin-left: 400px;
+  max-width: 600px;
 }
 
 .logo {
@@ -39,11 +57,12 @@
   font-size: var(--font-size);
   font-weight: $font-weight-bold;
   text-align: center;
-  color: $color-teaser;
+  color: $color-text;
   text-shadow: 0 0 10px var(--shadow-color);
   display: block;
-  margin-top: var(--padding);
+  margin-top: var(--padding-double);
   margin-bottom: var(--padding);
+  line-height: 1.5;
 }
 
 .grid {
