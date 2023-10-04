@@ -35,7 +35,7 @@ const MusicPage = () => {
             />
           </div>
           <div className={styles.gridItem}>
-            <h3 className={`${styles.header} ${styles.headerRight}`}>Kto się tak wydziera?</h3>
+            <h3 className={`${styles.header} ${styles.headerRight}`}>Nasza płyta</h3>
             <p className={styles.text}>
               Trochę trzeba było zaczekać, ale mamy nadzieję, że było warto. W końcu jest! Nasza
               płyta z piosenkami powstańczymi, ale nie tylko. Do nabycia w sklepie internetowym

@@ -78,6 +78,8 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+
+      <img src="/images/logo2.png" alt="Logo Ferajny z Hoovera" className={styles.image} />
     </section>
   );
 };

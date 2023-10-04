@@ -116,12 +116,15 @@
 
 .header {
   text-align: center;
-  font-size: var(--font-size);
+  font-size: var(--font-size-large);
   line-height: 2.5;
   font-weight: $font-weight-bold;
   margin-top: -15px;
   margin-bottom: var(--padding-half);
   position: relative;
+
+  text-shadow: 1px 10px 5px rgba(16, 16, 16, 0.4), 1px 15px 10px rgba(16, 16, 16, 0.3),
+    1px 20px 30px rgba(16, 16, 16, 0.2), 1px 25px 50px rgba(16, 16, 16, 0.1);
 
   @include breakpoint($breakpoint-tablet) {
     margin-top: var(--padding-half);

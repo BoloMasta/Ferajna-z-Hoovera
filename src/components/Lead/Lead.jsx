@@ -8,7 +8,7 @@ import styles from "./Lead.module.scss";
 const Lead = () => {
   return (
     <section className={styles.lead}>
-      <Parallax speed={20} translateY={[330, 100]} opacity={[-0.8, 1.5]}>
+      <Parallax speed={20} translateY={[450, 200]} opacity={[-0.8, 1.5]}>
         <h1 className={styles.title}>Serwus</h1>
       </Parallax>
 
