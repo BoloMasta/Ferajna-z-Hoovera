@@ -32,6 +32,9 @@ const MusicPage = () => {
               className={styles.image}
               src="/images/plyta.jpg"
               alt="Okładka płyty Kto się tak wydziera?"
+              onClick={() => {
+                window.open("https://wydawnictwopoczekalnia.pl/", "_blank");
+              }}
             />
           </div>
           <div className={styles.gridItem}>

@@ -1,8 +1,38 @@
+import { useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 import styles from "./Teaser.module.scss";
 
 const Teaser = () => {
+  const smoothScrollToTop = () => {
+    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(smoothScrollToTop);
+      window.scrollTo(0, currentScroll - currentScroll / 8);
+    }
+  };
+
+  let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  let isDisabled = false;
+
+  const OutputScrollToConsole = () => {
+    currentScroll = document.documentElement.scrollTop;
+    if (currentScroll >= 500) {
+      console.log("Wyłączam parallax");
+      isDisabled = true;
+      console.log(isDisabled);
+      // document.querySelector("#ferajna").setAttribute("disabled", "");
+      //document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
+      //document.querySelector("#ferajna").removeAttribute("disabled");
+    }
+    console.log(currentScroll);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", OutputScrollToConsole);
+    //return () => window.removeEventListener("scroll", OutputScrollToConsole);
+  }, []);
+
   return (
     <section className={styles.teaser}>
       <div className={styles.container}>
@@ -20,8 +50,18 @@ const Teaser = () => {
           opacity={[0.2, 1]}
           scale={[0.2, 1]}
           translateX={[50, 0]}
-          startScroll={200}
+          startScroll={100}
           endScroll={500}
+          id="ferajna"
+          // disabled
+          onProgressChange={(progress) => {
+            if (progress > 0.9) {
+              console.log("Wyłączam parallax");
+              document.querySelector("#ferajna").setAttribute("disabled", "");
+              // document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
+              // document.querySelector("#ferajna").removeAttribute("disabled");
+            }
+          }}
         >
           <img
             src="../images/ferajna.png"
@@ -52,7 +92,7 @@ const Teaser = () => {
 
         <div className={styles.grid}>
           <div className={styles.gridItem}>
-            <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
+            <Link to="/about" onClick={smoothScrollToTop}>
               <img
                 src="../images/teaser1.jpg"
                 alt="Ferajna z Hoovera"
@@ -64,7 +104,7 @@ const Teaser = () => {
           </div>
 
           <div className={styles.gridItem}>
-            <Link to="/music" onClick={() => window.scrollTo(0, 0)}>
+            <Link to="/music" onClick={smoothScrollToTop}>
               <img
                 src="../images/teaser2.jpg"
                 alt="Ferajna z Hoovera"
@@ -76,7 +116,7 @@ const Teaser = () => {
           </div>
 
           <div className={styles.gridItem}>
-            <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
+            <Link to="/contact" onClick={smoothScrollToTop}>
               <img
                 src="../images/teaser3.jpg"
                 alt="Ferajna z Hoovera"

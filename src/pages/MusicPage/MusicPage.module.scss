@@ -211,6 +211,10 @@
   object-position: center;
   transition: all 0.3s ease-in-out;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   // @include breakpoint($breakpoint-desktop) {
   //   max-width: 450px;
   // }
