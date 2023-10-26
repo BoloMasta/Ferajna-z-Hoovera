@@ -12,26 +12,26 @@ const Teaser = () => {
     }
   };
 
-  let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  let isDisabled = false;
+  // let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  // let isDisabled = false;
 
-  const OutputScrollToConsole = () => {
-    currentScroll = document.documentElement.scrollTop;
-    if (currentScroll >= 500) {
-      console.log("Wyłączam parallax");
-      isDisabled = true;
-      console.log(isDisabled);
-      // document.querySelector("#ferajna").setAttribute("disabled", "");
-      //document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
-      //document.querySelector("#ferajna").removeAttribute("disabled");
-    }
-    console.log(currentScroll);
-  };
+  // const OutputScrollToConsole = () => {
+  //   currentScroll = document.documentElement.scrollTop;
+  //   if (currentScroll >= 500) {
+  //     console.log("Wyłączam parallax");
+  //     isDisabled = true;
+  //     console.log(isDisabled);
+  //     // document.querySelector("#ferajna").setAttribute("disabled", "");
+  //     //document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
+  //     //document.querySelector("#ferajna").removeAttribute("disabled");
+  //   }
+  //   console.log(currentScroll);
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", OutputScrollToConsole);
-    //return () => window.removeEventListener("scroll", OutputScrollToConsole);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", OutputScrollToConsole);
+  //   //return () => window.removeEventListener("scroll", OutputScrollToConsole);
+  // }, []);
 
   return (
     <section className={styles.teaser}>
@@ -54,14 +54,14 @@ const Teaser = () => {
           endScroll={500}
           id="ferajna"
           // disabled
-          onProgressChange={(progress) => {
-            if (progress > 0.9) {
-              console.log("Wyłączam parallax");
-              document.querySelector("#ferajna").setAttribute("disabled", "");
-              // document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
-              // document.querySelector("#ferajna").removeAttribute("disabled");
-            }
-          }}
+          // onProgressChange={(progress) => {
+          //   if (progress > 0.9) {
+          //     console.log("Wyłączam parallax");
+          //     document.querySelector("#ferajna").setAttribute("disabled", "");
+          //     // document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
+          //     // document.querySelector("#ferajna").removeAttribute("disabled");
+          //   }
+          // }}
         >
           <img
             src="../images/ferajna.png"

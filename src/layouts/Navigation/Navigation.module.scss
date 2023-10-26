@@ -77,6 +77,10 @@
   @media screen and (min-width: $breakpoint-desktop) {
     &:not(:last-child) {
       margin-right: pxToRem(50);
+
+      &::after {
+        margin-left: 30px;
+      }
     }
   }
 }
