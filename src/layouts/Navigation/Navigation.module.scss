@@ -1,5 +1,10 @@
 .nav {
   display: inline-block;
+  margin-top: 50px;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 0;
+  }
 }
 
 .list {
@@ -12,21 +17,23 @@
   text-align: center;
   position: relative;
 
-  &::before {
-    background: $color-highlight;
-    content: "";
-    inset: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease-in-out;
-    z-index: -1;
-  }
-
-  &:hover {
+  @include breakpoint($breakpoint-tablet) {
     &::before {
-      transform: scaleX(1);
-      transform-origin: left;
+      background: $color-highlight;
+      content: "";
+      inset: 0;
+      position: absolute;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s ease-in-out;
+      z-index: -1;
+    }
+
+    &:hover {
+      &::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
     }
   }
 

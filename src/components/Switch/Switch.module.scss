@@ -3,9 +3,9 @@
 }
 
 .gallery {
-  --z: 28px; /* zig-zag */
-  --s: 220px; /* size */
-  --g: 6px; /* gap */
+  --z: 25px; /* zig-zag */
+  --s: 190px; /* size */
+  --g: 5px; /* gap */
 
   display: grid;
   gap: var(--g);
@@ -13,6 +13,12 @@
   grid-auto-flow: column;
   position: relative;
   overflow: hidden;
+
+  @media screen and (min-width: 500px) {
+    --z: 28px; /* zig-zag */
+    --s: 220px; /* size */
+    --g: 6px; /* gap */
+  }
 
   @include breakpoint($breakpoint-tablet) {
     --z: 30px;
@@ -51,16 +57,16 @@
   @extend .image;
   place-self: start;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  --mask: conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100% calc(2 * var(--z))
-    repeat-y;
+  --mask: conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 50%/100%
+    calc(2 * var(--z)) repeat-y;
 }
 
 .rightImage {
   @extend .image;
   place-self: end;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  --mask: conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50% calc(50% - var(--z)) / 100%
-    calc(2 * var(--z)) repeat-y;
+  --mask: conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 50%
+    calc(50% - var(--z)) / 100% calc(2 * var(--z)) repeat-y;
 }
 
 // #leftImage {

@@ -33,7 +33,10 @@ const MusicPage = () => {
               src="/images/plyta.jpg"
               alt="Okładka płyty Kto się tak wydziera?"
               onClick={() => {
-                window.open("https://wydawnictwopoczekalnia.pl/", "_blank");
+                window.open(
+                  "https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24",
+                  "_blank"
+                );
               }}
             />
           </div>
@@ -44,7 +47,7 @@ const MusicPage = () => {
               płyta z piosenkami powstańczymi, ale nie tylko. Do nabycia w sklepie internetowym
               wydawnictwa{" "}
               <a
-                href="https://wydawnictwopoczekalnia.pl/"
+                href="https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24"
                 target="_blank"
                 rel="noreferrer"
                 style={{ fontWeight: "bold" }}

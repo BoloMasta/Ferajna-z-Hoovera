@@ -132,13 +132,19 @@
 }
 
 .copy {
-  @include flex-center;
-  width: 100%;
+  @include breakpoint($breakpoint-tablet) {
+    @include flex-center;
+    width: 100%;
+  }
 }
 
 .copyText {
   font-size: calc(var(--font-size-small) * 0.8);
-  margin-right: 0.5rem;
+  text-align: center;
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-right: 0.5rem;
+  }
 }
 
 .copyLink {

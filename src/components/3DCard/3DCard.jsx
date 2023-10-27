@@ -137,7 +137,7 @@ const Card = () => {
         id="card"
         className={styles.card}
         onClick={() => {
-          window.open("https://wydawnictwopoczekalnia.pl/", "_blank");
+          window.open("https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24", "_blank");
         }}
       >
         <div className={styles.glow} id="glow"></div>
@@ -148,7 +148,7 @@ const Card = () => {
           Zaprszamy do zakupu naszej płyty. Wszystkie utwory zostały nagrane w Quality Studio w
           Warszawie. Płyta jest dostępna w sprzedaży w sklepie internetowym wydawnictwa{" "}
           <a
-            href="https://wydawnictwopoczekalnia.pl/"
+            href="https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24"
             target="_blank"
             rel="noreferrer"
             style={{ fontWeight: "bold" }}

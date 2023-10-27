@@ -26,11 +26,13 @@
   transition: $transition-slow;
   overflow: hidden;
   @include flex-center;
+  align-items: flex-start;
 
   box-shadow: 0 0 10px var(--shadow-color);
 
   &.open {
-    height: calc(100vh - 132px);
+    //height: calc(100vh - 132px);
+    height: 100%;
   }
 
   @include breakpoint($breakpoint-tablet) {
