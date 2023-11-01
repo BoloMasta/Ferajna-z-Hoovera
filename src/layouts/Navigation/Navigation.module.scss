@@ -102,6 +102,10 @@
   transition: var(--transition);
 
   @media screen and (min-width: $breakpoint-tablet) {
+    font-size: calc(var(--font-size) - 0.1rem);
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
     font-size: var(--font-size);
   }
 }

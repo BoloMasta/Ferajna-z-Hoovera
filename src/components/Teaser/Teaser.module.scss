@@ -2,6 +2,7 @@
   @include flex-center;
   height: auto;
   position: relative;
+  width: calc(100% - 7px);
 
   &::before {
     content: "";
