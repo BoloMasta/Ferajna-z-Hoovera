@@ -25,6 +25,7 @@ body {
   margin: 0 auto;
   overflow-y: scroll;
   overflow: overlay;
+  overflow-x: hidden;
 }
 
 h1,
