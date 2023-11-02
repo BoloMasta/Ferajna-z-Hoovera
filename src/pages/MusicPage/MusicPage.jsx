@@ -28,17 +28,29 @@ const MusicPage = () => {
           </Media>
 
           <div className={styles.gridItem}>
-            <img
-              className={styles.image}
-              src="/images/plyta.jpg"
-              alt="Okładka płyty Kto się tak wydziera?"
-              onClick={() => {
-                window.open(
-                  "https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24",
-                  "_blank"
-                );
-              }}
-            />
+            <Media queries={breakpoints}>
+              {(matches) =>
+                matches.desktop ? (
+                  <img
+                    className={styles.image}
+                    src="/images/plyta.jpg"
+                    alt="Okładka płyty Kto się tak wydziera?"
+                    onClick={() => {
+                      window.open(
+                        "https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24",
+                        "_blank"
+                      );
+                    }}
+                  />
+                ) : (
+                  <img
+                    className={styles.image}
+                    src="/images/plyta.jpg"
+                    alt="Okładka płyty Kto się tak wydziera?"
+                  />
+                )
+              }
+            </Media>
           </div>
           <div className={styles.gridItem}>
             <h3 className={`${styles.header} ${styles.headerRight}`}>Nasza płyta</h3>
@@ -104,56 +116,117 @@ const MusicPage = () => {
             ></iframe>
           </div> */}
 
-          <div className={styles.gridItem}>
-            <iframe
-              className={styles.video}
-              src="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
-              title="Piosenki Powstania Warszawskiego"
-              frameBorder="0"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+          <Media queries={breakpoints}>
+            {(matches) =>
+              !matches.mobile ? (
+                <>
+                  <div className={styles.gridItem}>
+                    <iframe
+                      className={styles.video}
+                      src="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
+                      title="Piosenki Powstania Warszawskiego"
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
 
-            <iframe
-              className={styles.video}
-              style={{ marginTop: "20px" }}
-              src="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
-              title="Piosenki i pieńni patriotyczne"
-              frameBorder="0"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className={styles.gridItem}>
-            <h3 className={`${styles.header} ${styles.headerRight}`}>Filmy edukacyjne</h3>
-            <p className={styles.text}>
-              Dzięki współpracy z{" "}
-              <a
-                href="https://www.orpeg.pl/"
-                target="_blank"
-                rel="noreferrer"
-                style={{ fontWeight: "bold" }}
-              >
-                ORPEG
-              </a>
-              , udało nam się stworzyć już 2 filmy edukacyjne na temat polskich pieśni
-              patriotycznych. Obie produkcje są dostępne bezpłatnie na platformie YouTube i cieszą
-              się popularnością podczas lekcji historii i muzyki. Za zdjęcia i montaż obu filmów
-              odpowiedzialna była firma{" "}
-              <a
-                href="https://www.facebook.com/FBWorksVideo/"
-                target="_blank"
-                rel="noreferrer"
-                style={{ fontWeight: "bold" }}
-              >
-                F&B Works
-              </a>
-              , natomiast my zajęliśmy się oprawą muzyczną, a eksperci dostarczyli cenne treści
-              merytoryczne. Serdecznie zachęcamy do ich oglądania i udostępniania!
-            </p>
-          </div>
+                    <iframe
+                      className={styles.video}
+                      style={{ marginTop: "20px" }}
+                      src="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
+                      title="Piosenki i pieńni patriotyczne"
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <div className={styles.gridItem}>
+                    <h3 className={`${styles.header} ${styles.headerRight}`}>Filmy edukacyjne</h3>
+                    <p className={styles.text}>
+                      Dzięki współpracy z{" "}
+                      <a
+                        href="https://www.orpeg.pl/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        ORPEG
+                      </a>
+                      , udało nam się stworzyć już 2 filmy edukacyjne na temat polskich pieśni
+                      patriotycznych. Obie produkcje są dostępne bezpłatnie na platformie YouTube i
+                      cieszą się popularnością podczas lekcji historii i muzyki. Za zdjęcia i montaż
+                      obu filmów odpowiedzialna była firma{" "}
+                      <a
+                        href="https://www.facebook.com/FBWorksVideo/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        F&B Works
+                      </a>
+                      , natomiast my zajęliśmy się oprawą muzyczną, a eksperci dostarczyli cenne
+                      treści merytoryczne. Serdecznie zachęcamy do ich oglądania i udostępniania!
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className={styles.gridItem}>
+                    <h3 className={`${styles.header} ${styles.headerRight}`}>Filmy edukacyjne</h3>
+                    <p className={styles.text}>
+                      Dzięki współpracy z{" "}
+                      <a
+                        href="https://www.orpeg.pl/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        ORPEG
+                      </a>
+                      , udało nam się stworzyć już 2 filmy edukacyjne na temat polskich pieśni
+                      patriotycznych. Obie produkcje są dostępne bezpłatnie na platformie YouTube i
+                      cieszą się popularnością podczas lekcji historii i muzyki. Za zdjęcia i montaż
+                      obu filmów odpowiedzialna była firma{" "}
+                      <a
+                        href="https://www.facebook.com/FBWorksVideo/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        F&B Works
+                      </a>
+                      , natomiast my zajęliśmy się oprawą muzyczną, a eksperci dostarczyli cenne
+                      treści merytoryczne. Serdecznie zachęcamy do ich oglądania i udostępniania!
+                    </p>
+                  </div>
+                  <div className={styles.gridItem}>
+                    <iframe
+                      className={styles.video}
+                      src="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
+                      title="Piosenki Powstania Warszawskiego"
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+
+                    <iframe
+                      className={styles.video}
+                      style={{ marginTop: "20px" }}
+                      src="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
+                      title="Piosenki i pieńni patriotyczne"
+                      frameBorder="0"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </>
+              )
+            }
+          </Media>
         </div>
       </div>
     </section>

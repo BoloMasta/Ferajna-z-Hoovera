@@ -40,8 +40,8 @@
 
 .member {
   @include flex-center;
-  min-width: 100px;
-  min-height: 150px;
+  // min-width: 100px;
+  // min-height: 150px;
   max-width: 120px;
   max-height: 180px;
   overflow: hidden;

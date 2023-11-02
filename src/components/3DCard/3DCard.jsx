@@ -79,7 +79,10 @@
 // export default Card;
 
 import { useEffect } from "react";
+import Media from "react-media";
+import { breakpoints } from "../../assets/breakpoints";
 import styles from "./3DCard.module.scss";
+//import { min } from "moment";
 
 const Card = () => {
   useEffect(() => {
@@ -133,7 +136,28 @@ const Card = () => {
 
   return (
     <section className={styles.cardContainer}>
-      <div
+      <Media queries={breakpoints}>
+        {(matches) =>
+          matches.desktop ? (
+            <div
+              id="card"
+              className={styles.card}
+              onClick={() => {
+                window.open(
+                  "https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24",
+                  "_blank"
+                );
+              }}
+            >
+              <div className={styles.glow} id="glow"></div>
+            </div>
+          ) : (
+            <div className={styles.card}></div>
+          )
+        }
+      </Media>
+
+      {/* <div
         id="card"
         className={styles.card}
         onClick={() => {
@@ -141,7 +165,7 @@ const Card = () => {
         }}
       >
         <div className={styles.glow} id="glow"></div>
-      </div>
+      </div> */}
       <div className={styles.description}>
         <h2 className={styles.title}>Kup płytę</h2>
         <p className={styles.text}>

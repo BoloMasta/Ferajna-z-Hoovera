@@ -94,7 +94,7 @@
 
 .link {
   font-family: var(--header-font);
-  font-size: var(--font-size-huge);
+  font-size: calc(var(--font-size-huge) - 0.3rem);
   color: var(--text-color);
   display: inline-block;
   margin: 0;
