@@ -1,16 +1,28 @@
 .button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid #000;
   font-family: var(--font-family);
   font-size: var(--font-size);
-  padding: var(--padding-half) var(--padding);
-  border-radius: 5px;
-  border: 1px solid $color-text;
-  transition: $transition-slow;
-  cursor: pointer;
-  background-color: transparent;
-  color: $color-text;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  top: var(--padding);
+  margin-bottom: 40px;
 
   &:hover {
     background-color: $color-text;
     color: $color-background;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    position: absolute;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    width: 160px;
+    height: 45px;
   }
 }

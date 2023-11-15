@@ -5,8 +5,7 @@ import { BiArrowBack, BiCamera } from "react-icons/bi";
 import { Img } from "react-image";
 import { galleries } from "../../assets/images/gallery/gallery";
 import Loader from "../../layouts/Loader/Loader";
-//import Button from "../../components/Button/Button";
-import Button2 from "../../components/Button/Button2";
+import Button from "../../components/Button/Button";
 import styles from "./GalleryPage.module.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";
 import NoPhoto from "/images/brak-zdjecia.png";
@@ -43,15 +42,10 @@ const GalleryPage = () => {
               {images.author}
             </p>
 
-            {/* <Button className={styles.button} onClick={() => (location.href = "/gallery")}>
+            <Button className={styles.button} onClick={() => (location.href = "/gallery")}>
               <BiArrowBack className={styles.icon} />
               Powrót
-            </Button> */}
-
-            <Button2 onClick={() => (location.href = "/gallery")}>
-              <BiArrowBack className={styles.icon} />
-              Powrót
-            </Button2>
+            </Button>
 
             <div className={styles.grid}>
               {images.images.map((image, index) => (
@@ -78,15 +72,11 @@ const GalleryPage = () => {
               <BiCamera className={styles.icon} />
               {images.author}
             </p>
-            {/* <Button className={styles.button} onClick={() => setImageIndex(0)}>
+            <Button className={styles.button} onClick={() => setImageIndex(0)}>
               <BiArrowBack className={styles.icon} />
               Powrót
-            </Button> */}
+            </Button>
 
-            <Button2 onClick={() => setImageIndex(0)}>
-              <BiArrowBack className={styles.icon} />
-              Powrót
-            </Button2>
             <ImageGallery
               items={imagesToGallery}
               showPlayButton={true}

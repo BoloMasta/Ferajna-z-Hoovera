@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 import Media from "react-media";
@@ -13,27 +12,6 @@ const Teaser = () => {
       window.scrollTo(0, currentScroll - currentScroll / 8);
     }
   };
-
-  // let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-  // let isDisabled = false;
-
-  // const OutputScrollToConsole = () => {
-  //   currentScroll = document.documentElement.scrollTop;
-  //   if (currentScroll >= 500) {
-  //     console.log("Wyłączam parallax");
-  //     isDisabled = true;
-  //     console.log(isDisabled);
-  //     // document.querySelector("#ferajna").setAttribute("disabled", "");
-  //     //document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
-  //     //document.querySelector("#ferajna").removeAttribute("disabled");
-  //   }
-  //   console.log(currentScroll);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", OutputScrollToConsole);
-  //   //return () => window.removeEventListener("scroll", OutputScrollToConsole);
-  // }, []);
 
   return (
     <section className={styles.teaser}>
@@ -73,7 +51,6 @@ const Teaser = () => {
                     alt="Kto się tak wydziera?"
                     className={styles.kto}
                   />
-                  {/* <h2 className={styles.title}>Kto się tak wydziera?</h2> */}
                 </Parallax>
 
                 <Parallax
@@ -83,15 +60,6 @@ const Teaser = () => {
                   startScroll={100}
                   endScroll={500}
                   id="ferajna"
-                  // disabled
-                  // onProgressChange={(progress) => {
-                  //   if (progress > 0.9) {
-                  //     console.log("Wyłączam parallax");
-                  //     document.querySelector("#ferajna").setAttribute("disabled", "");
-                  //     // document.querySelector("#ferajna").removeEventListener("scroll", OutputScrollToConsole);
-                  //     // document.querySelector("#ferajna").removeAttribute("disabled");
-                  //   }
-                  // }}
                 >
                   <img
                     src="../images/ferajna.png"
@@ -99,19 +67,7 @@ const Teaser = () => {
                     alt="Ferajna z Hoovera"
                     className={styles.ferajna}
                   />
-                  {/* <h2 className={styles.title}>Kto się tak wydziera?</h2> */}
                 </Parallax>
-
-                {/* <Parallax
-          translateX={["-30px", "600px"]}
-          translateY={["0px", "-40px"]}
-          scale={[1, 0.75]}
-          rotate={[-10, 180]}
-          easing="easeInQuad"
-          opacity={[1, 0]}
-        >
-          <img src="../images/loader.png" alt="Ferajna z Hoovera" className={styles.logo} loading="lazy" />
-        </Parallax> */}
 
                 <Parallax opacity={[0.5, 1]}>
                   <p className={styles.text}>

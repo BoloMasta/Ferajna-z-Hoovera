@@ -6,8 +6,6 @@ const MusicPage = () => {
   return (
     <section className={styles.music}>
       <div className={styles.container}>
-        {/* <h2 className={styles.title}>Muzyka</h2> */}
-
         <div className={styles.grid}>
           <Media queries={breakpoints}>
             {(matches) => (
@@ -96,25 +94,6 @@ const MusicPage = () => {
           <div className={styles.gridSpacer}>
             <img src="../images/loader.png" className={styles.spacer} />
           </div>
-
-          {/* <div className={styles.gridItem}>
-            <h3 className={`${styles.header} ${styles.headerLeft}`}>Playlista ulicznych wykonań</h3>
-            <p className={styles.text}>
-              Przez lata grania na ulicach Warszawy otrzymaliśmy od was wiele nagrań. Oto playlista z wybranymi utworami
-              z różnych lat. Dajcie znać które wykonania najbardziej przypadły wam do gustu.
-            </p>
-          </div>
-          <div className={styles.gridItem}>
-            <iframe
-              className={styles.video}
-              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLp6GCgoiewEnlRwpoEGp3VLT3kftTZsvP"
-              title="YouTube video player"
-              frameBorder="0"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div> */}
 
           <Media queries={breakpoints}>
             {(matches) =>

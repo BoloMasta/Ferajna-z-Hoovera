@@ -10,14 +10,19 @@
 
 .title {
   margin-bottom: var(--padding-half);
-  max-width: 65%;
   text-align: center;
+
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 60%;
+  }
 }
 
 .button {
-  //position: absolute;
-  top: var(--padding-half);
-  right: var(--padding-half);
+  right: 0;
+
+  @include breakpoint($breakpoint-tablet) {
+    right: var(--padding-half);
+  }
 }
 
 .icon {
@@ -30,10 +35,7 @@
 .author {
   font-size: var(--font-size);
   margin-bottom: var(--padding-half);
-  // position: absolute;
-  // top: calc(var(--padding) + 6px);
-  // left: var(--padding);
-  // max-width: 20%;
+  margin-left: 10px;
 
   @include breakpoint($breakpoint-tablet) {
     margin-bottom: var(--padding-double);
@@ -42,18 +44,6 @@
 
 .grid {
   @include grid3-2-1;
-
-  // display: grid;
-  // grid-template-columns: repeat(1, 1fr);
-  // grid-gap: var(--padding-half);
-
-  // @include breakpoint($breakpoint-tablet) {
-  //   grid-template-columns: repeat(2, 1fr);
-  // }
-
-  // @include breakpoint($breakpoint-desktop) {
-  //   grid-template-columns: repeat(3, 1fr);
-  // }
 }
 
 .gridItem {
@@ -63,7 +53,6 @@
   height: auto;
 
   &:hover {
-    // box-shadow: 0 0 10px $color-shadow;
     cursor: pointer;
 
     .image {
