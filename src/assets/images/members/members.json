@@ -2,11 +2,11 @@
   "members": [
     {
       "id": 1,
-      "name": "Jakub Jagiełło",
-      "alias": "Laluś",
-      "photo": "../images/about/members/lalusPhoto.png",
-      "avatar": "../images/about/members/lalusAvatar.png",
-      "description": "<p>Ferajniany skrzypek 🎻. Jego rzewne solówki wyciskają łzy 😢 z oczu największych twardzieli a skoczne przygrywki podrywają do tańca 💃.</p> <p>Mąż 👩‍❤️‍👨, od niedawna ojciec👨‍👧, naukowiec w dziedzinie nanostruktur 👨‍🔬 w zakresie ich wytwarzania i charakteryzacji. Znany z tego, że nikt z ferajniaków nie wie jak śpiewa 🤷‍♂️ oraz ze stoickiego usposobienia co wyróżnia go spośród pozostałych ferajniaków.</p> <p>W wolnych chwilach kopie razem z @janek_adamiec świński pęcherz ⚽ w amatorskiej drużynie Los Aspirantos. Pasjonat włoskiej piłki nożnej 🇮🇹.</p>"
+      "name": "Grzegorz Gadziomski",
+      "alias": "Cygan",
+      "photo": "../images/about/members/cyganPhoto.png",
+      "avatar": "../images/about/members/cyganAvatar.png",
+      "description": "<p>Ferajniany skrzypek… ale nie tylko, bo na skrzypcach gra wszystko - od od folku przez rock, elektronikę, aż po muzykę klasyczną - i wszędzie - od klubów, przez domówki, aż po sale koncertowe i plany filmowe w kraju i na świecie. Kiedy odrywa się od skrzypiec, można spotkać go na ścianie wspinaczkowej, boisku do piłki nożnej lub na fifie z ziomeczkami.</p>"
     },
     {
       "id": 2,
@@ -26,7 +26,7 @@
       "photoAlt": "Jan Adamiec",
       "avatar": "../images/about/members/jeshuaAvatar.png",
       "avatarAlt": "Jeshua avatar",
-      "description": "<p>Praworęczny gitarzysta 🎸 acz leworęczny człowiek 👈. Brat stryjeczny Kędziora.</p> <p> W Ferajnie śpiewa 🎤, tańczy🕺, gra na gitarze i opowiada sympatyczne historie. Niewieście serca pękają 💔 kiedy tylko zaintonuje \"Rozmaryna\" a potem płoną z zazdrości na widok obrączki na palcu (roszczenia zgłaszać do @sieradzanm i syna Gustawczaka).</p> <p> Przemierzył z małżonką pół świata 🌍, jednak serce zostawił w Tatrach ⛰️, a pierś w białoniebieskim trykocie vicemistrza półamatotskiej podwórkowej ligi kopaczy, Los Aspirantos ⚽. Marketingowiec @decathlonpolska, stale przypomina reszcie ferajny, że keSZua a nie keCZua.</p> <p>Chciałby mieć Fiata 500 🚙. </p>"
+      "description": "<p>Praworęczny gitarzysta 🎸 acz leworęczny człowiek 👈. Brat stryjeczny Kędziora.</p> <p> W Ferajnie śpiewa 🎤, tańczy🕺, gra na gitarze i opowiada sympatyczne historie. Niewieście serca pękają 💔 kiedy tylko zaintonuje \"Rozmaryna\" a potem płoną z zazdrości na widok obrączki na palcu (roszczenia zgłaszać do @sieradzanm i syna Gustawczaka oraz córci Rozalii).</p> <p> Przemierzył z małżonką pół świata 🌍, jednak serce zostawił w Tatrach ⛰️, a pierś w białoniebieskim trykocie vicemistrza półamatotskiej podwórkowej ligi kopaczy, Los Aspirantos ⚽. Marketingowiec @decathlonpolska, stale przypomina reszcie ferajny, że keSZua a nie keCZua.</p> <p>Chciałby mieć Fiata 500 🚙. </p>"
     },
     {
       "id": 4,
@@ -36,7 +36,7 @@
       "photoAlt": "Mateusz Halicki",
       "avatar": "../images/about/members/miecioAvatar.png",
       "avatarAlt": "Miecio avatar",
-      "description": "<p>Główny bas Ferajny, znany ze słusznego wzrostu i potężnego głosu 🎤. Jeden z założycieli i pomysłodawców zespołu, na co dzień prowadzi własną pracownię lutniczą w śródmieściu gdzie buduje, naprawia i serwisuje skrzypce 🎻, altówki, wiolonczele i kontrabasy.</p> <p>Mąż Małgorzaty i ojciec Tosi 👨‍👩‍👧</p>"
+      "description": "<p>Główny bas Ferajny, znany ze słusznego wzrostu i potężnego głosu 🎤. Jeden z założycieli i pomysłodawców zespołu, na co dzień prowadzi własną pracownię lutniczą w śródmieściu gdzie buduje, naprawia i serwisuje skrzypce 🎻, altówki, wiolonczele i kontrabasy.</p> <p>Mąż Małgorzaty i ojciec Tosi, Mieszka i Władka 👨‍👩‍👧</p>"
     },
     {
       "id": 5,
@@ -86,7 +86,7 @@
       "photoAlt": "Bolesław Adamiec",
       "avatar": "../images/about/members/kedziorAvatar.png",
       "avatarAlt": "Kędzior avatar",
-      "description": "<p> Leworęczny gitarzysta 🎸 acz praworęczny człowiek➡️, brat stryjeczny Jeshuy. Nieformalny ambasador Ferajny w mediach, zawsze gotów stanąć przed kamerą 🎥 by odpowiedzieć na pytania reporterów 📸. Jeśli podchodzisz do nas na ulicy pogadać o interesach a nie ma w okolicy naszego menago – przeważnie wyślemy Cię do niego.</p> <p>Gitarzysta zespołu @johny.rockers. Amator badmintona 🏸 i ultimate frisbee 🥏. Patentowany żeglarz ⛵. Jeśli kiedykolwiek będziesz potrzebował muzyczki to wpadaj do @apollomusicpl i pytaj o niego. Najbardziej punktualny 🕐 ze wszystkich ferajniaków zawsze melduje się na Skwerze pierwszy🥇.</p>"
+      "description": "<p> Leworęczny gitarzysta 🎸 acz praworęczny człowiek➡️, brat stryjeczny Jeshuy. Nieformalny ambasador Ferajny w mediach, zawsze gotów stanąć przed kamerą 🎥 by odpowiedzieć na pytania reporterów 📸.</p> <p>Amator badmintona 🏸 i ultimate frisbee 🥏. Patentowany żeglarz ⛵. Jeśli kiedykolwiek będziesz potrzebował muzyczki to wpadaj do @apollomusicpl i pytaj o niego. Najbardziej punktualny 🕐 ze wszystkich ferajniaków; zawsze melduje się na Skwerze pierwszy🥇.</p>"
     }
   ]
 }
