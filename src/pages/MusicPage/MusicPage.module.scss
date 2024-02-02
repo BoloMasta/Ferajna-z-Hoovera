@@ -77,7 +77,7 @@
   width: 523px;
   height: 304px;
   z-index: 2;
-  background: url("../images/loader.png") no-repeat center center;
+  background: url("/images/loader.png") no-repeat center center;
 
   @include breakpoint($breakpoint-tablet) {
     width: calc(100% + 3rem);

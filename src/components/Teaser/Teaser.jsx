@@ -21,13 +21,13 @@ const Teaser = () => {
             matches.mobile ? (
               <>
                 <img
-                  src="../images/kto.png"
+                  src="../images/teaser/kto.png"
                   loading="lazy"
                   alt="Kto się tak wydziera?"
                   className={styles.kto}
                 />
                 <img
-                  src="../images/ferajna.png"
+                  src="../images/teaser/ferajna.png"
                   loading="lazy"
                   alt="Ferajna z Hoovera"
                   className={styles.ferajna}
@@ -46,7 +46,7 @@ const Teaser = () => {
                   endScroll={500}
                 >
                   <img
-                    src="../images/kto.png"
+                    src="../images/teaser/kto.png"
                     loading="lazy"
                     alt="Kto się tak wydziera?"
                     className={styles.kto}
@@ -62,7 +62,7 @@ const Teaser = () => {
                   id="ferajna"
                 >
                   <img
-                    src="../images/ferajna.png"
+                    src="../images/teaser/ferajna.png"
                     loading="lazy"
                     alt="Ferajna z Hoovera"
                     className={styles.ferajna}
@@ -84,7 +84,7 @@ const Teaser = () => {
           <div className={styles.gridItem}>
             <Link to="/about" onClick={smoothScrollToTop}>
               <img
-                src="../images/teaser1.jpg"
+                src="../images/teaser/teaser1.jpg"
                 alt="Ferajna z Hoovera"
                 className={styles.image}
                 loading="lazy"
@@ -96,7 +96,7 @@ const Teaser = () => {
           <div className={styles.gridItem}>
             <Link to="/music" onClick={smoothScrollToTop}>
               <img
-                src="../images/teaser2.jpg"
+                src="../images/teaser/teaser2.jpg"
                 alt="Ferajna z Hoovera"
                 className={styles.image}
                 loading="lazy"
@@ -108,7 +108,7 @@ const Teaser = () => {
           <div className={styles.gridItem}>
             <Link to="/contact" onClick={smoothScrollToTop}>
               <img
-                src="../images/teaser3.jpg"
+                src="../images/teaser/teaser3.jpg"
                 alt="Ferajna z Hoovera"
                 className={styles.image}
                 loading="lazy"

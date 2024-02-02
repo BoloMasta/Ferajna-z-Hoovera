@@ -81,7 +81,7 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/bohateron.jpg"
+                      src="../images/about/about/bohateron.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image}`}
                       loading="lazy"
@@ -119,7 +119,7 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/skwer1.jpg"
+                      src="../images/about/about/skwer1.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageLeft}`}
                       loading="lazy"
@@ -127,7 +127,7 @@ const About = () => {
                       unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     />
                     <Img
-                      src="../images/skwer3.jpg"
+                      src="../images/about/about/skwer3.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageRight}`}
                       loading="lazy"
@@ -145,7 +145,7 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/skwer4.jpg"
+                      src="../images/about/about/skwer4.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageRight}`}
                       loading="lazy"
@@ -153,7 +153,7 @@ const About = () => {
                       unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     />
                     <Img
-                      src="../images/bohateron.jpg"
+                      src="../images/about/about/bohateron.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageLeft}`}
                       loading="lazy"
@@ -218,7 +218,7 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/skwer1.jpg"
+                      src="../images/about/about/skwer1.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageLeft}`}
                       loading="lazy"
@@ -226,7 +226,7 @@ const About = () => {
                       unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     />
                     <Img
-                      src="../images/skwer3.jpg"
+                      src="../images/about/about/skwer3.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageRight}`}
                       loading="lazy"
@@ -236,7 +236,7 @@ const About = () => {
                   </div>
                   <div className={styles.gridItem}>
                     <Img
-                      src="../images/skwer4.jpg"
+                      src="../images/about/about/skwer4.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageRight}`}
                       loading="lazy"
@@ -244,7 +244,7 @@ const About = () => {
                       unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
                     />
                     <Img
-                      src="../images/bohateron.jpg"
+                      src="../images/about/about/bohateron.jpg"
                       alt="Ferajna z Hoovera"
                       className={`${styles.image} ${styles.imageLeft}`}
                       loading="lazy"
