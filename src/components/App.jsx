@@ -10,6 +10,7 @@ const MusicPage = lazy(() => import("../pages/MusicPage/MusicPage"));
 const GalleriesPage = lazy(() => import("../pages/GalleriesPage/GalleriesPage"));
 const GalleryPage = lazy(() => import("../pages/GalleryPage/GalleryPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage/ContactPage"));
+const PlayerPage = lazy(() => import("../pages/PlayerPage/PlayerPage"));
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/gallery" element={<GalleriesPage />} />
           <Route path="/gallery/:galleryId" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/ktosietakwydziera" element={<PlayerPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
