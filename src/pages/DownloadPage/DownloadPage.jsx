@@ -10,7 +10,7 @@ const DownloadPage = () => {
           alt="Okładka płyty Kto się tak wydziera?"
         />
 
-        <a href="/music/LEGIONY.mp3" download>
+        <a href="/music/KTO SIĘ TAK WYDZIERA MP3.rar" download>
           <button type="submit" className={styles.button}>
             Pobierz płytę
           </button>

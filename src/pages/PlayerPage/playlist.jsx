@@ -1,82 +1,82 @@
 export const playlist = [
   {
     title: "Posłuchajcie ludzie",
-    src: "/music/POSŁUCHAJCIE LUDZIE.mp3",
+    src: "/music/1 - Posłuchajcie ludzie.mp3",
   },
   {
     title: "Gdy w noc wrześniowe",
-    src: "/music/GDY W NOC WRZEŚNIOWE.mp3",
+    src: "/music/2 - Gdy w noc wrześniowe.mp3",
   },
   {
     title: "Okupacyjna świnia",
-    src: "/music/OKUPACYJNA ŚWINIA.mp3",
+    src: "/music/3 - Okupacyjna świnia.mp3",
   },
   {
     title: "Teraz jest wojna",
-    src: "/music/TERAZ JEST WOJNA.mp3",
+    src: "/music/4 - Teraz jest wojna.mp3",
   },
   {
     title: "Sanitariuszka Małgorzatka",
-    src: "/music/SANITARIUSZKA MAŁGORZATKA.mp3",
+    src: "/music/5 - Sanitariuszka Małgorzatka.mp3",
   },
   {
     title: "Marsz Mokotowa",
-    src: "/music/MARSZ MOKOTOWA.mp3",
+    src: "/music/6 - Marsz Mokotowa.mp3",
   },
   {
     title: "Pałacyk Michla",
-    src: "/music/PAŁACYK MICHLA.mp3",
+    src: "/music/7 - Pałacyk Michla.mp3",
   },
   {
     title: "Warszawo ma",
-    src: "/music/WARSZAWO MA.mp3",
+    src: "/music/8 - Warszawo ma.mp3",
   },
   {
     title: "Warszawskie dzieci",
-    src: "/music/WARSZAWSKIE DZIECI.mp3",
+    src: "/music/9 - Warszawskie dzieci.mp3",
   },
   {
     title: "Serce w plecaku",
-    src: "/music/SERCE W PLECAKU.mp3",
+    src: "/music/10 - Serce w plecaku.mp3",
   },
   {
     title: "Siekiera motyka",
-    src: "/music/SIEKIERA MOTYKA.mp3",
+    src: "/music/11 - Siekiera motyka.mp3",
   },
   {
     title: "Rozszumiały się wierzby płaczące",
-    src: "/music/ROZSZUMIAŁY SIĘ WIERZBY PŁACZĄCE.mp3",
+    src: "/music/12 - Rozszumiały sie wierzby płaczące.mp3",
   },
   {
     title: "Legiony",
-    src: "/music/LEGIONY.mp3",
+    src: "/music/13 - Legiony.mp3",
   },
   {
     title: "O mój rozmarynie",
-    src: "/music/O MÓJ ROZMARYNIE.mp3",
+    src: "/music/14 - O mój rozmarynie.mp3",
   },
   {
     title: "Rozkwitały pąki białych róż",
-    src: "/music/ROZKWITAŁY PĄKI BIAŁYCH RÓŻ.mp3",
+    src: "/music/15 - Rozkwitały pąki białych róż.mp3",
   },
   {
     title: "Przybyli ułani",
-    src: "/music/PRZYBYLI UŁANI.mp3",
+    src: "/music/16 - Przybyli ułani.mp3",
   },
   {
     title: "Szara piechota",
-    src: "/music/SZARA PIECHOTA.mp3",
+    src: "/music/17 - Szara piechota.mp3",
   },
   {
     title: "Ułani, ułani",
-    src: "/music/UŁANI, UŁANI.mp3",
+    src: "/music/18 - Ułani ułani.mp3",
   },
   {
     title: "Warszawianka",
-    src: "/music/WARSZAWIANKA.mp3",
+    src: "/music/19 - Warszawianka.mp3",
   },
   {
     title: "Wojenko, wojenko",
-    src: "/music/WOJENKO, WOJENKO.mp3",
+    src: "/music/20 - Wojenko wojenko.mp3",
   },
 ];

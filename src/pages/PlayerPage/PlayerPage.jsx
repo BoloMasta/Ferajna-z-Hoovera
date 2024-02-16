@@ -45,7 +45,7 @@ const PlayerPage = () => {
               src={track}
               onClickNext={() => nextTrack()}
               onClickPrevious={() => prevTrack()}
-              onEnded={() => nextTrack()}
+              onEnded={() => track !== playlist[playlist.length - 1].src && nextTrack()}
               header={playlist.find((el) => el.src === track).title}
             />
           </div>
