@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { animateScroll } from "react-scroll";
 import propsTypes from "prop-types";
 import styles from "./Navigation.module.scss";
 
@@ -7,7 +8,17 @@ const Navigation = ({ props }) => {
 
   return (
     <nav className={styles.nav}>
-      <ul className={styles.list} onClick={() => setIsMenuOpen(false)}>
+      <ul
+        className={styles.list}
+        onClick={() => {
+          setIsMenuOpen(false);
+          animateScroll.scrollToTop({
+            duration: 500,
+            smooth: true,
+            easing: "easeInOutQuart",
+          });
+        }}
+      >
         <li className={styles.item}>
           <NavLink
             to="/"

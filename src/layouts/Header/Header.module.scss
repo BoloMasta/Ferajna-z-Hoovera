@@ -1,6 +1,31 @@
 .header {
   border-bottom: 1px solid #333333;
   box-shadow: 0 0 10px var(--shadow-color);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: #e0e0e0;
+  transition: $transition-slow;
+}
+
+.smallHeader {
+  opacity: 0.9;
+  transition: $transition-slow;
+  border-bottom: 1px solid #3333333a;
+  background-color: #3333333a;
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    height: 50px;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+    height: 60px;
+  }
 }
 
 .container {
@@ -9,10 +34,20 @@
   @include flex-between;
 }
 
+.smallContainer {
+  padding: calc(var(--padding-half) / 2) var(--padding);
+}
+
 .logo {
   display: block;
   width: 100px;
   height: 100px;
+}
+
+.smallLogo {
+  width: 40px;
+  height: 40px;
+  margin-left: var(--padding-double);
 }
 
 .modalMenu {

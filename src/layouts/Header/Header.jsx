@@ -8,12 +8,18 @@ import { breakpoints } from "../../assets/breakpoints";
 import styles from "./Header.module.scss";
 
 const Header = ({ ...props }) => {
-  const { isMenuOpen } = props;
+  const { isMenuOpen, isViewOnTop } = props;
 
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <img src={logo} alt="Ferajna z Hoovera logo" className={styles.logo} />
+    <header className={`${styles.header} ${!isViewOnTop && styles.smallHeader}`}>
+      <div className={`${styles.container} ${!isViewOnTop && styles.smallContainer}`}>
+        <img
+          src={logo}
+          alt="Ferajna z Hoovera logo"
+          className={`
+            ${styles.logo} ${!isViewOnTop && styles.smallLogo}
+          `}
+        />
         <Media queries={breakpoints}>
           {(matches) => (
             <>
@@ -37,5 +43,6 @@ export default Header;
 Header.propTypes = {
   props: propTypes.object,
   isMenuOpen: propTypes.bool,
+  isViewOnTop: propTypes.bool,
   setIsMenuOpen: propTypes.func,
 };

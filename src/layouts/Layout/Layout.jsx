@@ -8,6 +8,7 @@ import "./Layout.scss";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isViewOnTop, setIsViewOnTop] = useState(true);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -21,9 +22,22 @@ const Layout = () => {
     }
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    function onScroll() {
+      setIsViewOnTop(window.scrollY === 0);
+    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <>
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        isViewOnTop={isViewOnTop}
+        setIsViewOnTop={setIsViewOnTop}
+      />
       <main>
         <div className="container">
           <Suspense fallback={<Loader />}>
