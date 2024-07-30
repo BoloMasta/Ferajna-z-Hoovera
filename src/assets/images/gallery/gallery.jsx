@@ -14,6 +14,8 @@ import bemowo010822 from "./bemowo010822.json";
 import skwer010823 from "./skwer010823.json";
 import grochow030923 from "./grochow030923.json";
 import wawer020819 from "./wawer020819.json";
+import niepodlegla010820 from "./niepodlegla010820.json";
+import wroclaw200524 from "./wroclaw200524.json";
 
 export const galleries = [
   bemowo010821,
@@ -30,6 +32,8 @@ export const galleries = [
   skwer010823,
   grochow030923,
   wawer020819,
+  niepodlegla010820,
+  wroclaw200524,
 ];
 
 export const galleriesSortedCovers = galleries

@@ -1,0 +1,64 @@
+{
+  "galeryId": "wroclaw200524",
+  "location": "Wrocław",
+  "date": "20.05.2024",
+  "author": "Sebastian Górecki",
+
+  "images": [
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4777.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4777_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4694.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4694_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4302.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4302_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4688.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4688_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4714.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4714_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4692.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4692_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4736.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4736_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4747.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4747_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4772.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4772_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4831.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4831_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    },
+    {
+      "url": "../images/gallery/wroclaw 20.05.2024/4B3A4263.jpg",
+      "urlThumbnail": "../images/gallery/wroclaw 20.05.2024/4B3A4263_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
+    }
+  ]
+}
