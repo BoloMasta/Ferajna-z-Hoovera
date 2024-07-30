@@ -2,11 +2,17 @@ import propsTypes from "prop-types";
 import styles from "./HamburgerMenu.module.scss";
 
 const HamburgerMenu = ({ props }) => {
-  const { isMenuOpen, setIsMenuOpen } = props;
+  const { isMenuOpen, setIsMenuOpen, isViewOnTop } = props;
 
   return (
     <div
-      className={isMenuOpen ? `${styles.hamburgerMenu} ${styles.open}` : styles.hamburgerMenu}
+      className={
+        styles.hamburgerMenu +
+        " " +
+        (!isViewOnTop && styles.small) +
+        " " +
+        (isMenuOpen && styles.open)
+      }
       onClick={() => setIsMenuOpen(!isMenuOpen)}
     >
       <div className={styles.icon}></div>
@@ -20,4 +26,5 @@ HamburgerMenu.propTypes = {
   props: propsTypes.object,
   isMenuOpen: propsTypes.bool,
   setIsMenuOpen: propsTypes.func,
+  isViewOnTop: propsTypes.bool,
 };

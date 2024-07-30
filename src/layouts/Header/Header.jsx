@@ -17,7 +17,7 @@ const Header = ({ ...props }) => {
           src={logo}
           alt="Ferajna z Hoovera logo"
           className={`
-            ${styles.logo} ${!isViewOnTop && styles.smallLogo}
+            ${styles.logo} ${!isViewOnTop && styles.small}
           `}
         />
         <Media queries={breakpoints}>

@@ -11,18 +11,6 @@ const Layout = () => {
   const [isViewOnTop, setIsViewOnTop] = useState(true);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      window.onscroll = () => {
-        window.scrollTo(0, 0);
-      };
-    } else {
-      window.onscroll = () => {
-        window.scrollTo(0, window.scrollY);
-      };
-    }
-  }, [isMenuOpen]);
-
-  useEffect(() => {
     function onScroll() {
       setIsViewOnTop(window.scrollY === 0);
     }

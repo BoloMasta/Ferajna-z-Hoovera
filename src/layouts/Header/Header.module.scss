@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #696969cb;
   box-shadow: 0 0 10px var(--shadow-color);
   position: fixed;
   z-index: 1000;
@@ -36,18 +36,25 @@
 
 .smallContainer {
   padding: calc(var(--padding-half) / 2) var(--padding);
+  height: inherit;
+  transition: $transition-slow;
 }
 
 .logo {
   display: block;
   width: 100px;
   height: 100px;
+  transition: $transition-slow;
 }
 
-.smallLogo {
-  width: 40px;
-  height: 40px;
-  margin-left: var(--padding-double);
+.small {
+  height: 50px;
+  width: max-content;
+  margin-left: var(--padding);
+
+  @include breakpoint($breakpoint-tablet) {
+    height: inherit;
+  }
 }
 
 .modalMenu {
@@ -66,7 +73,7 @@
   box-shadow: 0 0 10px var(--shadow-color);
 
   &.open {
-    height: 100%;
+    height: 100vh;
   }
 
   @include breakpoint($breakpoint-tablet) {
