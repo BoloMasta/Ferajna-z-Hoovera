@@ -2,8 +2,12 @@
   @include flex-center;
   height: calc(100vh - 180px);
   position: relative;
-  width: calc(100% - 0px);
+  width: calc(100% - 18px);
   z-index: 1;
+
+  @include breakpoint($breakpoint-tablet) {
+    width: 100%;
+  }
 
   @include breakpoint($breakpoint-desktop) {
     height: calc(100vh - 180px);
@@ -12,7 +16,7 @@
   &::before {
     content: "";
     display: block;
-    width: calc(100vw + 17px);
+    width: calc(100vw + 18px);
     height: calc(100% + var(--padding) * 1);
     position: absolute;
     background-image: url("/images/lead/lead.jpg");
