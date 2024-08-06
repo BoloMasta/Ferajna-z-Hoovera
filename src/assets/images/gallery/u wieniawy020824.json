@@ -1,0 +1,39 @@
+{
+  "galeryId": "uwieniawy020824",
+  "location": "U Wieniawy",
+  "date": "2.08.2024",
+  "author": "Michał Majewski",
+
+  "images": [
+    {
+      "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9569.jpg",
+      "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9569_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
+    },
+    {
+      "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9756.jpg",
+      "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9756_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
+    },
+    {
+      "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9526.jpg",
+      "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9526_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
+    },
+    {
+      "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9575.jpg",
+      "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9575_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
+    },
+    {
+      "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9580.jpg",
+      "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9580_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
+    },
+    {
+      "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9785.jpg",
+      "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9785_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
+    }
+  ]
+}
