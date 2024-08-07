@@ -86,7 +86,27 @@
       "photoAlt": "Bolesław Adamiec",
       "avatar": "../images/about/members/kedziorAvatar.png",
       "avatarAlt": "Kędzior avatar",
-      "description": "<p> Leworęczny gitarzysta 🎸 acz praworęczny człowiek➡️, brat stryjeczny Jeshuy. Nieformalny ambasador Ferajny w mediach, zawsze gotów stanąć przed kamerą 🎥 by odpowiedzieć na pytania reporterów 📸.</p> <p>Amator badmintona 🏸 i ultimate frisbee 🥏. Patentowany żeglarz ⛵. Jeśli kiedykolwiek będziesz potrzebował muzyczki to wpadaj do @apollomusicpl i pytaj o niego. Najbardziej punktualny 🕐 ze wszystkich ferajniaków; zawsze melduje się na Skwerze pierwszy🥇.</p>"
+      "description": "<p> Leworęczny gitarzysta 🎸 acz praworęczny człowiek➡️, brat stryjeczny Jeshuy. Nieformalny ambasador Ferajny w mediach, zawsze gotów stanąć przed kamerą 🎥 by odpowiedzieć na pytania reporterów 📸.</p> <p>Amator badmintona 🏸 i ultimate frisbee 🥏. Patentowany żeglarz ⛵. Jeśli kiedykolwiek będziesz potrzebował muzyczki to wpadaj do @apollomusicpl i pytaj o niego. Najbardziej punktualny 🕐 ze wszystkich ferajniaków; zawsze melduje się na Skwerze pierwszy🥇. Tata Juliana.</p>"
+    },
+    {
+      "id": 10,
+      "name": "Jakub Jagiełło",
+      "alias": "Laluś",
+      "photo": "../images/about/members/lalusPhoto.png",
+      "photoAlt": "Jakub Jagiełło",
+      "avatar": "../images/about/members/lalusAvatar.png",
+      "avatarAlt": "Kędzior avatar",
+      "description": "<p> Ferajniany skrzypek 🎻. Jego rzewne solówki wyciskają łzy 😢 z oczu największych twardzieli a skoczne przygrywki podrywają do tańca 💃</p> <p> Mąż 👩‍❤️‍👨, od niedawna ojciec👨‍👧, naukowiec w dziedzinie nanostruktur 👨‍🔬 w zakresie ich wytwarzania i charakteryzacji. Znany z tego, że nikt z ferajniaków nie wie jak śpiewa 🤷‍♂️ oraz ze stoickiego usposobienia co wyróżnia go spośród pozostałych ferajniaków.</p> <p> W wolnych chwilach kopie razem z @janek_adamiec świński pęcherz ⚽ w amatorskiej drużynie Los Aspirantos. Pasjonat włoskiej piłki nożnej 🇮🇹.</p>"
+    },
+    {
+      "id": 11,
+      "name": "Adam Sieradzan",
+      "alias": "Dudek",
+      "photo": "../images/about/members/dudekPhoto.png",
+      "photoAlt": "Adam Sieradzan",
+      "avatar": "../images/about/members/dudekAvatar.png",
+      "avatarAlt": "Kędzior avatar",
+      "description": "<p> Najmłodszy członek zespołu 👶 i brat @panpielegniarka grający z nim na zmianę. Swoją role w ferajnie wypełnia poprzez łojenie w bęben 🥁. Na co dzień student geografii 🗺️, spec w firmie sharingowej 🚳 i autostopowicz 🚙. Życie nocnej Warszawy 🌃 nie jest mu obce więc wypatrujcie go wieczorami w najlepszych stołecznych lokalach a na pewno chętnie z wami zagada i wychyly co nieco.</p> <p>Znany z typowej dla młodych wiary w ideały jak na przykład to, że jak będzie grał równo to my też zaczniemy 😂</p>"
     }
   ]
 }

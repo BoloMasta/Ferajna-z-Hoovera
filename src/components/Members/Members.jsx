@@ -23,6 +23,13 @@ const Members = () => {
               key={member.id}
               id={member.id}
               onClick={() => {
+                if (
+                  document.getElementById(member.id).classList.contains(`${styles.memberActive}`)
+                ) {
+                  document.getElementById(member.id).classList.remove(`${styles.memberActive}`);
+                } else {
+                  document.getElementById(member.id).classList.add(`${styles.memberActive}`);
+                }
                 setActiveMember(member.id);
               }}
               onMouseEnter={() => {
@@ -32,6 +39,7 @@ const Members = () => {
                 if (activeMember !== member.id)
                   document.getElementById(member.id).classList.remove(`${styles.memberActive}`);
               }}
+              
             >
               <img src={member.avatar} alt={member.avatarAlt} className={styles.memberAvatar} />
               <img src={member.photo} alt={member.photoAlt} className={styles.memberPhoto} />
