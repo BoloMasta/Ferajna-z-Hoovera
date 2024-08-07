@@ -1,9 +1,17 @@
-import { Parallax } from "react-scroll-parallax";
+import { Parallax, useParallax } from "react-scroll-parallax";
 import Media from "react-media";
 import { breakpoints } from "../../assets/breakpoints";
 import styles from "./Lead.module.scss";
 
 const Lead = () => {
+  const parallax = useParallax({
+    onProgressChange: (progress) => {
+      if (parallax.ref.current) {
+        parallax.ref.current.style.setProperty("--progress", progress.toString());
+      }
+    },
+  });
+
   return (
     <section className={styles.lead}>
       <Media queries={breakpoints}>
@@ -12,7 +20,13 @@ const Lead = () => {
             <h1 className={styles.title}>Serwus</h1>
           ) : (
             <Parallax speed={20} translateY={[250, -100]} opacity={[-3, 2]}>
-              <h1 className={styles.title}>Serwus</h1>
+              <h1
+                className={styles.title}
+                ref={parallax.ref}
+                style={{ letterSpacing: `calc(10px * (var(--progress)) * 4)` }}
+              >
+                Serwus
+              </h1>
             </Parallax>
           )
         }
