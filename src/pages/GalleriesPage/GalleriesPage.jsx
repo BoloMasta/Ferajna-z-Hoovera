@@ -24,7 +24,13 @@ const GalleriesPage = () => {
                 className={`${styles.image} ${styles.cover}`}
                 loading="lazy"
                 loader={<Loader />}
-                unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
+                unloader={
+                  <img
+                    src={NoPhoto}
+                    alt="Brak zdjęcia"
+                    className={`${styles.image} ${styles.cover}`}
+                  />
+                }
               />
               <p className={styles.text}>
                 {images.location}
