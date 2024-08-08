@@ -21,6 +21,27 @@ const Switch = (props) => {
     if (rightImage) rightImage.classList.add(`${styles.imageActive}`);
   }
 
+  const scrollToDown = () => {
+    setTimeout(() => {
+      if (window.innerWidth < 768) {
+        window.scrollTo({
+          top: 280,
+          behavior: "smooth",
+        });
+      } else if (window.innerWidth < 1280) {
+        window.scrollTo({
+          top: 465,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+          top: 550,
+          behavior: "smooth",
+        });
+      }
+    }, 0);
+  };
+
   return (
     <section className={styles.switch}>
       <div className={styles.gallery}>
@@ -36,7 +57,10 @@ const Switch = (props) => {
             props.active !== "left" &&
               document.getElementById("leftTitle").classList.remove(`${styles.titleActive}`);
           }}
-          onClick={() => props.setActive("left")}
+          onClick={() => {
+            props.setActive("left");
+            scrollToDown();
+          }}
         />
         <img
           src="../images/about/switch/czlonkowie.jpg"
@@ -50,7 +74,10 @@ const Switch = (props) => {
             props.active !== "right" &&
               document.getElementById("rightTitle").classList.remove(`${styles.titleActive}`);
           }}
-          onClick={() => props.setActive("right")}
+          onClick={() => {
+            props.setActive("right");
+            scrollToDown();
+          }}
         />
         <h2 className={styles.title} id="leftTitle">
           O zespole

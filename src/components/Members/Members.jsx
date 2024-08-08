@@ -31,6 +31,14 @@ const Members = () => {
                   document.getElementById(member.id).classList.add(`${styles.memberActive}`);
                 }
                 setActiveMember(member.id);
+
+                if (window.innerWidth < 768) {
+                  scrollTo({ top: 850, behavior: "smooth" });
+                } else if (window.innerWidth < 1280) {
+                  scrollTo({ top: 465, behavior: "smooth" });
+                } else {
+                  scrollTo({ top: 550, behavior: "smooth" });
+                }
               }}
               onMouseEnter={() => {
                 document.getElementById(member.id).classList.add(`${styles.memberActive}`);
@@ -39,7 +47,6 @@ const Members = () => {
                 if (activeMember !== member.id)
                   document.getElementById(member.id).classList.remove(`${styles.memberActive}`);
               }}
-              
             >
               <img src={member.avatar} alt={member.avatarAlt} className={styles.memberAvatar} />
               <img src={member.photo} alt={member.photoAlt} className={styles.memberPhoto} />
