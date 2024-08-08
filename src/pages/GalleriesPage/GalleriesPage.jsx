@@ -1,7 +1,7 @@
 import { Img } from "react-image";
 import Loader from "../../layouts/Loader/Loader";
 import { galleriesSortedCovers } from "../../assets/images/gallery/gallery";
-import NoPhoto from "/images/brak-zdjecia.png";
+import NoPhoto from "./images/brak-zdjecia.png";
 import styles from "./GalleriesPage.module.scss";
 
 const GalleriesPage = () => {

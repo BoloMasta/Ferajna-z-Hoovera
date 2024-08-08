@@ -17,7 +17,9 @@ const Lead = () => {
       <Media queries={breakpoints}>
         {(matches) =>
           matches.mobile ? (
-            <h1 className={styles.title}>Serwus</h1>
+            <h1 className={styles.title} ref={parallax.ref}>
+              Serwus
+            </h1>
           ) : (
             <Parallax speed={20} translateY={[250, -100]} opacity={[-3, 2]}>
               <h1

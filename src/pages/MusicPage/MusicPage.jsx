@@ -1,4 +1,5 @@
 import Media from "react-media";
+import ReactPlayer from "react-player/youtube";
 import { breakpoints } from "../../assets/breakpoints";
 import styles from "./MusicPage.module.scss";
 
@@ -81,14 +82,22 @@ const MusicPage = () => {
             </p>
           </div>
           <div className={styles.gridItem}>
-            <iframe
+            {/* <iframe
               className={styles.video}
               src="https://www.youtube-nocookie.com/embed/PbWtu5Sa_NE"
               title="Ferajna z Hoovera - Warszawo ma"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+
+            <ReactPlayer
+              url="https://www.youtube-nocookie.com/embed/PbWtu5Sa_NE"
+              controls="true"
+              className={styles.video}
+              width="100%"
+              height="auto"
+            />
           </div>
 
           <div className={styles.gridSpacer}>
@@ -100,7 +109,7 @@ const MusicPage = () => {
               !matches.mobile ? (
                 <>
                   <div className={styles.gridItem}>
-                    <iframe
+                    {/* <iframe
                       className={styles.video}
                       src="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
                       title="Piosenki Powstania Warszawskiego"
@@ -108,9 +117,17 @@ const MusicPage = () => {
                       loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
-                    ></iframe>
+                    ></iframe> */}
 
-                    <iframe
+                    <ReactPlayer
+                      url="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
+                      controls="true"
+                      className={styles.video}
+                      width="100%"
+                      height="auto"
+                    />
+
+                    {/* <iframe
                       className={styles.video}
                       style={{ marginTop: "20px" }}
                       src="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
@@ -119,7 +136,15 @@ const MusicPage = () => {
                       loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
-                    ></iframe>
+                    ></iframe> */}
+
+                    <ReactPlayer
+                      url="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
+                      controls="true"
+                      className={styles.video}
+                      width="100%"
+                      height="auto"
+                    />
                   </div>
                   <div className={styles.gridItem}>
                     <h3 className={`${styles.header} ${styles.headerRight}`}>Filmy edukacyjne</h3>
@@ -181,7 +206,7 @@ const MusicPage = () => {
                     </p>
                   </div>
                   <div className={styles.gridItem}>
-                    <iframe
+                    {/* <iframe
                       className={styles.video}
                       src="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
                       title="Piosenki Powstania Warszawskiego"
@@ -200,7 +225,23 @@ const MusicPage = () => {
                       loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
-                    ></iframe>
+                    ></iframe> */}
+
+                    <ReactPlayer
+                      url="https://www.youtube-nocookie.com/embed/-2klUYihhJo"
+                      controls="true"
+                      className={styles.video}
+                      width="100%"
+                      height="auto"
+                    />
+
+                    <ReactPlayer
+                      url="https://www.youtube-nocookie.com/embed/zyE7tw4JvvY"
+                      controls="true"
+                      className={styles.video}
+                      width="100%"
+                      height="auto"
+                    />
                   </div>
                 </>
               )
