@@ -1,5 +1,5 @@
-//import Container from "../Container/Container";
 import Media from "react-media";
+import { Img } from "react-image";
 import propTypes from "prop-types";
 import Navigation from "../Navigation/Navigation";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
@@ -13,13 +13,13 @@ const Header = ({ ...props }) => {
   return (
     <header className={`${styles.header} ${!isViewOnTop && styles.smallHeader}`}>
       <div className={`${styles.container} ${!isViewOnTop && styles.smallContainer}`}>
-        <img
+        <Img
           src={logo}
-          alt="Ferajna z Hoovera logo"
-          className={`
-            ${styles.logo} ${!isViewOnTop && styles.small}
-          `}
+          alt="Logo Ferajny z Hoovera"
+          className={`${styles.logo} ${!isViewOnTop && styles.small}`}
+          loading="lazy"
         />
+
         <Media queries={breakpoints}>
           {(matches) => (
             <>

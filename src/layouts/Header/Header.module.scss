@@ -45,6 +45,25 @@
   width: 100px;
   height: 100px;
   transition: $transition-slow;
+
+  animation: blur 16s infinite 9s;
+}
+
+@keyframes blur {
+  0% {
+    transform: scale(1);
+    filter: blur(0px) grayscale(0%) sepia(0%);
+  }
+
+  5% {
+    transform: scale(0.8) rotate(2deg);
+    filter: blur(4px) grayscale(90%) sepia(90%);
+  }
+
+  10% {
+    transform: scale(1) rotate(0deg);
+    filter: blur(0px) grayscale(0%) sepia(0%);
+  }
 }
 
 .small {

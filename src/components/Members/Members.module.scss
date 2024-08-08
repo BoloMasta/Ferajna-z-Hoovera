@@ -55,13 +55,13 @@
     height: 100%;
     background: linear-gradient(120deg, transparent, $color-background, transparent);
     transition: $transition-slow;
-    z-index: 100;
-    opacity: 0.3;
+    z-index: 10;
+    opacity: 0.15;
   }
 
   &.memberActive {
     &::before {
-      animation: shine 6s infinite 6s;
+      animation: shine 6s infinite 4s;
     }
   }
 }
