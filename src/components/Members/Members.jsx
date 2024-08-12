@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import members from "../../assets/images/members/members";
+import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
+import members from "../../assets/members/members.json";
 import styles from "./Members.module.scss";
 
 const Members = () => {
   const [activeMember, setActiveMember] = useState(0);
+  polyfillCountryFlagEmojis();
 
   useEffect(() => {
     for (let i = 0; i < members.members.length; i++) {

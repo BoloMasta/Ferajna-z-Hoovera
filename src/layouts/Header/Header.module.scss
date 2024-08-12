@@ -56,12 +56,12 @@
   }
 
   5% {
-    transform: scale(0.8) rotate(2deg);
+    transform: scale(0.9);
     filter: blur(4px) grayscale(90%) sepia(90%);
   }
 
   10% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
     filter: blur(0px) grayscale(0%) sepia(0%);
   }
 }
