@@ -6,8 +6,53 @@
 
   "images": [
     {
-      "url": "../images/gallery/skwer 1.08.2024/KUN8588.jpg",
-      "urlThumbnail": "../images/gallery/skwer 1.08.2024/KUN8588_thumbnail.jpg",
+      "url": "../images/gallery/skwer 1.08.2024/WWA_060.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_060_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_064.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_064_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_065.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_065_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_066.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_066_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_067.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_067_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_062.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_062_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_069.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_069_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_073.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_073_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_070.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_070_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
+    },
+    {
+      "url": "../images/gallery/skwer 1.08.2024/WWA_075.jpg",
+      "urlThumbnail": "../images/gallery/skwer 1.08.2024/WWA_075_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
     }
   ]
