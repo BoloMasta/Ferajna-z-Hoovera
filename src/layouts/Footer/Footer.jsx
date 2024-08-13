@@ -55,10 +55,15 @@ const Footer = () => {
         </div>
 
         <div className={styles.copy}>
-          <p className={styles.copyText}>&copy; 2023 Ferajna z Hoovera.</p>
+          <p className={styles.copyText}>&copy; 2024 Ferajna z Hoovera.</p>
           <p className={styles.copyText}>
             Projekt i wykonanie: &nbsp;
-            <a href="https://github.com/BoloMasta" target="_blank" rel="noreferrer" className={styles.copyLink}>
+            <a
+              href="https://github.com/BoloMasta"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.copyLink}
+            >
               Bolesław Adamiec
             </a>
           </p>
