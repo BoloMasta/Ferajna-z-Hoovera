@@ -44,5 +44,5 @@ Header.propTypes = {
   props: propTypes.object,
   isMenuOpen: propTypes.bool,
   isViewOnTop: propTypes.bool,
-  setIsMenuOpen: propTypes.func,
+  setIsMenuOpen: propTypes.func
 };

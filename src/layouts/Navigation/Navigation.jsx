@@ -39,7 +39,7 @@ const Navigation = ({ setIsMenuOpen }) => {
 };
 
 Navigation.propTypes = {
-  setIsMenuOpen: PropTypes.func.isRequired,
+  setIsMenuOpen: PropTypes.func,
 };
 
 export default Navigation;
