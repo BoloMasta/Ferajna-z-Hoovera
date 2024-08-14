@@ -13,16 +13,6 @@
 }
 
 .grid {
-  // @include grid3-2-1;
-  // align-content: flex-start;
-
-  // // &::after {
-  // //   content: "";
-  // //   flex: auto;
-  // //   width: auto;
-  // // }
-  // align-content: space-between;
-
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: var(--padding-half);
