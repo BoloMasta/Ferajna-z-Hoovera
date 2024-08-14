@@ -1,45 +1,25 @@
-import propTypes from "prop-types";
+import { useCallback } from "react";
+import PropTypes from "prop-types";
 import styles from "./Switch.module.scss";
 
-const Switch = (props) => {
-  const leftImage = document.getElementById("leftImage");
-  const rightImage = document.getElementById("rightImage");
-  const leftTitle = document.getElementById("leftTitle");
-  const rightTitle = document.getElementById("rightTitle");
+const Switch = ({ active, setActive }) => {
+  const scrollToDown = useCallback(() => {
+    const scrollTop = window.innerWidth < 768 ? 310 : window.innerWidth < 1280 ? 465 : 550;
 
-  if (props.active === "left") {
-    leftTitle.classList.add(`${styles.titleActive}`);
-    rightTitle.classList.remove(`${styles.titleActive}`);
+    window.scrollTo({
+      top: scrollTop,
+      behavior: "smooth",
+    });
+  }, []);
 
-    if (leftImage) leftImage.classList.add(`${styles.imageActive}`);
-    if (rightImage) rightImage.classList.remove(`${styles.imageActive}`);
-  } else if (props.active === "right") {
-    leftTitle.classList.remove(`${styles.titleActive}`);
-    rightTitle.classList.add(`${styles.titleActive}`);
+  const handleMouseEnter = (id) => {
+    document.getElementById(id)?.classList.add(styles.titleActive);
+  };
 
-    if (leftImage) leftImage.classList.remove(`${styles.imageActive}`);
-    if (rightImage) rightImage.classList.add(`${styles.imageActive}`);
-  }
-
-  const scrollToDown = () => {
-    setTimeout(() => {
-      if (window.innerWidth < 768) {
-        window.scrollTo({
-          top: 280,
-          behavior: "smooth",
-        });
-      } else if (window.innerWidth < 1280) {
-        window.scrollTo({
-          top: 465,
-          behavior: "smooth",
-        });
-      } else {
-        window.scrollTo({
-          top: 550,
-          behavior: "smooth",
-        });
-      }
-    }, 0);
+  const handleMouseLeave = (id) => {
+    if (active !== id) {
+      document.getElementById(id)?.classList.remove(styles.titleActive);
+    }
   };
 
   return (
@@ -48,41 +28,37 @@ const Switch = (props) => {
         <img
           src="../images/about/switch/ozespole.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
-          className={styles.leftImage}
+          className={`${styles.leftImage} ${active === "left" ? styles.imageActive : ""}`}
           id="leftImage"
-          onMouseEnter={() => {
-            document.getElementById("leftTitle").classList.add(`${styles.titleActive}`);
-          }}
-          onMouseLeave={() => {
-            props.active !== "left" &&
-              document.getElementById("leftTitle").classList.remove(`${styles.titleActive}`);
-          }}
+          onMouseEnter={() => handleMouseEnter("leftTitle")}
+          onMouseLeave={() => handleMouseLeave("leftTitle")}
           onClick={() => {
-            props.setActive("left");
+            setActive("left");
             scrollToDown();
           }}
         />
         <img
           src="../images/about/switch/czlonkowie.jpg"
           alt="Zdjęcie zespołu Ferajna z Hoovera"
-          className={styles.rightImage}
+          className={`${styles.rightImage} ${active === "right" ? styles.imageActive : ""}`}
           id="rightImage"
-          onMouseEnter={() => {
-            document.getElementById("rightTitle").classList.add(`${styles.titleActive}`);
-          }}
-          onMouseLeave={() => {
-            props.active !== "right" &&
-              document.getElementById("rightTitle").classList.remove(`${styles.titleActive}`);
-          }}
+          onMouseEnter={() => handleMouseEnter("rightTitle")}
+          onMouseLeave={() => handleMouseLeave("rightTitle")}
           onClick={() => {
-            props.setActive("right");
+            setActive("right");
             scrollToDown();
           }}
         />
-        <h2 className={styles.title} id="leftTitle">
+        <h2
+          className={`${styles.title} ${active === "left" ? styles.titleActive : ""}`}
+          id="leftTitle"
+        >
           O zespole
         </h2>
-        <h2 className={styles.title} id="rightTitle">
+        <h2
+          className={`${styles.title} ${active === "right" ? styles.titleActive : ""}`}
+          id="rightTitle"
+        >
           Członkowie
         </h2>
       </div>
@@ -90,9 +66,9 @@ const Switch = (props) => {
   );
 };
 
-export default Switch;
-
 Switch.propTypes = {
-  active: propTypes.string,
-  setActive: propTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
+  setActive: PropTypes.func.isRequired,
 };
+
+export default Switch;
