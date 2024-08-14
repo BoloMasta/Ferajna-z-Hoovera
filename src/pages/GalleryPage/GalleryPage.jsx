@@ -17,7 +17,6 @@ const GalleryPage = () => {
   const { galleryId } = useParams();
   const navigate = useNavigate();
 
-  // Fetch gallery data based on galleryId
   const fetchGalleryData = useCallback(() => {
     if (galleryId) {
       const gallery = galleries.find((g) => g.galeryId === galleryId);
