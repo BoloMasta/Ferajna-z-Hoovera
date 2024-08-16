@@ -28,7 +28,7 @@ const Header = ({ isMenuOpen, isViewOnTop, setIsMenuOpen }) => {
                   isViewOnTop={isViewOnTop}
                 />
               )}
-              {matches.tablet || (matches.desktop && <Navigation setIsMenuOpen={setIsMenuOpen} />)}
+              {(matches.tablet || matches.desktop) && <Navigation setIsMenuOpen={setIsMenuOpen} />}
             </>
           )}
         </Media>
