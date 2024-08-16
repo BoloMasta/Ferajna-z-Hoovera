@@ -1,6 +1,6 @@
 # Strona zespołu Ferajna z Hoovera
 
-Strona internetowa zespołu Ferajna z Hoovera stworzona przy użyciu Vite i React.
+Strona internetowa zespołu Ferajna z Hoovera stworzona przy użyciu React + Vite.
 
 ## Podgląd
 
@@ -19,14 +19,10 @@ Zdjęcia są umieszczone w folderze `public/images/gallery`, podzielone na galer
 
 - Rozmiary zdjęć [dłuższa krawędź]:
   - **Oryginał**: 2000px
+  - **Cover**: 450px
   - **Thumbnail**: 100px
 
 Pliki JSON do galerii znajdują się w folderze `assets/images/gallery`.
-
-## Technologie
-
-- **Vite**: Narzędzie do szybkiego budowania aplikacji.
-- **React**: Biblioteka JavaScript do budowania interfejsów użytkownika.
 
 ## Użyte biblioteki
 

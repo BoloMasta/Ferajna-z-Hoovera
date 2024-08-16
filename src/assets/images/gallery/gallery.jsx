@@ -45,7 +45,7 @@ export const galleries = [
 export const galleriesSortedCovers = galleries
   .sort((a, b) => moment(b.date, "DD.MM.YYYY") - moment(a.date, "DD.MM.YYYY"))
   .map((images) => ({
-    cover: images.images[0].url,
+    cover: images.images[0].urlCover,
     coverAlt: images.images[0].alt,
     location: images.location,
     date: images.date,

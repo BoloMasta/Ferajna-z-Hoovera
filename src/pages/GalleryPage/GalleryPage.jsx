@@ -67,7 +67,7 @@ const GalleryPage = () => {
             {images.map((image, index) => (
               <div className={styles.gridItem} key={index}>
                 <Img
-                  src={image.url}
+                  src={image.urlCover}
                   alt={image.alt}
                   className={styles.image}
                   loading="lazy"
@@ -86,7 +86,7 @@ const GalleryPage = () => {
             showNav
             showThumbnails
             showBullets
-            lazyLoad
+            lazyLoad={true}
             slideDuration={500}
             slideInterval={3000}
             thumbnailPosition="bottom"

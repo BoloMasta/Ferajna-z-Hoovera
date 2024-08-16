@@ -7,27 +7,32 @@
   "images": [
     {
       "url": "../images/gallery/flora 19.01.2020/IMG_20200119_154359.jpg",
+      "urlCover": "../images/gallery/flora 19.01.2020/IMG_20200119_154359_cover.jpg",
       "urlThumbnail": "../images/gallery/flora 19.01.2020/IMG_20200119_154359_thumbnail.jpg",
       "alt": "Urodziny Powstańców Warszawskich we Flora Caffe"
     },
 
     {
       "url": "../images/gallery/flora 19.01.2020/MM5D9783.jpg",
+      "urlCover": "../images/gallery/flora 19.01.2020/MM5D9783_cover.jpg",
       "urlThumbnail": "../images/gallery/flora 19.01.2020/MM5D9783_thumbnail.jpg",
       "alt": "Urodziny Powstańców Warszawskich we Flora Caffe"
     },
     {
       "url": "../images/gallery/flora 19.01.2020/IMG_20200119_152718.jpg",
+      "urlCover": "../images/gallery/flora 19.01.2020/IMG_20200119_152718_cover.jpg",
       "urlThumbnail": "../images/gallery/flora 19.01.2020/IMG_20200119_152718_thumbnail.jpg",
       "alt": "Urodziny Powstańców Warszawskich we Flora Caffe"
     },
     {
       "url": "../images/gallery/flora 19.01.2020/IMG_20200119_153607.jpg",
+      "urlCover": "../images/gallery/flora 19.01.2020/IMG_20200119_153607_cover.jpg",
       "urlThumbnail": "../images/gallery/flora 19.01.2020/IMG_20200119_153607_thumbnail.jpg",
       "alt": "Urodziny Powstańców Warszawskich we Flora Caffe"
     },
     {
       "url": "../images/gallery/flora 19.01.2020/IMG_8443.jpg",
+      "urlCover": "../images/gallery/flora 19.01.2020/IMG_8443_cover.jpg",
       "urlThumbnail": "../images/gallery/flora 19.01.2020/IMG_8443_thumbnail.jpg",
       "alt": "Urodziny Powstańców Warszawskich we Flora Caffe"
     }
