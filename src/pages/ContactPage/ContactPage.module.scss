@@ -136,7 +136,7 @@
   }
 }
 
-#facebook {
+.facebook {
   &:hover {
     background-color: $color-facebook;
     & .link {
@@ -148,7 +148,7 @@
   }
 }
 
-#instagram {
+.instagram {
   &:hover {
     background: $color-instagram;
     & .link {
@@ -160,7 +160,7 @@
   }
 }
 
-#youtube {
+.youtube {
   &:hover {
     background-color: $color-youtube;
     & .link {

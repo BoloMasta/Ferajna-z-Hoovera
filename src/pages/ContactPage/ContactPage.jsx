@@ -1,8 +1,42 @@
-GiRotaryPhone;
 import { GiRotaryPhone, GiMailbox, GiRingingBell } from "react-icons/gi";
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
-
 import styles from "./ContactPage.module.scss";
+
+const contactList = [
+  {
+    name: "Łukasz Kosiński",
+    phone: "+48667777615",
+  },
+  {
+    name: "Bolesław Adamiec",
+    phone: "+48693993930",
+  },
+  {
+    name: "Andrzej Ostrowski",
+    phone: "+48662242604",
+  },
+];
+
+const socialLinks = [
+  {
+    id: "facebook",
+    href: "https://www.facebook.com/ferajnazhoovera",
+    icon: <BsFacebook className={styles.listIcon} />,
+    label: "Facebook",
+  },
+  {
+    id: "instagram",
+    href: "https://www.instagram.com/ferajnazhoovera/",
+    icon: <BsInstagram className={styles.listIcon} />,
+    label: "Instagram",
+  },
+  {
+    id: "youtube",
+    href: "https://www.youtube.com/ferajnazhoovera",
+    icon: <BsYoutube className={styles.listIcon} />,
+    label: "YouTube",
+  },
+];
 
 const ContactPage = () => {
   return (
@@ -13,27 +47,16 @@ const ContactPage = () => {
         <div className={styles.grid}>
           <div className={styles.gridItem}>
             <GiRotaryPhone className={styles.icon} />
-
             <p className={styles.header}>Zadzwoń</p>
             <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <p className={styles.listName}>Łukasz Kosiński</p>
-                <a href="tel:+48667777615" className={styles.link}>
-                  + 48 667 777 615
-                </a>
-              </li>
-              <li className={styles.listItem}>
-                <p className={styles.listName}>Bolesław Adamiec</p>
-                <a href="tel:+48693993930" className={styles.link}>
-                  + 48 693 993 930
-                </a>
-              </li>
-              <li className={styles.listItem}>
-                <p className={styles.listName}>Andrzej Ostrowski</p>
-                <a href="tel:+48662242604" className={styles.link}>
-                  + 48 662 242 604
-                </a>
-              </li>
+              {contactList.map(({ name, phone }) => (
+                <li className={styles.listItem} key={phone}>
+                  <p className={styles.listName}>{name}</p>
+                  <a href={`tel:${phone}`} className={styles.link}>
+                    {phone}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -42,11 +65,7 @@ const ContactPage = () => {
             <p className={styles.header}>Napisz</p>
             <div className={styles.listItem}>
               E-mail
-              <a
-                href="mailto:
-              ferajnazhoovera@gmail.com"
-                className={styles.link}
-              >
+              <a href="mailto:ferajnazhoovera@gmail.com" className={styles.link}>
                 ferajnazhoovera@gmail.com
               </a>
             </div>
@@ -56,24 +75,14 @@ const ContactPage = () => {
             <GiRingingBell className={styles.icon} />
             <p className={styles.header}>Obserwuj</p>
             <ul className={styles.list}>
-              <li className={styles.listItem} id={styles.facebook}>
-                <a href="https://www.facebook.com/ferajnazhoovera" className={styles.link}>
-                  <BsFacebook className={styles.listIcon} />
-                  Facebook
-                </a>
-              </li>
-              <li className={styles.listItem} id={styles.instagram}>
-                <a href="https://www.instagram.com/ferajnazhoovera/" className={styles.link}>
-                  <BsInstagram className={styles.listIcon} />
-                  Instagram
-                </a>
-              </li>
-              <li className={styles.listItem} id={styles.youtube}>
-                <a href="http://www.youtube.com/ferajnazhoovera" className={styles.link}>
-                  <BsYoutube className={styles.listIcon} />
-                  Youtube
-                </a>
-              </li>
+              {socialLinks.map(({ id, href, icon, label }) => (
+                <li className={`${styles.listItem} ${styles[id]}`} key={id}>
+                  <a href={href} className={styles.link} aria-label={label}>
+                    {icon}
+                    {label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
