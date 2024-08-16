@@ -7,31 +7,37 @@
   "images": [
     {
       "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9569.jpg",
+      "urlCover": "../images/gallery/u wieniawy 2.08.2024/IMG_9569_cover.jpg",
       "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9569_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
     },
     {
       "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9756.jpg",
+      "urlCover": "../images/gallery/u wieniawy 2.08.2024/IMG_9756_cover.jpg",
       "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9756_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
     },
     {
       "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9526.jpg",
+      "urlCover": "../images/gallery/u wieniawy 2.08.2024/IMG_9526_cover.jpg",
       "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9526_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
     },
     {
       "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9575.jpg",
+      "urlCover": "../images/gallery/u wieniawy 2.08.2024/IMG_9575_cover.jpg",
       "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9575_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
     },
     {
       "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9580.jpg",
+      "urlCover": "../images/gallery/u wieniawy 2.08.2024/IMG_9580_cover.jpg",
       "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9580_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
     },
     {
       "url": "../images/gallery/u wieniawy 2.08.2024/IMG_9785.jpg",
+      "urlCover": "../images/gallery/u wieniawy 2.08.2024/IMG_9785_cover.jpg",
       "urlThumbnail": "../images/gallery/u wieniawy 2.08.2024/IMG_9785_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na obiedzie z Powstańcami Warszawskimi w restauracji U Wieniawy"
     }

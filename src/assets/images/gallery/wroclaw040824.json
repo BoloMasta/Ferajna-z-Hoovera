@@ -7,66 +7,79 @@
   "images": [
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5674.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5674_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5674_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5506.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5506_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5506_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5571.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5571_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5571_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5607.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5607_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5607_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5693.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5693_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5693_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5713.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5713_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5713_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5734.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5734_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5734_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A5793.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A5793_cover.jpg", 
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A5793_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/305A6024.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/305A6024_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/305A6024_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/DSC05116.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/DSC05116_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/DSC05116_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/DSC05137.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/DSC05137_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/DSC05137_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/DSC05180.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/DSC05180_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/DSC05180_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     },
     {
       "url": "../images/gallery/wroclaw 4.08.2024/DSC05204.jpg",
+      "urlCover": "../images/gallery/wroclaw 4.08.2024/DSC05204_cover.jpg",
       "urlThumbnail": "../images/gallery/wroclaw 4.08.2024/DSC05204_thumbnail.jpg",
       "alt": "Koncert Ferajny z Hoovera we Wrocławiu"
     }
