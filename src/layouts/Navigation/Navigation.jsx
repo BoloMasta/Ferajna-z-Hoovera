@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 import styles from "./Navigation.module.scss";
 
 const handleNavClick = (setIsMenuOpen) => {
-  setIsMenuOpen(false);
+  if (typeof setIsMenuOpen === "function") {
+    setIsMenuOpen(false);
+  }
+
   animateScroll.scrollToTop({
     duration: 500,
     smooth: true,

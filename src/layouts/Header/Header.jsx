@@ -1,15 +1,13 @@
 import Media from "react-media";
 import { Img } from "react-image";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 import Navigation from "../Navigation/Navigation";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import logo from "/images/logo.png";
 import { breakpoints } from "../../assets/breakpoints";
 import styles from "./Header.module.scss";
 
-const Header = ({ ...props }) => {
-  const { isMenuOpen, isViewOnTop } = props;
-
+const Header = ({ isMenuOpen, isViewOnTop, setIsMenuOpen }) => {
   return (
     <header className={`${styles.header} ${!isViewOnTop && styles.smallHeader}`}>
       <div className={`${styles.container} ${!isViewOnTop && styles.smallContainer}`}>
@@ -23,16 +21,21 @@ const Header = ({ ...props }) => {
         <Media queries={breakpoints}>
           {(matches) => (
             <>
-              {matches.mobile && <HamburgerMenu props={props} />}
-              {matches.tablet && <Navigation props={props} />}
-              {matches.desktop && <Navigation props={props} />}
+              {matches.mobile && (
+                <HamburgerMenu
+                  isMenuOpen={isMenuOpen}
+                  setIsMenuOpen={setIsMenuOpen}
+                  isViewOnTop={isViewOnTop}
+                />
+              )}
+              {matches.tablet || (matches.desktop && <Navigation setIsMenuOpen={setIsMenuOpen} />)}
             </>
           )}
         </Media>
       </div>
 
       <div className={isMenuOpen ? `${styles.modalMenu} ${styles.open}` : styles.modalMenu}>
-        <Navigation props={props} />
+        <Navigation setIsMenuOpen={setIsMenuOpen} />
       </div>
     </header>
   );
@@ -41,8 +44,7 @@ const Header = ({ ...props }) => {
 export default Header;
 
 Header.propTypes = {
-  props: propTypes.object,
-  isMenuOpen: propTypes.bool,
-  isViewOnTop: propTypes.bool,
-  setIsMenuOpen: propTypes.func
+  isMenuOpen: PropTypes.bool,
+  isViewOnTop: PropTypes.bool,
+  setIsMenuOpen: PropTypes.func,
 };
