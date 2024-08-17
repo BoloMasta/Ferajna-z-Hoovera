@@ -7,8 +7,10 @@ import styles from "./PlayerPage.module.scss";
 const PlayerPage = () => {
   const [track, setTrack] = useState(playlist[0].src);
 
+  const getTrackIndex = (src) => playlist.findIndex((el) => el.src === src);
+
   const nextTrack = () => {
-    const index = playlist.findIndex((el) => el.src === track);
+    const index = getTrackIndex(track);
     if (index === playlist.length - 1) {
       setTrack(playlist[0].src);
     } else {
@@ -17,7 +19,7 @@ const PlayerPage = () => {
   };
 
   const prevTrack = () => {
-    const index = playlist.findIndex((el) => el.src === track);
+    const index = getTrackIndex(track);
     if (index === 0) {
       setTrack(playlist[playlist.length - 1].src);
     } else {
