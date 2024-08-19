@@ -1,10 +1,12 @@
 import Media from "react-media";
 import { Img } from "react-image";
+import ImageGallery from "react-image-gallery";
 import PropTypes from "prop-types";
 import Loader from "../../layouts/Loader/Loader";
 import NoPhoto from "../../../public/images/brak-zdjecia.png";
 import { breakpoints } from "../../assets/breakpoints";
 import styles from "./About.module.scss";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const AboutText = ({ children }) => <p className={styles.text}>{children}</p>;
 
@@ -47,7 +49,25 @@ const About = () => {
                     </AboutText>
                   </div>
                   <div className={styles.gridItem}>
-                    <AboutImage src="../images/about/about/_KUN8588.jpg" />
+                    <ImageGallery
+                      items={[
+                        {
+                          original: "../images/about/about/skwer1.jpg",
+                        },
+                        {
+                          original: "../images/about/about/skwer3.jpg",
+                        },
+                        {
+                          original: "../images/about/about/IMG_2636.jpg",
+                        },
+                      ]}
+                      showBullets
+                      lazyLoad={true}
+                      additionalClass={styles.image}
+                      showPlayButton={false}
+                      showFullscreenButton={false}
+                      showNav={false}
+                    />
                   </div>
                   <div className={styles.gridItem}>
                     <AboutText>
@@ -63,7 +83,7 @@ const About = () => {
                     </AboutText>
                   </div>
                   <div className={styles.gridItem}>
-                    <AboutImage src="../images/about/about/IMG_2636.jpg" />
+                    <AboutImage src="../images/about/about/fot. Stefan Różycki 2.jpg" />
                   </div>
                   <div className={styles.gridItem}>
                     <AboutText>
