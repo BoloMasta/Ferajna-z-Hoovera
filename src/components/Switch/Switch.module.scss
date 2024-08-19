@@ -5,7 +5,7 @@
 .gallery {
   --z: 25px; /* zig-zag */
   --s: 190px; /* size */
-  --g: 5px; /* gap */
+  --g: 1px; /* gap */
 
   display: grid;
   gap: var(--g);
@@ -17,38 +17,44 @@
   @media screen and (min-width: 500px) {
     --z: 28px; /* zig-zag */
     --s: 220px; /* size */
-    --g: 6px; /* gap */
+    --g: 1px; /* gap */
   }
 
   @include breakpoint($breakpoint-tablet) {
     --z: 30px;
     --s: 330px;
-    --g: 7px;
+    --g: 1px;
   }
 
   @include breakpoint($breakpoint-desktop) {
     --z: 32px;
     --s: 400px;
-    --g: 8px;
+    --g: 1px;
   }
+}
+
+picture {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .image {
   width: 0;
-  min-width: calc(100% + var(--z) / 2);
+  min-width: calc(102% + var(--z) / 2);
   height: var(--s);
   object-fit: cover;
   -webkit-mask: var(--mask);
   mask: var(--mask);
   cursor: pointer;
-  transition: 0.5s;
+  transition: $transition-slow;
   filter: grayscale(1);
   border: 1px solid $color-border;
   border-radius: 5px;
   box-shadow: 2px 2px 0 var(--shadow-color), 3px 3px 0 var(--shadow-color-dark);
 }
 
-.gallery > img:hover {
+.gallery > picture > img:hover {
   width: calc(var(--s) / 2);
   filter: grayscale(0);
 }
