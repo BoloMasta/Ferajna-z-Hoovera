@@ -21,7 +21,7 @@ const Lead = () => {
               Serwus
             </h1>
           ) : (
-            <Parallax speed={20} translateY={[250, -100]} opacity={[-3, 2]}>
+            <Parallax speed={20} translateY={[200, 0]} opacity={[-3, 2]}>
               <h1
                 className={styles.title}
                 ref={parallax.ref}

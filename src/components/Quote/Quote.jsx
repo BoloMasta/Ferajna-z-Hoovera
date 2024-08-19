@@ -27,8 +27,8 @@ const Quote = () => {
             opacity={[0.5, 1]}
             scale={[0.6, 1]}
             translateY={[50, 0]}
-            startScroll={matches.tablet ? 950 : 1100}
-            endScroll={matches.tablet ? 1300 : 1500}
+            startScroll={matches.tablet ? 900 : 1100}
+            endScroll={matches.tablet ? 1200 : 1500}
           >
             <section className={styles.quote}>
               <div className={styles.box}>

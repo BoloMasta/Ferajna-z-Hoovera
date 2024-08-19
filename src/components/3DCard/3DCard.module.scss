@@ -43,7 +43,7 @@
 }
 
 .description {
-  min-width: 220px;
+  min-width: 250px;
   width: 48%;
   height: 100%;
   padding: var(--padding-half);
@@ -65,6 +65,7 @@
   position: relative;
   color: $color-text;
   text-shadow: 0 0 10px $color-shadow;
+  text-wrap: nowrap;
 
   @include breakpoint($breakpoint-tablet) {
     color: $color-background;
@@ -85,12 +86,16 @@
     box-shadow: 0 0 10px $color-shadow-dark;
 
     @include breakpoint($breakpoint-tablet) {
+      width: 130%;
       display: block;
       top: 2px;
+      right: 0%;
     }
 
     @include breakpoint($breakpoint-desktop) {
+      width: 100%;
       top: 15px;
+      right: 20%;
     }
   }
 }
