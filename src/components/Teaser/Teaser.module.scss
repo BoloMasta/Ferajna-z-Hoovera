@@ -10,12 +10,12 @@
     width: calc(100vw - 10px);
     height: 100%;
     position: absolute;
-    // background: linear-gradient(
-    //   180deg,
-    //   rgba(44, 19, 8, 0.76) 0%,
-    //   rgba(51, 21, 7, 0.418) 60%,
-    //   $color-background 100%
-    // );
+    background: linear-gradient(
+      180deg,
+      rgba(44, 19, 8, 0.3) 0%,
+      rgba(51, 21, 7, 0.2) 20%,
+      $color-background 100%
+    );
   }
 }
 

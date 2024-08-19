@@ -83,36 +83,48 @@ const Teaser = () => {
         <div className={styles.grid}>
           <div className={styles.gridItem}>
             <Link to="/about" onClick={smoothScrollToTop}>
-              <img
-                src="../images/teaser/teaser1.jpg"
-                alt="Ferajna z Hoovera"
-                className={styles.image}
-                loading="lazy"
-              />
+              <picture>
+                <source media={breakpoints.mobile} srcSet="../images/teaser/teaser1_mobile.jpg" />
+                <source media={breakpoints.tablet} srcSet="../images/teaser/teaser1.jpg" />
+                <img
+                  src="../images/teaser/teaser1.jpg"
+                  alt="Ferajna z Hoovera"
+                  className={styles.image}
+                  loading="lazy"
+                />
+              </picture>
               <p className={styles.description}>Dowiedz się kim jesteśmy</p>
             </Link>
           </div>
 
           <div className={styles.gridItem}>
             <Link to="/music" onClick={smoothScrollToTop}>
-              <img
-                src="../images/teaser/teaser2.jpg"
-                alt="Ferajna z Hoovera"
-                className={styles.image}
-                loading="lazy"
-              />
+              <picture>
+                <source media={breakpoints.mobile} srcSet="../images/teaser/teaser2_mobile.jpg" />
+                <source media={breakpoints.tablet} srcSet="../images/teaser/teaser2.jpg" />
+                <img
+                  src="../images/teaser/teaser2.jpg"
+                  alt="Ferajna z Hoovera"
+                  className={styles.image}
+                  loading="lazy"
+                />
+              </picture>
               <p className={styles.description}>Posłuchaj co gramy</p>
             </Link>
           </div>
 
           <div className={styles.gridItem}>
             <Link to="/contact" onClick={smoothScrollToTop}>
-              <img
-                src="../images/teaser/teaser3.jpg"
-                alt="Ferajna z Hoovera"
-                className={styles.image}
-                loading="lazy"
-              />
+              <picture>
+                <source media={breakpoints.mobile} srcSet="../images/teaser/teaser3_mobile.jpg" />
+                <source media={breakpoints.tablet} srcSet="../images/teaser/teaser3.jpg" />
+                <img
+                  src="../images/teaser/teaser3.jpg"
+                  alt="Ferajna z Hoovera"
+                  className={styles.image}
+                  loading="lazy"
+                />
+              </picture>
               <p className={styles.description}>Skontaktuj się z nami</p>
             </Link>
           </div>
