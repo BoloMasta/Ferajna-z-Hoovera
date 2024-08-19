@@ -17,8 +17,10 @@ const MusicPage = () => (
                   <div className={styles.gridItem}>
                     <h3 className={styles.header}>Nasza płyta</h3>
                     <p className={styles.text}>
-                      Prezentujemy naszą płytę z piosenkami powstańczymi i nie tylko, wydaną razem
-                      ze śpiewnikiem. Zestaw do nabycia w sklepie internetowym wydawnictwa{" "}
+                      Prezentujemy naszą płytę z piosenkami powstańczymi i innymi utworami, wydaną
+                      razem z pięknie ilustrowanym śpiewnikiem. Zawiera on dwadzieścia piosenek z
+                      historii Polski, z zapisem linii melodycznej i opisem ich powstania. Zestaw
+                      jest dostępny w sklepie internetowym wydawnictwa{" "}
                       <a
                         href="https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24"
                         target="_blank"
@@ -124,8 +126,10 @@ const MusicPage = () => (
                   <div className={styles.gridItem}>
                     <h3 className={styles.header}>Nasza płyta</h3>
                     <p className={styles.text}>
-                      Prezentujemy naszą płytę z piosenkami powstańczymi i nie tylko, wydaną razem
-                      ze śpiewnikiem. Zestaw do nabycia w sklepie internetowym wydawnictwa{" "}
+                      Prezentujemy naszą płytę z piosenkami powstańczymi i innymi utworami, wydaną
+                      razem z pięknie ilustrowanym śpiewnikiem. Zawiera on dwadzieścia piosenek z
+                      historii Polski, z zapisem linii melodycznej i opisem ich powstania. Zestaw
+                      jest dostępny w sklepie internetowym wydawnictwa{" "}
                       <a
                         href="https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24"
                         target="_blank"

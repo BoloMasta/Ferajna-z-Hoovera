@@ -77,10 +77,11 @@ const Card = () => {
       </Media>
 
       <div className={styles.description}>
-        <h2 className={styles.title}>Kup płytę</h2>
+        <h2 className={styles.title}>Śpiewaj z nami</h2>
         <p className={styles.text}>
-          Zaprszamy do zakupu naszej płyty. Wszystkie utwory zostały nagrane w Quality Studio w
-          Warszawie. Płyta jest dostępna w sprzedaży w sklepie internetowym wydawnictwa{" "}
+          Zapraszamy do zakupu naszego pięknie ilustrowanego śpiewnika, który można nabyć razem z
+          płytą Ferajny. Znajdziecie na niej najpiękniejsze utwory patriotyczne w naszym wykonaniu.
+          Zestaw jest dostępny w sklepie internetowym wydawnictwa{" "}
           <a
             href="https://wydawnictwopoczekalnia.pl/pl/p/Kto-sie-tak-wydziera/24"
             target="_blank"
