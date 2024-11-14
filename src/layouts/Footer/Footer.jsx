@@ -43,7 +43,7 @@ const Footer = () => {
 
             <div className={styles.socialsIcon} id={styles.iconYoutube}>
               <a
-                href="https://www.youtube.com/ferajnazhoovera"
+                href="https://www.youtube.com/@ferajnazhoovera4955/videos"
                 target="_blank"
                 rel="noreferrer"
                 className={styles.link}

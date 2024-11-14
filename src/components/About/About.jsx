@@ -3,7 +3,7 @@ import { Img } from "react-image";
 import ImageGallery from "react-image-gallery";
 import PropTypes from "prop-types";
 import Loader from "../../layouts/Loader/Loader";
-import NoPhoto from "../../../public/images/brak-zdjecia.png";
+import NoPhoto from "/images/brak-zdjecia.png?url";
 import { breakpoints } from "../../assets/breakpoints";
 import styles from "./About.module.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";

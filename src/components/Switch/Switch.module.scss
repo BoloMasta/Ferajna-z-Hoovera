@@ -17,19 +17,19 @@
   @media screen and (min-width: 500px) {
     --z: 28px; /* zig-zag */
     --s: 220px; /* size */
-    --g: 1px; /* gap */
+    --g: 13px; /* gap */
   }
 
   @include breakpoint($breakpoint-tablet) {
     --z: 30px;
     --s: 330px;
-    --g: 1px;
+    --g: 18px;
   }
 
   @include breakpoint($breakpoint-desktop) {
     --z: 32px;
     --s: 400px;
-    --g: 1px;
+    --g: 22px;
   }
 }
 

@@ -8,7 +8,7 @@ import Loader from "../../layouts/Loader/Loader";
 import Button from "../../components/Button/Button";
 import styles from "./GalleryPage.module.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";
-import NoPhoto from "/images/brak-zdjecia.png";
+import NoPhoto from "/images/brak-zdjecia.png?url";
 
 const GalleryPage = () => {
   const [galleryData, setGalleryData] = useState(null);

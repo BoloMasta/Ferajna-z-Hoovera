@@ -32,7 +32,7 @@ const socialLinks = [
   },
   {
     id: "youtube",
-    href: "https://www.youtube.com/ferajnazhoovera",
+    href: "https://www.youtube.com/@ferajnazhoovera4955/videos",
     icon: <BsYoutube className={styles.listIcon} />,
     label: "YouTube",
   },
@@ -77,7 +77,13 @@ const ContactPage = () => {
             <ul className={styles.list}>
               {socialLinks.map(({ id, href, icon, label }) => (
                 <li className={`${styles.listItem} ${styles[id]}`} key={id}>
-                  <a href={href} className={styles.link} aria-label={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.link}
+                    aria-label={label}
+                  >
                     {icon}
                     {label}
                   </a>
