@@ -21,10 +21,10 @@ const Navigation = ({ setIsMenuOpen }) => {
       <ul className={styles.list}>
         {[
           { to: "/", label: "Strona główna" },
-          { to: "/about", label: "O nas" },
-          { to: "/music", label: "Muzyka" },
-          { to: "/gallery", label: "Galeria" },
-          { to: "/contact", label: "Kontakt" },
+          { to: "/onas", label: "O nas" },
+          { to: "/muzyka", label: "Muzyka" },
+          { to: "/galeria", label: "Galeria" },
+          { to: "/kontakt", label: "Kontakt" },
         ].map(({ to, label }) => (
           <li className={styles.item} key={to}>
             <NavLink

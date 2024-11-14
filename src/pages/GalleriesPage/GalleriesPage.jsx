@@ -9,7 +9,7 @@ const GalleriesPage = () => {
   const navigate = useNavigate();
 
   const handleGalleryClick = (galleryId) => {
-    navigate(`/gallery/${galleryId}`);
+    navigate(`/galeria/${galleryId}`);
   };
 
   return (

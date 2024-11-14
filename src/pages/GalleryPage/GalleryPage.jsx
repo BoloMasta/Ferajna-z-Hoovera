@@ -8,7 +8,7 @@ import Loader from "../../layouts/Loader/Loader";
 import Button from "../../components/Button/Button";
 import styles from "./GalleryPage.module.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";
-import NoPhoto from "/images/brak-zdjecia.png?url";
+import NoPhoto from "/images/brak-zdjecia.png";
 
 const GalleryPage = () => {
   const [galleryData, setGalleryData] = useState(null);
@@ -40,7 +40,8 @@ const GalleryPage = () => {
   }, [galleryData]);
 
   const handleImageClick = (index) => setCurrentImageIndex(index + 1);
-  const handleBackClick = () => navigate("/gallery");
+  const handleBackClick = () =>
+    currentImageIndex > 0 ? setCurrentImageIndex(0) : navigate("/galeria");
 
   if (!galleryData) {
     return <Loader />;

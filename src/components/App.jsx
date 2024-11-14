@@ -63,11 +63,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/music" element={<MusicPage />} />
-          <Route path="/gallery" element={<GalleriesPage />} />
-          <Route path="/gallery/:galleryId" element={<GalleryPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/onas" element={<AboutPage />} />
+          <Route path="/muzyka" element={<MusicPage />} />
+          <Route path="/galeria" element={<GalleriesPage />} />
+          <Route path="/galeria/:galleryId" element={<GalleryPage />} />
+          <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/ktosietakwydziera" element={<PlayerPage />} />
           <Route path="/ktosietakwydzierapobierzplyte" element={<DownloadPage />} />
           <Route path="*" element={<Navigate to="/" />} />

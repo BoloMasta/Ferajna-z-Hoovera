@@ -82,7 +82,7 @@ const Teaser = () => {
 
         <div className={styles.grid}>
           <div className={styles.gridItem}>
-            <Link to="/about" onClick={smoothScrollToTop}>
+            <Link to="/onas" onClick={smoothScrollToTop}>
               <picture>
                 <source media={breakpoints.mobile} srcSet="../images/teaser/teaser1_mobile.jpg" />
                 <source media={breakpoints.tablet} srcSet="../images/teaser/teaser1.jpg" />
@@ -98,7 +98,7 @@ const Teaser = () => {
           </div>
 
           <div className={styles.gridItem}>
-            <Link to="/music" onClick={smoothScrollToTop}>
+            <Link to="/muzyka" onClick={smoothScrollToTop}>
               <picture>
                 <source media={breakpoints.mobile} srcSet="../images/teaser/teaser2_mobile.jpg" />
                 <source media={breakpoints.tablet} srcSet="../images/teaser/teaser2.jpg" />
@@ -114,7 +114,7 @@ const Teaser = () => {
           </div>
 
           <div className={styles.gridItem}>
-            <Link to="/contact" onClick={smoothScrollToTop}>
+            <Link to="/kontakt" onClick={smoothScrollToTop}>
               <picture>
                 <source media={breakpoints.mobile} srcSet="../images/teaser/teaser3_mobile.jpg" />
                 <source media={breakpoints.tablet} srcSet="../images/teaser/teaser3.jpg" />
