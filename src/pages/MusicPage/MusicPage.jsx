@@ -15,6 +15,46 @@ const MusicPage = () => (
               {matches.mobile && (
                 <>
                   <div className={styles.gridItem}>
+                    <h3 className={styles.header}>10. urodziny</h3>
+                    <p className={styles.text}>
+                      Zapraszamy do obejrzenia filmu zrealizowanego 1 sierpnia 2024 w Warszawie, z
+                      okazji naszego 10-lecia! Ekipa{" "}
+                      <a
+                        href="https://fbworks.pl/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        F&B Works
+                      </a>{" "}
+                      uchwyciła każdy wyjątkowy moment tego dnia, a w tle usłyszycie realizację od
+                      niezastąpionego{" "}
+                      <a
+                        href="https://siekier.pl/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Siekier Audio
+                      </a>
+                      .
+                    </p>
+                  </div>
+                  <div className={styles.gridItem}>
+                    <ReactPlayer
+                      url="https://www.youtube-nocookie.com/embed/uMa0_u6S-6g"
+                      controls
+                      className={styles.video}
+                      width="100%"
+                      height="auto"
+                    />
+                  </div>
+
+                  <div className={styles.gridSpacer}>
+                    <img src="../images/loader.png" className={styles.spacer} alt="spacer" />
+                  </div>
+
+                  <div className={styles.gridItem}>
                     <h3 className={styles.header}>Nasza płyta</h3>
                     <p className={styles.text}>
                       Prezentujemy naszą płytę z piosenkami powstańczymi i innymi utworami, wydaną
@@ -82,7 +122,7 @@ const MusicPage = () => (
                       Obie produkcje są dostępne bezpłatnie na YouTube i są popularne wśród uczniów
                       podczas lekcji historii i muzyki. Za zdjęcia i montaż odpowiadała firma{" "}
                       <a
-                        href="https://www.facebook.com/FBWorksVideo/"
+                        href="https://fbworks.pl/"
                         target="_blank"
                         rel="noreferrer"
                         style={{ fontWeight: "bold" }}
@@ -117,6 +157,46 @@ const MusicPage = () => (
               {(matches.tablet || matches.desktop) && (
                 <>
                   <div className={styles.gridItem}>
+                    <h3 className={styles.header}>10. urodziny</h3>
+                    <p className={styles.text}>
+                      Zapraszamy do obejrzenia filmu zrealizowanego 1 sierpnia 2024 w Warszawie, z
+                      okazji naszego 10-lecia! Ekipa{" "}
+                      <a
+                        href="https://fbworks.pl/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        F&B Works
+                      </a>{" "}
+                      uchwyciła każdy wyjątkowy moment tego dnia, a w tle usłyszycie realizację od
+                      niezastąpionego{" "}
+                      <a
+                        href="https://siekier.pl/"
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{ fontWeight: "bold" }}
+                      >
+                        Siekier Audio
+                      </a>
+                      .
+                    </p>
+                  </div>
+                  <div className={styles.gridItem}>
+                    <ReactPlayer
+                      url="https://www.youtube-nocookie.com/embed/uMa0_u6S-6g"
+                      controls
+                      className={styles.video}
+                      width="100%"
+                      height="auto"
+                    />
+                  </div>
+
+                  <div className={styles.gridSpacer}>
+                    <img src="../images/loader.png" className={styles.spacer} alt="spacer" />
+                  </div>
+
+                  <div className={styles.gridItem}>
                     <img
                       className={styles.image}
                       src="/images/plyta.jpg"
@@ -201,7 +281,7 @@ const MusicPage = () => (
                       Obie produkcje są dostępne bezpłatnie na YouTube i są popularne wśród uczniów
                       podczas lekcji historii i muzyki. Za zdjęcia i montaż odpowiadała firma{" "}
                       <a
-                        href="https://www.facebook.com/FBWorksVideo/"
+                        href="https://fbworks.pl/"
                         target="_blank"
                         rel="noreferrer"
                         style={{ fontWeight: "bold" }}
