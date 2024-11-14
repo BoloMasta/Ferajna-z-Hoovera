@@ -1,0 +1,78 @@
+{
+  "galeryId": "festiwal111124",
+  "location": "Festiwal Niepodległa",
+  "date": "11.11.2024",
+  "author": "Tomasz Tołłoczko",
+
+  "images": [
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0505-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0505-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0505-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0506-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0506-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0506-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0510-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0510-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0510-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0513-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0513-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0513-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0514-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0514-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0514-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0516-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0516-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0516-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0517-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0517-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0517-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0520-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0520-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0520-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0521-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0521-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0521-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/festiwal 11.11.2024/0524-11.11.2024_Festiwal-November 11 2024_websize.jpg",
+      "urlCover": "../images/gallery/festiwal 11.11.2024/0524-11.11.2024_Festiwal-November 11 2024_websize_cover.jpg",
+      "urlThumbnail": "../images/gallery/festiwal 11.11.2024/0524-11.11.2024_Festiwal-November 11 2024_websize_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera podczas Festiwalu Niepodległa '24 na Krakowskim Przedmieściu w Warszawie"
+    }
+  ]
+}
