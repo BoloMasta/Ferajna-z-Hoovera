@@ -36,7 +36,7 @@ function App() {
           property="og:description"
           content="Oficjalna strona zespołu Ferajna z Hoovera. Znajdziesz tutaj informacje o zespole, muzyce i kontakt."
         />
-        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:image" content="https://ferajnazhoovera.pl/images/logo.png" />
         <meta property="og:url" content="https://ferajnazhoovera.pl/" />
         <meta property="og:type" content="website" />
 
@@ -47,7 +47,7 @@ function App() {
           name="twitter:description"
           content="Oficjalna strona zespołu Ferajna z Hoovera. Znajdziesz tutaj informacje o zespole, muzyce i kontakt."
         />
-        <meta name="twitter:image" content="/images/logo.png" />
+        <meta name="twitter:image" content="https://ferajnazhoovera.pl/images/logo.png" />
         <meta name="twitter:url" content="https://ferajnazhoovera.pl/" />
 
         {/* Canonical URL to avoid duplicate content issues */}
