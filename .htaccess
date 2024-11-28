@@ -1,0 +1,19 @@
+RewriteEngine on
+
+# Ustawienia HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^ferajnazhoovera\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.ferajnazhoovera\.pl$
+RewriteRule ^/?$ "https\:\/\/ferajnazhoovera\.pl\/" [R=301,L]
+
+# Sprawdzamy, czy żądany plik lub katalog istnieje (jeśli tak, nie przekierowujemy)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Wszystkie inne żądania (brak pliku/katalogu) przekierowujemy do index.html
+RewriteRule ^ /index.html [L]
+
+# Wyłączenie listowania katalogów
+Options -Indexes
