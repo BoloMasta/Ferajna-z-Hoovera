@@ -7,6 +7,10 @@ RewriteCond %{HTTP_HOST} ^ferajnazhoovera\.pl$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.ferajnazhoovera\.pl$
 RewriteRule ^/?$ "https\:\/\/ferajnazhoovera\.pl\/" [R=301,L]
 
+# Przekierowanie na stronę główną, jeśli żądanie dotyczy katalogu
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ / [R=301,L]
+
 # Sprawdzamy, czy żądany plik lub katalog istnieje (jeśli tak, nie przekierowujemy)
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
