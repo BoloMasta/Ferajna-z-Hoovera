@@ -20,6 +20,7 @@ import wroclaw040824 from "./wroclaw040824.json";
 import uwieniawy020824 from "./u wieniawy020824.json";
 import skwer010824 from "./skwer010824.json";
 import festiwal111124 from "./festiwal111124.json";
+import kanalzero010825 from "./kanal zero010825.json";
 
 export const galleries = [
   bemowo010821,
@@ -42,6 +43,7 @@ export const galleries = [
   uwieniawy020824,
   skwer010824,
   festiwal111124,
+  kanalzero010825,
 ];
 
 export const galleriesSortedCovers = galleries
