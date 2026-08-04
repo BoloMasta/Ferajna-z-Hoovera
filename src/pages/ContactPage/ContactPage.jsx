@@ -1,5 +1,5 @@
 import { GiRotaryPhone, GiMailbox, GiRingingBell } from "react-icons/gi";
-import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsYoutube, BsTiktok } from "react-icons/bs";
 import styles from "./ContactPage.module.scss";
 
 const contactList = [
@@ -35,6 +35,12 @@ const socialLinks = [
     href: "https://www.youtube.com/@ferajnazhoovera4955/videos",
     icon: <BsYoutube className={styles.listIcon} />,
     label: "YouTube",
+  },
+  {
+    id: "tiktok",
+    href: "https://www.tiktok.com/@ferajnazhoovera",
+    icon: <BsTiktok className={styles.listIcon} />,
+    label: "TikTok",
   },
 ];
 

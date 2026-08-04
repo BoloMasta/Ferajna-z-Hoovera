@@ -172,6 +172,18 @@
   }
 }
 
+.tiktok {
+  &:hover {
+    background-color: $color-tiktok;
+    & .link {
+      color: $color-secondary;
+      &::before {
+        transform: scaleX(0);
+      }
+    }
+  }
+}
+
 .image {
   position: absolute;
   bottom: 0;

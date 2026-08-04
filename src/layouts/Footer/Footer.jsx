@@ -1,5 +1,5 @@
 import logo from "/images/logo.png";
-import { BsFacebook, BsInstagram, BsYoutube, BsEnvelopeAt } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsYoutube, BsTiktok, BsEnvelopeAt } from "react-icons/bs";
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
@@ -49,6 +49,17 @@ const Footer = () => {
                 className={styles.link}
               >
                 <BsYoutube className={styles.icon} />
+              </a>
+            </div>
+
+            <div className={styles.socialsIcon} id={styles.iconTiktok}>
+              <a
+                href="https://www.tiktok.com/@ferajnazhoovera"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                <BsTiktok className={styles.icon} />
               </a>
             </div>
           </div>
