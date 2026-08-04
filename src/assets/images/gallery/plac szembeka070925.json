@@ -1,0 +1,82 @@
+{
+  "galeryId": "placszembeka070925",
+  "location": "Plac Szembeka",
+  "date": "7.9.2025",
+  "author": "Dorota i Wojciech Szota",
+
+  "images": [
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/5.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/5_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/5_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/1.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/1_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/1_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/2.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/2_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/2_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/3.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/3_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/3_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/4.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/4_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/4_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/8.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/8_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/8_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/6.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/6_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/6_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/7.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/7_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/7_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/9.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/9_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/9_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/10.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/10_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/10_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/11.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/11_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/11_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    },
+    {
+      "url": "../images/gallery/plac szembeka 7.09.2025/12.jpg",
+      "urlCover": "../images/gallery/plac szembeka 7.09.2025/12_cover.jpg",
+      "urlThumbnail": "../images/gallery/plac szembeka 7.09.2025/12_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera na Placu Szembeka w Warszawie"
+    }
+  ]
+}

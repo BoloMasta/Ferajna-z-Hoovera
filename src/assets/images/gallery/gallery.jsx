@@ -21,6 +21,9 @@ import uwieniawy020824 from "./u wieniawy020824.json";
 import skwer010824 from "./skwer010824.json";
 import festiwal111124 from "./festiwal111124.json";
 import kanalzero010825 from "./kanal zero010825.json";
+import rakowiecka020826 from "./rakowiecka020826.json";
+import bemowo010826 from "./bemowo010826.json";
+import placszembeka070925 from "./plac szembeka070925.json";
 
 export const galleries = [
   bemowo010821,
@@ -44,6 +47,9 @@ export const galleries = [
   skwer010824,
   festiwal111124,
   kanalzero010825,
+  rakowiecka020826,
+  bemowo010826,
+  placszembeka070925,
 ];
 
 export const galleriesSortedCovers = galleries

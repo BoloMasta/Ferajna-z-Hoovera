@@ -1,0 +1,58 @@
+{
+  "galeryId": "bemowo010826",
+  "location": "Bemowo",
+  "date": "1.08.2026",
+  "author": "Electrolite.wm",
+
+  "images": [
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/8.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/8_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/8_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/4.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/4_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/4_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/1.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/1_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/1_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/2.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/2_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/2_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/3.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/3_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/3_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/5.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/5_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/5_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/6.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/6_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/6_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    },
+    {
+      "url": "../images/gallery/bemowo 1.08.2026/7.jpg",
+      "urlCover": "../images/gallery/bemowo 1.08.2026/7_cover.jpg",
+      "urlThumbnail": "../images/gallery/bemowo 1.08.2026/7_thumbnail.jpg",
+      "alt": "Koncert Ferajny z Hoovera w Amfiteatrze Bemowo"
+    }
+  ]
+}

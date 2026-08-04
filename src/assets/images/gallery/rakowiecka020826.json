@@ -1,0 +1,69 @@
+{
+  "galeryId": "rakowiecka020826",
+  "location": "Muzeum na Rakowieciej",
+  "date": "2.08.2026",
+  "author": "Andrzej Wysocki",
+
+  "images": [
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/4.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/4_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/4_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/1.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/1_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/1_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/3.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/3_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/3_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/2.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/2_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/2_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/6.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/6_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/6_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/5.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/5_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/5_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/7.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/7_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/7_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/8.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/8_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/8_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/9.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/9_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/9_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    },
+    {
+      "url": "../images/gallery/rakowiecka 2.08.2026/10.jpg",
+      "urlCover": "../images/gallery/rakowiecka 2.08.2026/10_cover.jpg",
+      "urlThumbnail": "../images/gallery/rakowiecka 2.08.2026/10_thumbnail.jpg",
+      "alt": "Ferajna z Hoovera w Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL w Warszawie"
+    }
+  ]
+}
