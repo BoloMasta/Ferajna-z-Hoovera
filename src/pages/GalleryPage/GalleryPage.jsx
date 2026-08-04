@@ -8,12 +8,12 @@ import Loader from "../../layouts/Loader/Loader";
 import Button from "../../components/Button/Button";
 import styles from "./GalleryPage.module.scss";
 import "react-image-gallery/styles/scss/image-gallery.scss";
-import NoPhoto from "/images/brak-zdjecia.png";
+import NoPhoto from "/images/brak-zdjecia.png?url";
 
 const GalleryPage = () => {
   const [galleryData, setGalleryData] = useState(null);
   const [formattedImages, setFormattedImages] = useState([]);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(null);
   const { galleryId } = useParams();
   const navigate = useNavigate();
 
@@ -32,23 +32,72 @@ const GalleryPage = () => {
     if (galleryData?.images) {
       setFormattedImages(
         galleryData.images.map((image) => ({
-          original: image.url,
-          thumbnail: image.urlThumbnail,
-        }))
+          original: image.url || NoPhoto,
+          thumbnail: image.urlThumbnail || image.url || NoPhoto,
+          // alt/texty do użycia w rendererach
+          originalAlt: image.alt || "Zdjęcie",
+          thumbnailAlt: image.alt || "Miniaturka",
+        })),
       );
     }
   }, [galleryData]);
 
-  const handleImageClick = (index) => setCurrentImageIndex(index + 1);
   const handleBackClick = () =>
-    currentImageIndex > 0 ? setCurrentImageIndex(0) : navigate("/galeria");
+    currentImageIndex !== null ? setCurrentImageIndex(null) : navigate("/galeria");
+
+  const handleImageClick = (index) => setCurrentImageIndex(index);
+
+  useEffect(() => {
+    const onKeyDown = (e) => {
+      if (e.key !== "Escape") return;
+
+      if (currentImageIndex !== null) {
+        setCurrentImageIndex(null);
+      } else {
+        navigate("/galeria");
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [currentImageIndex, navigate]);
 
   if (!galleryData) {
     return <Loader />;
   }
 
   const { images, location, date, author } = galleryData;
-  const isGalleryView = currentImageIndex > 0;
+  const isGalleryView = currentImageIndex !== null;
+
+  // custom renderer for main image: replaces broken image with NoPhoto on error
+  const renderItem = (item) => (
+    <div className="image-gallery-image" style={{ width: "100%" }}>
+      <img
+        src={item.original || NoPhoto}
+        alt={item.originalAlt || "Zdjęcie"}
+        onError={(e) => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src = NoPhoto;
+        }}
+        draggable={false}
+        style={{ width: "100%", height: "auto", objectFit: "contain", maxHeight: "80vh" }}
+      />
+    </div>
+  );
+
+  // custom renderer for thumbnail: same fallback behavior
+  const renderThumbInner = (item) => (
+    <img
+      src={item.thumbnail || item.original || NoPhoto}
+      alt={item.thumbnailAlt || item.originalAlt || "Miniaturka"}
+      onError={(e) => {
+        e.currentTarget.onerror = null;
+        e.currentTarget.src = NoPhoto;
+      }}
+      draggable={false}
+      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+    />
+  );
 
   return (
     <div className={styles.gallery}>
@@ -66,22 +115,36 @@ const GalleryPage = () => {
         {!isGalleryView ? (
           <div className={styles.grid}>
             {images.map((image, index) => (
-              <div className={styles.gridItem} key={index}>
+              <button
+                type="button"
+                className={styles.gridItem}
+                key={image.url || index}
+                onClick={() => handleImageClick(index)}
+                aria-label={`Otwórz zdjęcie ${index + 1}`}
+              >
                 <Img
-                  src={image.urlCover}
-                  alt={image.alt}
+                  src={image.urlCover || NoPhoto}
+                  alt={image.alt || `Zdjęcie ${index + 1}`}
                   className={styles.image}
                   loading="lazy"
                   loader={<Loader />}
-                  unloader={<img src={NoPhoto} alt="Brak zdjęcia" className={styles.image} />}
-                  onClick={() => handleImageClick(index)}
+                  unloader={
+                    <img
+                      src={NoPhoto}
+                      alt="Brak zdjęcia"
+                      className={styles.image}
+                      onClick={() => handleImageClick(index)}
+                    />
+                  }
                 />
-              </div>
+              </button>
             ))}
           </div>
         ) : (
           <ImageGallery
             items={formattedImages}
+            renderItem={renderItem}
+            renderThumbInner={renderThumbInner}
             showPlayButton
             showFullscreenButton
             showNav
@@ -91,8 +154,9 @@ const GalleryPage = () => {
             slideDuration={500}
             slideInterval={3000}
             thumbnailPosition="bottom"
-            startIndex={currentImageIndex - 1}
+            startIndex={currentImageIndex}
             additionalClass={styles.imageGallery}
+            onSlide={(index) => setCurrentImageIndex(index)}
           />
         )}
       </div>
