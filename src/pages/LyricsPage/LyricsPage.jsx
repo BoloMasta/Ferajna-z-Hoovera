@@ -57,7 +57,7 @@ const LyricsPage = () => {
           </Button>
 
           <article className={styles.lyrics}>
-            <pre>{selected.lyrics}</pre>
+            <div className={styles.lyricsText}>{selected.lyrics}</div>
           </article>
         </div>
       </section>

@@ -18,8 +18,12 @@
   }
 }
 
+/* Przyciski: przypięty do góry kontenera (może zostać "na górze") */
 .button {
+  position: absolute;
+  top: var(--padding-half);
   right: 0;
+  z-index: 5;
 
   @include breakpoint($breakpoint-tablet) {
     right: var(--padding-half);
@@ -61,7 +65,10 @@
   width: 100%;
   cursor: pointer;
   transition: color 0.3s ease;
-  white-space: nowrap;
+
+  /* Pozwól tytułom zawijać na małych ekranach zamiast wyjeżdżać */
+  white-space: normal;
+  overflow-wrap: anywhere;
 
   &::before {
     background: $color-highlight;
@@ -92,6 +99,7 @@
   font-weight: bold;
 }
 
+/* Tekst piosenki: usunięty wewnętrzny scroll, tekst przewija się razem ze stroną */
 .lyrics {
   margin-top: 1rem;
   background: #fbfbfb;
@@ -107,18 +115,44 @@
     "Helvetica Neue",
     Arial;
   line-height: 1.6;
-  white-space: pre-wrap;
   font-size: 1rem;
   width: 100%;
   max-width: 600px;
 
-  /* nowe: ograniczona wysokość i scroll wewnętrzny */
-  max-height: 60vh;
-  overflow: auto;
+  /* usunięto ograniczoną wysokość i overflow (żadnych wewnętrznych pasków przewijania) */
 }
 
+/* Kontrolowany pre-wrap wewnątrz */
+.lyricsText {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Zmniejszamy czcionkę na bardzo małych ekranach, żeby tekst się nie "wyjeżdżał" */
 @media (max-width: 480px) {
   .title {
     font-size: 1.25rem;
+    /* dodajemy trochę odstępu od góry, jeśli potrzebne */
+    margin-top: 0.5rem;
+  }
+
+  .button {
+    /* Na małych ekranach nie pozycjonujemy absolutnie, dzięki temu nie zasłania tytułu */
+    position: relative;
+    top: auto;
+    right: auto;
+    align-self: flex-start; /* działa, bo .container jest flex-column */
+    margin-bottom: 0.75rem;
+    z-index: 5;
+  }
+
+  .lyrics {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  .playlistItem {
+    padding: 8px 12px;
   }
 }
