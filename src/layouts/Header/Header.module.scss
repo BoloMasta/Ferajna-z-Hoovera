@@ -30,6 +30,7 @@
 
 .container {
   @include container;
+  gap: var(--padding);
   padding: var(--padding-half) var(--padding);
   @include flex-between;
 }

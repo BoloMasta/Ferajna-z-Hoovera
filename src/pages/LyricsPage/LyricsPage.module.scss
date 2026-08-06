@@ -1,0 +1,124 @@
+.LyricsPage {
+  padding: 2rem 1rem;
+  color: #222;
+}
+
+.container {
+  @include container;
+  @include flex-center-column;
+  position: relative;
+}
+
+.title {
+  margin-bottom: var(--padding-half);
+  text-align: center;
+
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 60%;
+  }
+}
+
+.button {
+  right: 0;
+
+  @include breakpoint($breakpoint-tablet) {
+    right: var(--padding-half);
+  }
+}
+
+.icon {
+  margin-right: calc(var(--padding-half) / 3);
+  margin-left: -10px;
+  position: relative;
+  top: 3px;
+}
+
+/* Reszta stylów */
+.playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+.playlistItem {
+  display: block;
+  margin: 0;
+  text-align: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+
+  &::before {
+    background: $color-highlight;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.active {
+  color: $color-primary;
+  font-weight: bold;
+}
+
+.lyrics {
+  margin-top: 1rem;
+  background: #fbfbfb;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 600px;
+
+  /* nowe: ograniczona wysokość i scroll wewnętrzny */
+  max-height: 60vh;
+  overflow: auto;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.25rem;
+  }
+}

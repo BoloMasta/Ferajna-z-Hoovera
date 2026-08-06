@@ -7,6 +7,7 @@ import Layout from "../layouts/Layout/Layout";
 const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
 const AboutPage = lazy(() => import("../pages/AboutPage/AboutPage"));
 const MusicPage = lazy(() => import("../pages/MusicPage/MusicPage"));
+const LyricsPage = lazy(() => import("../pages/LyricsPage/LyricsPage"));
 const GalleriesPage = lazy(() => import("../pages/GalleriesPage/GalleriesPage"));
 const GalleryPage = lazy(() => import("../pages/GalleryPage/GalleryPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage/ContactPage"));
@@ -65,6 +66,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/onas" element={<AboutPage />} />
           <Route path="/muzyka" element={<MusicPage />} />
+          <Route path="/teksty" element={<LyricsPage />} />
           <Route path="/galeria" element={<GalleriesPage />} />
           <Route path="/galeria/:galleryId" element={<GalleryPage />} />
           <Route path="/kontakt" element={<ContactPage />} />

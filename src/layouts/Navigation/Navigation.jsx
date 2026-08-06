@@ -23,6 +23,7 @@ const Navigation = ({ setIsMenuOpen }) => {
           { to: "/", label: "Strona główna" },
           { to: "/onas", label: "O nas" },
           { to: "/muzyka", label: "Muzyka" },
+          { to: "/teksty", label: "Teksty" },
           { to: "/galeria", label: "Galeria" },
           { to: "/kontakt", label: "Kontakt" },
         ].map(({ to, label }) => (
