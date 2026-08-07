@@ -12,6 +12,7 @@ Projekt jest wdrożony na Netlify. Możesz zobaczyć stronę pod tym linkiem:
 
 - **/ktosietakwydziera**: Player z płytą "Kto się tak wydziera".
 - **/ktosietakwydzierapobierzplyte**: Możliwość pobrania płyty "Kto się tak wydziera" w formacie mp3.
+- **/spiewnik**: Możliwość pobrania tekstów w DOCX.
 
 ## Galeria
 
