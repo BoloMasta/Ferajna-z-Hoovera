@@ -24,6 +24,7 @@ import kanalzero010825 from "./kanal zero010825.json";
 import rakowiecka020826 from "./rakowiecka020826.json";
 import bemowo010826 from "./bemowo010826.json";
 import placszembeka070925 from "./plac szembeka070925.json";
+import akcjariksza310726 from "./akcja riksza310726.json";
 
 export const galleries = [
   bemowo010821,
@@ -50,6 +51,7 @@ export const galleries = [
   rakowiecka020826,
   bemowo010826,
   placszembeka070925,
+  akcjariksza310726,
 ];
 
 export const galleriesSortedCovers = galleries
