@@ -50,15 +50,32 @@ const LyricsPage = () => {
     return (
       <section className={styles.LyricsPage}>
         <div className={styles.container}>
-          <h2 className={styles.title}>{selected.title}</h2>
-          <Button className={styles.button} onClick={handleBackClick}>
-            <BiArrowBack className={styles.icon} />
-            Powrót
-          </Button>
+          {/* HEADER ROW: tytuł + górny przycisk. mobile-first: kolumna; na tablet+ będą w jednym wierszu */}
+          <div className={styles.headerRow}>
+            <h2 className={styles.title}>{selected.title}</h2>
 
-          <article className={styles.lyrics}>
-            <div className={styles.lyricsText}>{selected.lyrics}</div>
-          </article>
+            <Button className={styles.button} onClick={handleBackClick}>
+              <BiArrowBack className={styles.icon} />
+              Powrót
+            </Button>
+          </div>
+
+          {/* Wrapper: tekst + środkowy przycisk są w normalnym przepływie */}
+          <div className={styles.lyricsWrapper}>
+            <article className={styles.lyrics}>
+              <div className={styles.lyricsText}>{selected.lyrics}</div>
+            </article>
+
+            {/* Dodatkowy przycisk Powrót - WYŚRODKOWANY POD TEKSTEM i wyglądem identyczny z górnym */}
+            <Button
+              className={`${styles.button} ${styles.centerButton}`}
+              onClick={handleBackClick}
+              aria-label="Powrót"
+            >
+              <BiArrowBack className={styles.icon} />
+              Powrót
+            </Button>
+          </div>
         </div>
       </section>
     );

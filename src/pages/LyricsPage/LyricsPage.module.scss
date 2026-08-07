@@ -7,37 +7,143 @@
   @include container;
   @include flex-center-column;
   position: relative;
+  /* Pozycjonowanie przycisku dla tablet+ będzie odnosić się do tego kontenera */
+}
+
+/* HEADER ROW: mobile-first - kolumna (przycisk pod tytułem). Na tablet+ ustawiamy wiersz (ten sam wiersz) */
+.headerRow {
+  display: flex;
+  flex-direction: column; /* mobile: tytuł, potem przycisk */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+@include breakpoint($breakpoint-tablet) {
+  .headerRow {
+    flex-direction: row; /* tablet+ : tytuł i przycisk w jednym wierszu (przycisk będzie absolutny) */
+    align-items: center;
+    justify-content: center; /* tytuł pozostaje wycentrowany */
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .title {
-  margin-bottom: var(--padding-half);
+  margin: 0; /* reset marginesu, nagłówek i przycisk w jednej linii lepiej się skalują */
   text-align: center;
+  position: relative;
+  z-index: 2;
+  font-size: 1.25rem;
 
   @include breakpoint($breakpoint-tablet) {
     max-width: 60%;
+    font-size: 1.5rem;
   }
 }
 
-/* Przyciski: przypięty do góry kontenera (może zostać "na górze") */
+/* Główny styl przycisku: mobile-first - w przepływie i wyśrodkowany.
+   Na tablet+ staje się absolutny i trafia do prawego górnego rogu kontenera. */
 .button {
-  position: absolute;
-  top: var(--padding-half);
-  right: 0;
+  /* mobile: przycisk w normalnym przepływie */
+  position: relative;
+  align-self: center;
+  margin-bottom: var(--padding-half);
   z-index: 5;
 
+  /* Wnętrze przycisku: wyśrodkowanie ikony + tekstu */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  line-height: 1;
+  padding: 0.5rem 0.75rem; /* jeżeli Button sam ma paddingi, możesz to usunąć */
+  cursor: pointer;
+
   @include breakpoint($breakpoint-tablet) {
+    /* tablet+: umieszczamy przycisk w prawym górnym rogu kontenera */
+    position: absolute;
+    top: var(--padding-half);
     right: var(--padding-half);
+    margin-bottom: 0;
+    align-self: auto; /* nie potrzebne przy absolute, ale czytelne */
   }
 }
 
+/* Domyślne odstępy ikony — ZMNIEJSZONE, żeby strzałka była bliżej napisu (dopasowanie do galerii) */
 .icon {
-  margin-right: calc(var(--padding-half) / 3);
+  margin-right: 0.2rem; /* mniejsze niż wcześniej */
   margin-left: -10px;
   position: relative;
-  top: 3px;
+  top: 0;
 }
 
-/* Reszta stylów */
+/* Opcjonalne lekkie dopieszczenie tylko dla górnego przycisku na desktopzie:
+   delikatne pionowe przesunięcie ikony i minimalne różnicowanie spacingu */
+@include breakpoint($breakpoint-tablet) {
+  .headerRow .button:not(.centerButton) .icon {
+    top: 1px; /* lekkie dopasowanie pionowe */
+    margin-right: 0.22rem; /* bardzo blisko napisu */
+  }
+
+  /* dolny (center) przycisk ma jeszcze ciasniejszy odstęp między ikoną a napisem */
+  .centerButton .icon {
+    margin-right: 0.16rem;
+  }
+}
+
+/* Wrapper trzyma tekst i środkowy przycisk razem w kolejności DOM */
+.lyricsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tekst piosenki */
+.lyrics {
+  margin-top: 1rem;
+  background: #fbfbfb;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  line-height: 1.6;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* WYŚRODKOWANY przycisk pod tekstem: ma wygląd .button ale pozycjonowanie tylko w przepływie */
+.centerButton {
+  position: static !important; /* zabezpiecza przed wewnętrznymi regułami Buttona */
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.125rem 0 0;
+  z-index: 1;
+  line-height: 1;
+}
+
+/* Kontrolowany pre-wrap wewnątrz */
+.lyricsText {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Reszta stylów (playlist itp.) */
 .playlist {
   display: flex;
   flex-direction: column;
@@ -65,8 +171,6 @@
   width: 100%;
   cursor: pointer;
   transition: color 0.3s ease;
-
-  /* Pozwól tytułom zawijać na małych ekranach zamiast wyjeżdżać */
   white-space: normal;
   overflow-wrap: anywhere;
 
@@ -99,52 +203,10 @@
   font-weight: bold;
 }
 
-/* Tekst piosenki: usunięty wewnętrzny scroll, tekst przewija się razem ze stroną */
-.lyrics {
-  margin-top: 1rem;
-  background: #fbfbfb;
-  padding: 1rem;
-  border-radius: 8px;
-  border: 1px solid #f0f0f0;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial;
-  line-height: 1.6;
-  font-size: 1rem;
-  width: 100%;
-  max-width: 600px;
-
-  /* usunięto ograniczoną wysokość i overflow (żadnych wewnętrznych pasków przewijania) */
-}
-
-/* Kontrolowany pre-wrap wewnątrz */
-.lyricsText {
-  white-space: pre-wrap;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-}
-
-/* Zmniejszamy czcionkę na bardzo małych ekranach, żeby tekst się nie "wyjeżdżał" */
+/* Małe ekrany: dodatkowe dopracowanie spacingu (headerRow już jest kolumną w mobile) */
 @media (max-width: 480px) {
   .title {
     font-size: 1.25rem;
-    /* dodajemy trochę odstępu od góry, jeśli potrzebne */
-    margin-top: 0.5rem;
-  }
-
-  .button {
-    /* Na małych ekranach nie pozycjonujemy absolutnie, dzięki temu nie zasłania tytułu */
-    position: relative;
-    top: auto;
-    right: auto;
-    align-self: flex-start; /* działa, bo .container jest flex-column */
-    margin-bottom: 0.75rem;
-    z-index: 5;
   }
 
   .lyrics {
@@ -154,5 +216,9 @@
 
   .playlistItem {
     padding: 8px 12px;
+  }
+
+  .centerButton {
+    margin-top: 0.75rem;
   }
 }
