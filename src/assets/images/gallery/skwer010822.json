@@ -19,7 +19,7 @@
     },
     {
       "url": "../images/gallery/skwer 1.08.2022/IMG_1480.jpg",
-      "urlCover": "../images/gallery/skwer 1.08.2022/IMG_1480_cover.jpg",     
+      "urlCover": "../images/gallery/skwer 1.08.2022/IMG_1480_cover.jpg",
       "urlThumbnail": "../images/gallery/skwer 1.08.2022/IMG_1480_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
     },
@@ -87,11 +87,13 @@
 
     {
       "url": "../images/gallery/skwer 1.08.2022/IMG_1570.jpg",
+      "urlCover": "../images/gallery/skwer 1.08.2022/IMG_1570_cover.jpg",
       "urlThumbnail": "../images/gallery/skwer 1.08.2022/IMG_1570_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
     },
     {
       "url": "../images/gallery/skwer 1.08.2022/IMG_1592.jpg",
+      "urlCover": "../images/gallery/skwer 1.08.2022/IMG_1592_cover.jpg",
       "urlThumbnail": "../images/gallery/skwer 1.08.2022/IMG_1592_thumbnail.jpg",
       "alt": "Ferajna z Hoovera na skwerze Hoovera w Warszawie"
     }

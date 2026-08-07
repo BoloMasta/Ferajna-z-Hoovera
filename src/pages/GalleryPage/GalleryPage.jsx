@@ -28,6 +28,7 @@ const GalleryPage = () => {
     fetchGalleryData();
   }, [fetchGalleryData]);
 
+  // On gallery data load: format images, reset viewer index and scroll to top
   useEffect(() => {
     if (galleryData?.images) {
       setFormattedImages(
@@ -39,13 +40,30 @@ const GalleryPage = () => {
           thumbnailAlt: image.alt || "Miniaturka",
         })),
       );
+
+      // reset viewer state and scroll to top when entering a gallery
+      setCurrentImageIndex(null);
+      // smooth scroll to top so user sees header/title like in LyricsPage
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [galleryData]);
+
+  // Also ensure we scroll to top when the route/galleryId changes (entering a new gallery)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setCurrentImageIndex(null);
+  }, [galleryId]);
 
   const handleBackClick = () =>
     currentImageIndex !== null ? setCurrentImageIndex(null) : navigate("/galeria");
 
-  const handleImageClick = (index) => setCurrentImageIndex(index);
+  // When opening an image from the grid, scroll to top so the ImageGallery is fully visible,
+  // then open the viewer at the clicked index (user still sees the clicked image).
+  const handleImageClick = (index) => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    // small timeout ensures scroll starts before ImageGallery mounts; optional but smooth
+    setTimeout(() => setCurrentImageIndex(index), 100);
+  };
 
   useEffect(() => {
     const onKeyDown = (e) => {
