@@ -13,6 +13,7 @@ const GalleryPage = lazy(() => import("../pages/GalleryPage/GalleryPage"));
 const ContactPage = lazy(() => import("../pages/ContactPage/ContactPage"));
 const PlayerPage = lazy(() => import("../pages/PlayerPage/PlayerPage"));
 const DownloadPage = lazy(() => import("../pages/DownloadPage/DownloadPage"));
+const SongbookPage = lazy(() => import("../pages/SongbookPage/SongbookPage"));
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/ktosietakwydziera" element={<PlayerPage />} />
           <Route path="/ktosietakwydzierapobierzplyte" element={<DownloadPage />} />
+          <Route path="/spiewnik" element={<SongbookPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
